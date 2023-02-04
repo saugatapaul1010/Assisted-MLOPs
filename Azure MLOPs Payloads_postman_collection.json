@@ -1,0 +1,401 @@
+{
+	"info": {
+		"_postman_id": "8b1844d5-deaa-4330-a282-d7078e0b67cf",
+		"name": "Azure MLOPs Local Machine",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Dataset Upload",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "create_bucket_name",
+						"value": "demotesttcont",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "filename",
+							"type": "file",
+							"src": "/C:/Users/sauga/Desktop/AzurePOCs/data/Iris_Dataset_Test_Data.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/azure_dataset_upload/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"azure_dataset_upload",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Datasets",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/azure/datasets/list/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"azure",
+						"datasets",
+						"list",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Buckets",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/azure/buckets/list/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"azure",
+						"buckets",
+						"list",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Bucket",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "test_cont",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/azure/buckets/create/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"azure",
+						"buckets",
+						"create",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VIZ FILE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "file",
+					"file": {}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/vizfile/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"vizfile",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Custom Fine Uploader",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/custom_fine_uploader_azure/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"custom_fine_uploader_azure",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Pipeline",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"pipeline_name\": \"Assisted_Created_API_Saugata\",\n\"experiment_name\":\"IrisExperiment\",\n\"dataset_name\": \"azureml-blobstore-fa9d2517-040e-4c2e-be65-676d5c708710/irisdata/Iris.csv\",\n\"train_columns\": [\"SepalLengthCm\",\"SepalWidthCm\",\"PetalLengthCm\",\"PetalWidthCm\"],\n\"target_columns\": \"Species\",\n\"train_size\": 0.888,\n\"ml-compute_v_m_size\": \"STANDARD_DS12_V2\",\n\"missing_value\":true,\n\"remove_outlier\":true,\n\"model_selection\": {\n    \"model\":\"Random Forest\",\n        \"params\":{\n        \"random_state\":42,\n        \"n_estimators\":200,\n        \"criterion\":\"log_loss\"\n        }\n    },\n\"tasks\": {\n\"run_traininfrasetup\": true,\n\"run_preprocess\": true,\n\"run_train\": true,\n\"run_deployinfrasetup\": true,\n\"run_deploytoaks\": true,\n\"run_publishendpoint\": true\n    }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/pipeline/create/azure/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"pipeline",
+						"create",
+						"azure",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "View_dataset",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"dataset_name\": \"azureml-blobstore-fa9d2517-040e-4c2e-be65-676d5c708710/segmentation/segmentation.csv\"\n}\n\n\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/azure/dataset/view/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"azure",
+						"dataset",
+						"view",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Execute Pipeline",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/pipeline/create/azure/execute?definition_id=18",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"pipeline",
+						"create",
+						"azure",
+						"execute"
+					],
+					"query": [
+						{
+							"key": "definition_id",
+							"value": "18"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Pipelines",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/azure/pipelines/list/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"azure",
+						"pipelines",
+						"list",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pipeline Status",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"pipeline_definition_id_list\": [182]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/azure/pipeline/status/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"azure",
+						"pipeline",
+						"status",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Endpoint",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"endpoint_name\": \"segmentation-endpoint-lny-myk\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/azure/pipeline/getendpoint/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"azure",
+						"pipeline",
+						"getendpoint",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

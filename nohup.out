@@ -1,0 +1,330 @@
+Failure while loading azureml_run_type_providers. Failed to load entrypoint azureml.scriptrun = azureml.core.script_run:ScriptRun._from_run_dto with exception (knack 0.8.2 (/home/saugata/anaconda3/envs/assisted_mlops/lib/python3.8/site-packages), Requirement.parse('knack~=0.9.0')).
+Failure while loading azureml_run_type_providers. Failed to load entrypoint automl = azureml.train.automl.run:AutoMLRun._from_run_dto with exception (knack 0.8.2 (/home/saugata/anaconda3/envs/assisted_mlops/lib/python3.8/site-packages), Requirement.parse('knack~=0.9.0'), {'azureml-core'}).
+Failure while loading azureml_run_type_providers. Failed to load entrypoint azureml.PipelineRun = azureml.pipeline.core.run:PipelineRun._from_dto with exception (knack 0.8.2 (/home/saugata/anaconda3/envs/assisted_mlops/lib/python3.8/site-packages), Requirement.parse('knack~=0.9.0'), {'azureml-core'}).
+Failure while loading azureml_run_type_providers. Failed to load entrypoint azureml.ReusedStepRun = azureml.pipeline.core.run:StepRun._from_reused_dto with exception (knack 0.8.2 (/home/saugata/anaconda3/envs/assisted_mlops/lib/python3.8/site-packages), Requirement.parse('knack~=0.9.0'), {'azureml-core'}).
+Failure while loading azureml_run_type_providers. Failed to load entrypoint azureml.StepRun = azureml.pipeline.core.run:StepRun._from_dto with exception (knack 0.8.2 (/home/saugata/anaconda3/envs/assisted_mlops/lib/python3.8/site-packages), Requirement.parse('knack~=0.9.0'), {'azureml-core'}).
+Failure while loading azureml_run_type_providers. Failed to load entrypoint hyperdrive = azureml.train.hyperdrive:HyperDriveRun._from_run_dto with exception (knack 0.8.2 (/home/saugata/anaconda3/envs/assisted_mlops/lib/python3.8/site-packages), Requirement.parse('knack~=0.9.0'), {'azureml-core'}).
+[2022-05-27 04:51:54,669: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-05-27 04:51:54,679: INFO/MainProcess] mingle: searching for neighbors
+[2022-05-27 04:51:55,692: INFO/MainProcess] mingle: all alone
+[2022-05-27 04:51:55,703: WARNING/MainProcess] /home/saugata/anaconda3/envs/assisted_mlops/lib/python3.8/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2022-05-27 04:51:55,703: INFO/MainProcess] celery@neo ready.
+[2022-05-27 04:51:55,847: INFO/MainProcess] Received task: execute_current_pipeline[17929b07-7d4f-4e70-8faa-ec3297db3306]  
+[2022-05-27 04:51:55,848: INFO/MainProcess] execute_current_pipeline[17929b07-7d4f-4e70-8faa-ec3297db3306]: function to execute the pipeline
+[2022-05-27 04:51:57,153: WARNING/MainProcess] Logged-in to Azure DevOps.
+[2022-05-27 04:52:00,287: WARNING/MainProcess] Started Pipeline execution.
+[2022-05-27 04:52:00,287: INFO/MainProcess] execute_current_pipeline[17929b07-7d4f-4e70-8faa-ec3297db3306]: None
+[2022-05-27 04:52:00,289: INFO/MainProcess] Task execute_current_pipeline[17929b07-7d4f-4e70-8faa-ec3297db3306] succeeded in 4.441530818999809s: None
+[2022-05-27 04:52:00,293: INFO/MainProcess] Received task: execute_current_pipeline[48f7a94e-3fee-4269-9ede-69824ae57590]  
+[2022-05-27 04:52:00,294: INFO/MainProcess] execute_current_pipeline[48f7a94e-3fee-4269-9ede-69824ae57590]: function to execute the pipeline
+[2022-05-27 04:52:01,294: WARNING/MainProcess] Logged-in to Azure DevOps.
+[2022-05-27 04:52:04,036: WARNING/MainProcess] Started Pipeline execution.
+[2022-05-27 04:52:04,036: INFO/MainProcess] execute_current_pipeline[48f7a94e-3fee-4269-9ede-69824ae57590]: None
+[2022-05-27 04:52:04,038: INFO/MainProcess] Task execute_current_pipeline[48f7a94e-3fee-4269-9ede-69824ae57590] succeeded in 3.7439589619998515s: None
+[2022-05-27 05:00:20,040: INFO/MainProcess] Received task: commit_file_in_yaml_to_azure_repo[3812c47c-f9e5-46d5-a48a-29ca7e7e08f8]  
+[2022-05-27 05:00:20,044: INFO/MainProcess] commit_file_in_yaml_to_azure_repo[3812c47c-f9e5-46d5-a48a-29ca7e7e08f8]: function to commit yaml file to azure repo
+[2022-05-27 05:00:20,045: WARNING/MainProcess] Commiting File to Azure Repo..................
+Cloning into 'Assisted-MLOPs'...
+[2022-05-27 05:00:21,832: WARNING/MainProcess] Head currently pointed at -->
+[2022-05-27 05:00:21,832: WARNING/MainProcess] /home/saugata/Desktop/AzureBackend/azure_assisted_mlops
+[2022-05-27 05:00:21,832: WARNING/MainProcess] Deleteing the YAML file from repo
+[2022-05-27 05:00:21,833: WARNING/MainProcess] Deleteing the training script file from repo
+[2022-05-27 05:00:21,833: WARNING/MainProcess] Deleteing the preprocess script file from repo
+[2022-05-27 05:00:21,833: INFO/MainProcess] commit_file_in_yaml_to_azure_repo[3812c47c-f9e5-46d5-a48a-29ca7e7e08f8]: False
+[2022-05-27 05:00:21,835: INFO/MainProcess] Task commit_file_in_yaml_to_azure_repo[3812c47c-f9e5-46d5-a48a-29ca7e7e08f8] succeeded in 1.7904011759997047s: None
+[2022-05-27 05:02:19,634: INFO/MainProcess] Received task: execute_current_pipeline[8bd2a5dc-1ce0-4c3d-937f-d691dd0780c0]  
+[2022-05-27 05:02:19,635: INFO/MainProcess] execute_current_pipeline[8bd2a5dc-1ce0-4c3d-937f-d691dd0780c0]: function to execute the pipeline
+[2022-05-27 05:02:20,725: WARNING/MainProcess] Logged-in to Azure DevOps.
+[2022-05-27 05:02:23,088: WARNING/MainProcess] Started Pipeline execution.
+[2022-05-27 05:02:23,089: INFO/MainProcess] execute_current_pipeline[8bd2a5dc-1ce0-4c3d-937f-d691dd0780c0]: None
+[2022-05-27 05:02:23,090: INFO/MainProcess] Task execute_current_pipeline[8bd2a5dc-1ce0-4c3d-937f-d691dd0780c0] succeeded in 3.455758629999764s: None
+[2022-05-27 05:03:14,422: INFO/MainProcess] Received task: execute_current_pipeline[fd2abc50-81b0-4699-b18a-f811073ae466]  
+[2022-05-27 05:03:14,423: INFO/MainProcess] execute_current_pipeline[fd2abc50-81b0-4699-b18a-f811073ae466]: function to execute the pipeline
+[2022-05-27 05:03:15,884: WARNING/MainProcess] Logged-in to Azure DevOps.
+[2022-05-27 05:03:18,792: WARNING/MainProcess] Started Pipeline execution.
+[2022-05-27 05:03:18,793: INFO/MainProcess] execute_current_pipeline[fd2abc50-81b0-4699-b18a-f811073ae466]: None
+[2022-05-27 05:03:18,794: INFO/MainProcess] Task execute_current_pipeline[fd2abc50-81b0-4699-b18a-f811073ae466] succeeded in 4.3715017479999005s: None
+[2022-05-27 05:09:17,738: INFO/MainProcess] Received task: commit_file_in_yaml_to_azure_repo[3cfdcf6b-28b0-48c5-a9d7-d4b795b5605e]  
+[2022-05-27 05:09:17,739: INFO/MainProcess] commit_file_in_yaml_to_azure_repo[3cfdcf6b-28b0-48c5-a9d7-d4b795b5605e]: function to commit yaml file to azure repo
+[2022-05-27 05:09:17,739: WARNING/MainProcess] Commiting File to Azure Repo..................
+[2022-05-27 05:09:17,739: INFO/MainProcess] commit_file_in_yaml_to_azure_repo[3cfdcf6b-28b0-48c5-a9d7-d4b795b5605e]: False
+[2022-05-27 05:09:17,740: INFO/MainProcess] Task commit_file_in_yaml_to_azure_repo[3cfdcf6b-28b0-48c5-a9d7-d4b795b5605e] succeeded in 0.0011696630003825703s: None
+[2022-05-27 05:09:20,816: INFO/MainProcess] Received task: execute_current_pipeline[4f125dfb-8851-4cea-9255-545802135172]  
+[2022-05-27 05:09:20,817: INFO/MainProcess] execute_current_pipeline[4f125dfb-8851-4cea-9255-545802135172]: function to execute the pipeline
+[2022-05-27 05:09:22,066: WARNING/MainProcess] Logged-in to Azure DevOps.
+[2022-05-27 05:09:25,158: WARNING/MainProcess] Started Pipeline execution.
+[2022-05-27 05:09:25,159: INFO/MainProcess] execute_current_pipeline[4f125dfb-8851-4cea-9255-545802135172]: None
+[2022-05-27 05:09:25,161: INFO/MainProcess] Task execute_current_pipeline[4f125dfb-8851-4cea-9255-545802135172] succeeded in 4.343722252999669s: None
+[2022-05-27 05:14:30,553: INFO/MainProcess] Received task: execute_current_pipeline[5e32f9e0-e054-4b71-ad8b-fee6fcd1e17c]  
+[2022-05-27 05:14:30,554: INFO/MainProcess] execute_current_pipeline[5e32f9e0-e054-4b71-ad8b-fee6fcd1e17c]: function to execute the pipeline
+[2022-05-27 05:14:31,585: WARNING/MainProcess] Logged-in to Azure DevOps.
+[2022-05-27 05:14:33,958: WARNING/MainProcess] Started Pipeline execution.
+[2022-05-27 05:14:33,959: INFO/MainProcess] execute_current_pipeline[5e32f9e0-e054-4b71-ad8b-fee6fcd1e17c]: None
+[2022-05-27 05:14:33,960: INFO/MainProcess] Task execute_current_pipeline[5e32f9e0-e054-4b71-ad8b-fee6fcd1e17c] succeeded in 3.406158276000042s: None
+[2022-05-27 05:14:50,341: INFO/MainProcess] Received task: execute_current_pipeline[c646049e-16ae-43ab-b8a1-ccca005bc89e]  
+[2022-05-27 05:14:50,342: INFO/MainProcess] execute_current_pipeline[c646049e-16ae-43ab-b8a1-ccca005bc89e]: function to execute the pipeline
+[2022-05-27 05:14:51,377: WARNING/MainProcess] Logged-in to Azure DevOps.
+[2022-05-27 05:14:53,508: WARNING/MainProcess] Started Pipeline execution.
+[2022-05-27 05:14:53,508: INFO/MainProcess] execute_current_pipeline[c646049e-16ae-43ab-b8a1-ccca005bc89e]: None
+[2022-05-27 05:14:53,509: INFO/MainProcess] Task execute_current_pipeline[c646049e-16ae-43ab-b8a1-ccca005bc89e] succeeded in 3.1672214240002177s: None
+[2022-05-27 05:15:15,163: INFO/MainProcess] Received task: execute_current_pipeline[29dd9685-310c-4ce7-8bbf-2e9b1d102bbd]  
+[2022-05-27 05:15:15,164: INFO/MainProcess] execute_current_pipeline[29dd9685-310c-4ce7-8bbf-2e9b1d102bbd]: function to execute the pipeline
+[2022-05-27 05:15:16,146: WARNING/MainProcess] Logged-in to Azure DevOps.
+[2022-05-27 05:15:18,225: WARNING/MainProcess] Started Pipeline execution.
+[2022-05-27 05:15:18,226: INFO/MainProcess] execute_current_pipeline[29dd9685-310c-4ce7-8bbf-2e9b1d102bbd]: None
+[2022-05-27 05:15:18,227: INFO/MainProcess] Task execute_current_pipeline[29dd9685-310c-4ce7-8bbf-2e9b1d102bbd] succeeded in 3.0637143030003244s: None
+[2022-05-27 05:16:19,530: INFO/MainProcess] Received task: execute_current_pipeline[a6ee243f-45a3-4659-b864-4edfebec4254]  
+[2022-05-27 05:16:19,530: INFO/MainProcess] execute_current_pipeline[a6ee243f-45a3-4659-b864-4edfebec4254]: function to execute the pipeline
+[2022-05-27 05:16:20,596: WARNING/MainProcess] Logged-in to Azure DevOps.
+[2022-05-27 05:16:22,660: WARNING/MainProcess] Started Pipeline execution.
+[2022-05-27 05:16:22,661: INFO/MainProcess] execute_current_pipeline[a6ee243f-45a3-4659-b864-4edfebec4254]: None
+[2022-05-27 05:16:22,662: INFO/MainProcess] Task execute_current_pipeline[a6ee243f-45a3-4659-b864-4edfebec4254] succeeded in 3.1317644790001395s: None
+[2022-05-27 05:20:54,036: INFO/MainProcess] Received task: commit_file_in_yaml_to_azure_repo[ef4d4290-1f38-4634-9776-5736530aa373]  
+[2022-05-27 05:20:54,037: INFO/MainProcess] commit_file_in_yaml_to_azure_repo[ef4d4290-1f38-4634-9776-5736530aa373]: function to commit yaml file to azure repo
+[2022-05-27 05:20:54,037: WARNING/MainProcess] Commiting File to Azure Repo..................
+[2022-05-27 05:20:54,037: INFO/MainProcess] commit_file_in_yaml_to_azure_repo[ef4d4290-1f38-4634-9776-5736530aa373]: False
+[2022-05-27 05:20:54,038: INFO/MainProcess] Task commit_file_in_yaml_to_azure_repo[ef4d4290-1f38-4634-9776-5736530aa373] succeeded in 0.0009305260000473936s: None
+[2022-05-27 05:23:28,171: INFO/MainProcess] Received task: execute_current_pipeline[6b903b54-6239-48f1-9856-344e72f2c9d6]  
+[2022-05-27 05:23:28,172: INFO/MainProcess] execute_current_pipeline[6b903b54-6239-48f1-9856-344e72f2c9d6]: function to execute the pipeline
+[2022-05-27 05:23:29,307: WARNING/MainProcess] Logged-in to Azure DevOps.
+[2022-05-27 05:23:31,619: WARNING/MainProcess] Started Pipeline execution.
+[2022-05-27 05:23:31,620: INFO/MainProcess] execute_current_pipeline[6b903b54-6239-48f1-9856-344e72f2c9d6]: None
+[2022-05-27 05:23:31,621: INFO/MainProcess] Task execute_current_pipeline[6b903b54-6239-48f1-9856-344e72f2c9d6] succeeded in 3.4489670560001287s: None
+[2022-05-27 05:46:16,076: INFO/MainProcess] Received task: commit_file_in_yaml_to_azure_repo[fc4cd516-306c-4c2a-ba86-aca7bf816476]  
+[2022-05-27 05:46:16,077: INFO/MainProcess] commit_file_in_yaml_to_azure_repo[fc4cd516-306c-4c2a-ba86-aca7bf816476]: function to commit yaml file to azure repo
+[2022-05-27 05:46:16,078: WARNING/MainProcess] Commiting File to Azure Repo..................
+[2022-05-27 05:46:16,078: INFO/MainProcess] commit_file_in_yaml_to_azure_repo[fc4cd516-306c-4c2a-ba86-aca7bf816476]: False
+[2022-05-27 05:46:16,079: INFO/MainProcess] Task commit_file_in_yaml_to_azure_repo[fc4cd516-306c-4c2a-ba86-aca7bf816476] succeeded in 0.002305050999893865s: None
+[2022-05-27 05:46:21,367: INFO/MainProcess] Received task: commit_file_in_yaml_to_azure_repo[6d9a0b40-d878-49d6-9c5c-0b9e522257d8]  
+[2022-05-27 05:46:21,368: INFO/MainProcess] commit_file_in_yaml_to_azure_repo[6d9a0b40-d878-49d6-9c5c-0b9e522257d8]: function to commit yaml file to azure repo
+[2022-05-27 05:46:21,369: WARNING/MainProcess] Commiting File to Azure Repo..................
+[2022-05-27 05:46:21,369: INFO/MainProcess] commit_file_in_yaml_to_azure_repo[6d9a0b40-d878-49d6-9c5c-0b9e522257d8]: False
+[2022-05-27 05:46:21,370: INFO/MainProcess] Task commit_file_in_yaml_to_azure_repo[6d9a0b40-d878-49d6-9c5c-0b9e522257d8] succeeded in 0.0016574669998590252s: None
+[2022-05-27 05:46:26,002: INFO/MainProcess] Received task: commit_file_in_yaml_to_azure_repo[2bd247e6-5fcc-4991-b639-6cdc985d95a4]  
+[2022-05-27 05:46:26,003: INFO/MainProcess] commit_file_in_yaml_to_azure_repo[2bd247e6-5fcc-4991-b639-6cdc985d95a4]: function to commit yaml file to azure repo
+[2022-05-27 05:46:26,003: WARNING/MainProcess] Commiting File to Azure Repo..................
+[2022-05-27 05:46:26,003: INFO/MainProcess] commit_file_in_yaml_to_azure_repo[2bd247e6-5fcc-4991-b639-6cdc985d95a4]: False
+[2022-05-27 05:46:26,003: INFO/MainProcess] Task commit_file_in_yaml_to_azure_repo[2bd247e6-5fcc-4991-b639-6cdc985d95a4] succeeded in 0.0008023679993129917s: None
+[2022-05-27 05:48:15,122: INFO/MainProcess] Received task: commit_file_in_yaml_to_azure_repo[8ef0be1d-72e0-4ade-94de-d844d9c6deac]  
+[2022-05-27 05:48:15,123: INFO/MainProcess] commit_file_in_yaml_to_azure_repo[8ef0be1d-72e0-4ade-94de-d844d9c6deac]: function to commit yaml file to azure repo
+[2022-05-27 05:48:15,124: WARNING/MainProcess] Commiting File to Azure Repo..................
+[2022-05-27 05:48:15,124: INFO/MainProcess] commit_file_in_yaml_to_azure_repo[8ef0be1d-72e0-4ade-94de-d844d9c6deac]: False
+[2022-05-27 05:48:15,125: INFO/MainProcess] Task commit_file_in_yaml_to_azure_repo[8ef0be1d-72e0-4ade-94de-d844d9c6deac] succeeded in 0.0019287340001028497s: None
+[2022-05-27 05:48:49,912: INFO/MainProcess] Received task: commit_file_in_yaml_to_azure_repo[83b73cbe-93ed-44b5-976d-8d924f44256d]  
+[2022-05-27 05:48:49,912: INFO/MainProcess] commit_file_in_yaml_to_azure_repo[83b73cbe-93ed-44b5-976d-8d924f44256d]: function to commit yaml file to azure repo
+[2022-05-27 05:48:49,913: WARNING/MainProcess] Commiting File to Azure Repo..................
+[2022-05-27 05:48:49,913: INFO/MainProcess] commit_file_in_yaml_to_azure_repo[83b73cbe-93ed-44b5-976d-8d924f44256d]: False
+[2022-05-27 05:48:49,913: INFO/MainProcess] Task commit_file_in_yaml_to_azure_repo[83b73cbe-93ed-44b5-976d-8d924f44256d] succeeded in 0.0008583150001868489s: None
+[2022-05-27 05:49:08,064: INFO/MainProcess] Received task: commit_file_in_yaml_to_azure_repo[a17c9e79-0870-4714-a793-f0bb0570dc87]  
+[2022-05-27 05:49:08,065: INFO/MainProcess] commit_file_in_yaml_to_azure_repo[a17c9e79-0870-4714-a793-f0bb0570dc87]: function to commit yaml file to azure repo
+[2022-05-27 05:49:08,065: WARNING/MainProcess] Commiting File to Azure Repo..................
+[2022-05-27 05:49:08,065: INFO/MainProcess] commit_file_in_yaml_to_azure_repo[a17c9e79-0870-4714-a793-f0bb0570dc87]: False
+[2022-05-27 05:49:08,065: INFO/MainProcess] Task commit_file_in_yaml_to_azure_repo[a17c9e79-0870-4714-a793-f0bb0570dc87] succeeded in 0.0008866699999998673s: None
+[2022-05-27 05:50:08,550: INFO/MainProcess] Received task: commit_file_in_yaml_to_azure_repo[96166d3f-28aa-4fae-bfb8-e484d17e8a31]  
+[2022-05-27 05:50:08,551: INFO/MainProcess] commit_file_in_yaml_to_azure_repo[96166d3f-28aa-4fae-bfb8-e484d17e8a31]: function to commit yaml file to azure repo
+[2022-05-27 05:50:08,551: WARNING/MainProcess] Commiting File to Azure Repo..................
+[2022-05-27 05:50:08,551: INFO/MainProcess] commit_file_in_yaml_to_azure_repo[96166d3f-28aa-4fae-bfb8-e484d17e8a31]: False
+[2022-05-27 05:50:08,552: INFO/MainProcess] Task commit_file_in_yaml_to_azure_repo[96166d3f-28aa-4fae-bfb8-e484d17e8a31] succeeded in 0.0014197250002325745s: None
+[2022-05-27 05:51:20,081: INFO/MainProcess] Received task: commit_file_in_yaml_to_azure_repo[a792d40e-e693-478c-978e-d7b3782ea88d]  
+[2022-05-27 05:51:20,083: INFO/MainProcess] commit_file_in_yaml_to_azure_repo[a792d40e-e693-478c-978e-d7b3782ea88d]: function to commit yaml file to azure repo
+[2022-05-27 05:51:20,083: WARNING/MainProcess] Commiting File to Azure Repo..................
+[2022-05-27 05:51:20,083: INFO/MainProcess] commit_file_in_yaml_to_azure_repo[a792d40e-e693-478c-978e-d7b3782ea88d]: False
+[2022-05-27 05:51:20,084: INFO/MainProcess] Task commit_file_in_yaml_to_azure_repo[a792d40e-e693-478c-978e-d7b3782ea88d] succeeded in 0.0020256899997548317s: None
+[2022-05-27 05:52:05,912: INFO/MainProcess] Received task: execute_current_pipeline[895599f0-9985-474e-ae17-9a1cc03d4c6c]  
+[2022-05-27 05:52:05,913: INFO/MainProcess] execute_current_pipeline[895599f0-9985-474e-ae17-9a1cc03d4c6c]: function to execute the pipeline
+[2022-05-27 05:52:07,310: WARNING/MainProcess] Logged-in to Azure DevOps.
+[2022-05-27 05:52:10,252: WARNING/MainProcess] Started Pipeline execution.
+[2022-05-27 05:52:10,253: INFO/MainProcess] execute_current_pipeline[895599f0-9985-474e-ae17-9a1cc03d4c6c]: None
+[2022-05-27 05:52:10,255: INFO/MainProcess] Task execute_current_pipeline[895599f0-9985-474e-ae17-9a1cc03d4c6c] succeeded in 4.341538703999504s: None
+[2022-05-27 06:02:38,682: INFO/MainProcess] Received task: commit_file_in_yaml_to_azure_repo[c104ec64-569a-431c-a2c3-06f34fc47dec]  
+[2022-05-27 06:02:38,684: INFO/MainProcess] commit_file_in_yaml_to_azure_repo[c104ec64-569a-431c-a2c3-06f34fc47dec]: function to commit yaml file to azure repo
+[2022-05-27 06:02:38,684: WARNING/MainProcess] Commiting File to Azure Repo..................
+[2022-05-27 06:02:38,684: INFO/MainProcess] commit_file_in_yaml_to_azure_repo[c104ec64-569a-431c-a2c3-06f34fc47dec]: False
+[2022-05-27 06:02:38,685: INFO/MainProcess] Task commit_file_in_yaml_to_azure_repo[c104ec64-569a-431c-a2c3-06f34fc47dec] succeeded in 0.0018498689996704343s: None
+[2022-05-27 08:26:29,052: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/home/saugata/anaconda3/envs/assisted_mlops/lib/python3.8/site-packages/redis/connection.py", line 185, in _read_from_socket
+    raise socket.error(SERVER_CLOSED_CONNECTION_ERROR)
+OSError: Connection closed by server.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/saugata/anaconda3/envs/assisted_mlops/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 318, in start
+    blueprint.start(self)
+  File "/home/saugata/anaconda3/envs/assisted_mlops/lib/python3.8/site-packages/celery/bootsteps.py", line 119, in start
+    step.start(parent)
+  File "/home/saugata/anaconda3/envs/assisted_mlops/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 596, in start
+    c.loop(*c.loop_args())
+  File "/home/saugata/anaconda3/envs/assisted_mlops/lib/python3.8/site-packages/celery/worker/loops.py", line 91, in asynloop
+    next(loop)
+  File "/home/saugata/anaconda3/envs/assisted_mlops/lib/python3.8/site-packages/kombu/asynchronous/hub.py", line 364, in create_loop
+    cb(*cbargs)
+  File "/home/saugata/anaconda3/envs/assisted_mlops/lib/python3.8/site-packages/kombu/transport/redis.py", line 1083, in on_readable
+    self.cycle.on_readable(fileno)
+  File "/home/saugata/anaconda3/envs/assisted_mlops/lib/python3.8/site-packages/kombu/transport/redis.py", line 354, in on_readable
+    chan.handlers[type]()
+  File "/home/saugata/anaconda3/envs/assisted_mlops/lib/python3.8/site-packages/kombu/transport/redis.py", line 688, in _receive
+    ret.append(self._receive_one(c))
+  File "/home/saugata/anaconda3/envs/assisted_mlops/lib/python3.8/site-packages/kombu/transport/redis.py", line 698, in _receive_one
+    response = c.parse_response()
+  File "/home/saugata/anaconda3/envs/assisted_mlops/lib/python3.8/site-packages/redis/client.py", line 3036, in parse_response
+    return self._execute(connection, connection.read_response)
+  File "/home/saugata/anaconda3/envs/assisted_mlops/lib/python3.8/site-packages/redis/client.py", line 3013, in _execute
+    return command(*args)
+  File "/home/saugata/anaconda3/envs/assisted_mlops/lib/python3.8/site-packages/redis/connection.py", line 637, in read_response
+    response = self._parser.read_response()
+  File "/home/saugata/anaconda3/envs/assisted_mlops/lib/python3.8/site-packages/redis/connection.py", line 290, in read_response
+    response = self._buffer.readline()
+  File "/home/saugata/anaconda3/envs/assisted_mlops/lib/python3.8/site-packages/redis/connection.py", line 224, in readline
+    self._read_from_socket()
+  File "/home/saugata/anaconda3/envs/assisted_mlops/lib/python3.8/site-packages/redis/connection.py", line 198, in _read_from_socket
+    raise ConnectionError("Error while reading from socket: %s" %
+redis.exceptions.ConnectionError: Error while reading from socket: ('Connection closed by server.',)
+[2022-05-30 03:22:28,718: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-05-30 03:22:28,733: INFO/MainProcess] mingle: searching for neighbors
+[2022-05-30 03:22:29,751: INFO/MainProcess] mingle: all alone
+[2022-05-30 03:22:29,763: WARNING/MainProcess] /home/saugata/anaconda3/envs/amlops/lib/python3.8/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2022-05-30 03:22:29,763: INFO/MainProcess] celery@neo ready.
+[2022-05-30 03:26:43,135: INFO/MainProcess] Received task: commit_file_in_yaml_to_azure_repo[1d0fb1da-05ce-4be9-99d7-d62deee72a5b]  
+[2022-05-30 03:26:43,137: INFO/MainProcess] commit_file_in_yaml_to_azure_repo[1d0fb1da-05ce-4be9-99d7-d62deee72a5b]: function to commit yaml file to azure repo
+[2022-05-30 03:26:43,137: WARNING/MainProcess] Commiting File to Azure Repo..................
+Cloning into 'Assisted-MLOPs'...
+[2022-05-30 03:26:44,867: WARNING/MainProcess] Head currently pointed at -->
+[2022-05-30 03:26:44,868: WARNING/MainProcess] /home/saugata/Desktop/AzureBackend/azure_assisted_mlops
+[2022-05-30 03:26:44,868: WARNING/MainProcess] Deleteing the YAML file from repo
+[2022-05-30 03:26:44,868: WARNING/MainProcess] Deleteing the training script file from repo
+[2022-05-30 03:26:44,868: WARNING/MainProcess] Deleteing the preprocess script file from repo
+[2022-05-30 03:26:44,869: WARNING/MainProcess] Changing head to -->
+[2022-05-30 03:26:44,869: WARNING/MainProcess] /home/saugata/Desktop/AzureBackend/azure_assisted_mlops/Assisted-MLOPs
+To https://dev.azure.com/SyntbotsAI-RnD/Assisted-MLOPs/_git/Assisted-MLOPs
+   e34fd15..30253d9  iris -> iris
+[2022-05-30 03:26:46,557: WARNING/MainProcess] Updated the YAML file in Azure Repo. Starting Pipeline run.
+[2022-05-30 03:26:46,558: WARNING/MainProcess] Changing head to project working directory-->
+[2022-05-30 03:26:46,558: WARNING/MainProcess] /home/saugata/Desktop/AzureBackend/azure_assisted_mlops
+[2022-05-30 03:26:46,562: WARNING/MainProcess] ------------------------ Repository Deleted from Project Directory ------------------------
+[2022-05-30 03:26:46,562: INFO/MainProcess] commit_file_in_yaml_to_azure_repo[1d0fb1da-05ce-4be9-99d7-d62deee72a5b]: True
+[2022-05-30 03:26:46,563: INFO/MainProcess] Task commit_file_in_yaml_to_azure_repo[1d0fb1da-05ce-4be9-99d7-d62deee72a5b] succeeded in 3.426902949999203s: None
+[2022-05-30 03:28:09,182: INFO/MainProcess] Received task: commit_file_in_yaml_to_azure_repo[6010aa2e-9c7a-41d7-8059-bb7bb3844847]  
+[2022-05-30 03:28:09,183: INFO/MainProcess] commit_file_in_yaml_to_azure_repo[6010aa2e-9c7a-41d7-8059-bb7bb3844847]: function to commit yaml file to azure repo
+[2022-05-30 03:28:09,183: WARNING/MainProcess] Commiting File to Azure Repo..................
+Cloning into 'Assisted-MLOPs'...
+[2022-05-30 03:28:10,680: WARNING/MainProcess] Head currently pointed at -->
+[2022-05-30 03:28:10,680: WARNING/MainProcess] /home/saugata/Desktop/AzureBackend/azure_assisted_mlops
+[2022-05-30 03:28:10,680: WARNING/MainProcess] Deleteing the YAML file from repo
+[2022-05-30 03:28:10,681: WARNING/MainProcess] Deleteing the training script file from repo
+[2022-05-30 03:28:10,681: WARNING/MainProcess] Deleteing the preprocess script file from repo
+[2022-05-30 03:28:10,681: WARNING/MainProcess] Changing head to -->
+[2022-05-30 03:28:10,682: WARNING/MainProcess] /home/saugata/Desktop/AzureBackend/azure_assisted_mlops/Assisted-MLOPs
+To https://dev.azure.com/SyntbotsAI-RnD/Assisted-MLOPs/_git/Assisted-MLOPs
+   30253d9..e2990a3  iris -> iris
+[2022-05-30 03:28:12,217: WARNING/MainProcess] Updated the YAML file in Azure Repo. Starting Pipeline run.
+[2022-05-30 03:28:12,217: WARNING/MainProcess] Changing head to project working directory-->
+[2022-05-30 03:28:12,217: WARNING/MainProcess] /home/saugata/Desktop/AzureBackend/azure_assisted_mlops
+[2022-05-30 03:28:12,225: WARNING/MainProcess] ------------------------ Repository Deleted from Project Directory ------------------------
+[2022-05-30 03:28:12,225: INFO/MainProcess] commit_file_in_yaml_to_azure_repo[6010aa2e-9c7a-41d7-8059-bb7bb3844847]: True
+[2022-05-30 03:28:12,227: INFO/MainProcess] Task commit_file_in_yaml_to_azure_repo[6010aa2e-9c7a-41d7-8059-bb7bb3844847] succeeded in 3.044212360997335s: None
+[2022-05-30 03:28:25,011: INFO/MainProcess] Received task: execute_current_pipeline[0c054d3f-965d-462b-a1c6-f0b531e27be0]  
+[2022-05-30 03:28:25,013: INFO/MainProcess] execute_current_pipeline[0c054d3f-965d-462b-a1c6-f0b531e27be0]: function to execute the pipeline
+[2022-05-30 03:28:26,285: WARNING/MainProcess] Authenticated to Azure DevOps.
+[2022-05-30 03:28:29,011: WARNING/MainProcess] Started Pipeline execution.
+[2022-05-30 03:28:29,012: INFO/MainProcess] execute_current_pipeline[0c054d3f-965d-462b-a1c6-f0b531e27be0]: Success --> execute_current_pipeline
+[2022-05-30 03:28:29,013: INFO/MainProcess] Task execute_current_pipeline[0c054d3f-965d-462b-a1c6-f0b531e27be0] succeeded in 4.000141486991197s: None
+[2022-05-30 04:59:16,021: INFO/MainProcess] Received task: commit_file_in_yaml_to_azure_repo[0bfd1940-d093-48ac-8901-4258f7d00cac]  
+[2022-05-30 04:59:16,022: INFO/MainProcess] commit_file_in_yaml_to_azure_repo[0bfd1940-d093-48ac-8901-4258f7d00cac]: function to commit yaml file to azure repo
+[2022-05-30 04:59:16,022: WARNING/MainProcess] Commiting File to Azure Repo..................
+Cloning into 'Assisted-MLOPs'...
+[2022-05-30 04:59:19,862: WARNING/MainProcess] Head currently pointed at -->
+[2022-05-30 04:59:19,862: WARNING/MainProcess] /home/saugata/Desktop/AzureBackend/azure_assisted_mlops
+[2022-05-30 04:59:19,862: WARNING/MainProcess] Deleteing the YAML file from repo
+[2022-05-30 04:59:19,862: WARNING/MainProcess] Deleteing the training script file from repo
+[2022-05-30 04:59:19,863: WARNING/MainProcess] Deleteing the preprocess script file from repo
+[2022-05-30 04:59:19,863: WARNING/MainProcess] Changing head to -->
+[2022-05-30 04:59:19,863: WARNING/MainProcess] /home/saugata/Desktop/AzureBackend/azure_assisted_mlops/Assisted-MLOPs
+To https://dev.azure.com/SyntbotsAI-RnD/Assisted-MLOPs/_git/Assisted-MLOPs
+   e2990a3..f85c387  iris -> iris
+[2022-05-30 04:59:21,913: WARNING/MainProcess] Updated the YAML file in Azure Repo. Starting Pipeline run.
+[2022-05-30 04:59:21,914: WARNING/MainProcess] Changing head to project working directory-->
+[2022-05-30 04:59:21,914: WARNING/MainProcess] /home/saugata/Desktop/AzureBackend/azure_assisted_mlops
+[2022-05-30 04:59:21,921: WARNING/MainProcess] ------------------------ Repository Deleted from Project Directory ------------------------
+[2022-05-30 04:59:21,921: INFO/MainProcess] commit_file_in_yaml_to_azure_repo[0bfd1940-d093-48ac-8901-4258f7d00cac]: True
+[2022-05-30 04:59:21,922: INFO/MainProcess] Task commit_file_in_yaml_to_azure_repo[0bfd1940-d093-48ac-8901-4258f7d00cac] succeeded in 5.900290446006693s: None
+[2022-05-30 05:28:31,300: INFO/MainProcess] Received task: commit_file_in_yaml_to_azure_repo[4657172f-ca41-457d-9c9e-8f076287216c]  
+[2022-05-30 05:28:31,301: INFO/MainProcess] commit_file_in_yaml_to_azure_repo[4657172f-ca41-457d-9c9e-8f076287216c]: function to commit yaml file to azure repo
+[2022-05-30 05:28:31,302: WARNING/MainProcess] Commiting File to Azure Repo..................
+Cloning into 'Assisted-MLOPs'...
+[2022-05-30 05:28:32,838: WARNING/MainProcess] Head currently pointed at -->
+[2022-05-30 05:28:32,839: WARNING/MainProcess] /home/saugata/Desktop/AzureBackend/azure_assisted_mlops
+[2022-05-30 05:28:32,839: WARNING/MainProcess] Deleteing the YAML file from repo
+[2022-05-30 05:28:32,840: WARNING/MainProcess] Deleteing the training script file from repo
+[2022-05-30 05:28:32,843: WARNING/MainProcess] Deleteing the preprocess script file from repo
+[2022-05-30 05:28:32,844: WARNING/MainProcess] Changing head to -->
+[2022-05-30 05:28:32,845: WARNING/MainProcess] /home/saugata/Desktop/AzureBackend/azure_assisted_mlops/Assisted-MLOPs
+To https://dev.azure.com/SyntbotsAI-RnD/Assisted-MLOPs/_git/Assisted-MLOPs
+   f85c387..ff1c3c3  iris -> iris
+[2022-05-30 05:28:34,497: WARNING/MainProcess] Updated the YAML file in Azure Repo. Starting Pipeline run.
+[2022-05-30 05:28:34,498: WARNING/MainProcess] Changing head to project working directory-->
+[2022-05-30 05:28:34,498: WARNING/MainProcess] /home/saugata/Desktop/AzureBackend/azure_assisted_mlops
+[2022-05-30 05:28:34,506: WARNING/MainProcess] ------------------------ Repository Deleted from Project Directory ------------------------
+[2022-05-30 05:28:34,506: INFO/MainProcess] commit_file_in_yaml_to_azure_repo[4657172f-ca41-457d-9c9e-8f076287216c]: True
+[2022-05-30 05:28:34,507: INFO/MainProcess] Task commit_file_in_yaml_to_azure_repo[4657172f-ca41-457d-9c9e-8f076287216c] succeeded in 3.2062077239970677s: None
+[2022-05-30 05:29:24,022: INFO/MainProcess] Received task: execute_current_pipeline[d9dbe570-32f7-415a-a8c5-9133a34ae5cf]  
+[2022-05-30 05:29:24,024: INFO/MainProcess] execute_current_pipeline[d9dbe570-32f7-415a-a8c5-9133a34ae5cf]: function to execute the pipeline
+[2022-05-30 05:29:25,262: WARNING/MainProcess] Authenticated to Azure DevOps.
+[2022-05-30 05:29:28,346: WARNING/MainProcess] Started Pipeline execution.
+[2022-05-30 05:29:28,347: INFO/MainProcess] execute_current_pipeline[d9dbe570-32f7-415a-a8c5-9133a34ae5cf]: Success --> execute_current_pipeline
+[2022-05-30 05:29:28,348: INFO/MainProcess] Task execute_current_pipeline[d9dbe570-32f7-415a-a8c5-9133a34ae5cf] succeeded in 4.324670492002042s: None
+[2022-05-30 05:30:32,232: INFO/MainProcess] Received task: execute_current_pipeline[270448fb-6536-4909-86cc-2fde27d53049]  
+[2022-05-30 05:30:32,233: INFO/MainProcess] execute_current_pipeline[270448fb-6536-4909-86cc-2fde27d53049]: function to execute the pipeline
+[2022-05-30 05:30:33,436: WARNING/MainProcess] Authenticated to Azure DevOps.
+[2022-05-30 05:30:36,294: WARNING/MainProcess] Started Pipeline execution.
+[2022-05-30 05:30:36,295: INFO/MainProcess] execute_current_pipeline[270448fb-6536-4909-86cc-2fde27d53049]: Success --> execute_current_pipeline
+[2022-05-30 05:30:36,297: INFO/MainProcess] Task execute_current_pipeline[270448fb-6536-4909-86cc-2fde27d53049] succeeded in 4.063580092988559s: None
+[2022-05-30 06:26:07,688: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-05-30 06:26:07,699: INFO/MainProcess] mingle: searching for neighbors
+[2022-05-30 06:26:08,716: INFO/MainProcess] mingle: all alone
+[2022-05-30 06:26:08,731: WARNING/MainProcess] /home/saugata/anaconda3/envs/amlops/lib/python3.8/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2022-05-30 06:26:08,731: INFO/MainProcess] celery@neo ready.
+[2022-05-30 07:49:12,954: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/home/saugata/anaconda3/envs/amlops/lib/python3.8/site-packages/redis/connection.py", line 185, in _read_from_socket
+    raise socket.error(SERVER_CLOSED_CONNECTION_ERROR)
+OSError: Connection closed by server.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/saugata/anaconda3/envs/amlops/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 318, in start
+    blueprint.start(self)
+  File "/home/saugata/anaconda3/envs/amlops/lib/python3.8/site-packages/celery/bootsteps.py", line 119, in start
+    step.start(parent)
+  File "/home/saugata/anaconda3/envs/amlops/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 596, in start
+    c.loop(*c.loop_args())
+  File "/home/saugata/anaconda3/envs/amlops/lib/python3.8/site-packages/celery/worker/loops.py", line 91, in asynloop
+    next(loop)
+  File "/home/saugata/anaconda3/envs/amlops/lib/python3.8/site-packages/kombu/asynchronous/hub.py", line 364, in create_loop
+    cb(*cbargs)
+  File "/home/saugata/anaconda3/envs/amlops/lib/python3.8/site-packages/kombu/transport/redis.py", line 1083, in on_readable
+    self.cycle.on_readable(fileno)
+  File "/home/saugata/anaconda3/envs/amlops/lib/python3.8/site-packages/kombu/transport/redis.py", line 354, in on_readable
+    chan.handlers[type]()
+  File "/home/saugata/anaconda3/envs/amlops/lib/python3.8/site-packages/kombu/transport/redis.py", line 688, in _receive
+    ret.append(self._receive_one(c))
+  File "/home/saugata/anaconda3/envs/amlops/lib/python3.8/site-packages/kombu/transport/redis.py", line 698, in _receive_one
+    response = c.parse_response()
+  File "/home/saugata/anaconda3/envs/amlops/lib/python3.8/site-packages/redis/client.py", line 3036, in parse_response
+    return self._execute(connection, connection.read_response)
+  File "/home/saugata/anaconda3/envs/amlops/lib/python3.8/site-packages/redis/client.py", line 3013, in _execute
+    return command(*args)
+  File "/home/saugata/anaconda3/envs/amlops/lib/python3.8/site-packages/redis/connection.py", line 637, in read_response
+    response = self._parser.read_response()
+  File "/home/saugata/anaconda3/envs/amlops/lib/python3.8/site-packages/redis/connection.py", line 290, in read_response
+    response = self._buffer.readline()
+  File "/home/saugata/anaconda3/envs/amlops/lib/python3.8/site-packages/redis/connection.py", line 224, in readline
+    self._read_from_socket()
+  File "/home/saugata/anaconda3/envs/amlops/lib/python3.8/site-packages/redis/connection.py", line 198, in _read_from_socket
+    raise ConnectionError("Error while reading from socket: %s" %
+redis.exceptions.ConnectionError: Error while reading from socket: ('Connection closed by server.',)

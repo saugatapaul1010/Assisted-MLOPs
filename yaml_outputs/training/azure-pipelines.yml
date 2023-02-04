@@ -1,0 +1,418 @@
+trigger:
+- none
+
+variables:
+- name: ml.computeIdleSecs
+  value: 350
+- name: ml.computeMaxNodes
+  value: 3
+- name: ml.computeMinNodes
+  value: 0
+- name: ml.computeName
+  value: trainvmglass
+- name: ml.computeVMSize
+  value: STANDARD_DS12_V2
+- name: ml.region
+  value: centralindia
+- name: ml.resourceGroup
+  value: SyntbotsAI-RnD-MLOps
+- name: ml.workspace
+  value: MLOps_WS01
+- name: ml.experimentName
+  value: GlassExperiment
+- name: system.debug
+  value: true
+- name: aks.clusterName
+  value: aksvmglass
+- name: aks.vmSize
+  value: STANDARD_DS12_V2
+- name: aks_service_name
+  value: glass-endpoint-wwt-qor
+- name: aks.aksLocation
+  value: centralindia
+- name: aks.clusterPurpose
+  value: DevTest
+- name: aks.agentCount
+  value: 3
+- name: agent.name
+  value: New_Self_Hosted_Agent_V2
+- name: data.path
+  value: /home/azureuser/$(agent.name)/myagent/tempdatastore/
+- name: artifact.path
+  value: /home/azureuser/$(agent.name)/myagent/tempartifactstore/
+- name: artifact.publish
+  value: /home/azureuser/$(agent.name)/myagent/publishedartifacts/
+
+  #Training_Infra_Setup_Stage
+- name: run.stage1
+  value: true
+
+  #Data_Preprocessing_Stage
+- name: run.stage2
+  value: true
+
+  #Training_Stage
+- name: run.stage3
+  value: true
+
+  #Deployment_Infra_Setup_Stage
+- name: run.stage4
+  value: true
+
+  #Model_Deployment_To_AKS
+- name: run.stage5
+  value: true
+
+  #Run_Integration_Test_And_Publish_Endpoint
+- name: run.stage6
+  value: true
+
+  #Delete_Inference_Cluster
+- name: run.stage7
+  value: false
+
+  #Delete_Inference_Cluster
+- name: run.stage8
+  value: false
+
+#Pipeline Stages
+stages:
+  #Stage 1
+- stage: "Training_Infra_Setup_Stage"
+  condition: eq(variables['run.stage1'], 'true')
+  jobs:
+  - job: "Training_Infra_Setup_Job"
+    displayName: AgentJob - Training_Infra_Setup
+    cancelTimeoutInMinutes: 60
+    pool:
+      name: $(agent.name)
+      vmImage: ubuntu-18.04
+    steps:
+
+    - task: AzureCLI@2
+      displayName: Azure CLI ML Installation
+      inputs:
+        connectedServiceNameARM: 7e03a668-298d-4fab-bb8d-49cccb324797
+        scriptType: bash
+        scriptLocation: inlineScript
+        inlineScript: az extension add -n azure-cli-ml
+
+    - task: AzureCLI@2
+      displayName: Create/Use Workspace
+      inputs:
+        connectedServiceNameARM: 7e03a668-298d-4fab-bb8d-49cccb324797
+        scriptType: bash
+        scriptLocation: inlineScript
+        inlineScript: |-
+          az ml workspace create -g $(ml.resourceGroup) -w $(ml.workspace) -l $(ml.region) --exist-ok --yes
+
+    - task: AzureCLI@2
+      displayName: Create/Use Compute Target
+      inputs:
+        connectedServiceNameARM: 7e03a668-298d-4fab-bb8d-49cccb324797
+        scriptType: bash
+        scriptLocation: inlineScript
+        inlineScript: |-
+          az ml computetarget create amlcompute -g $(ml.resourceGroup) -w $(ml.workspace) -n $(ml.computeName) -s $(ml.computeVMSize) --min-nodes $(ml.computeMinNodes) --max-nodes $(ml.computeMaxNodes) --idle-seconds-before-scaledown $(ml.computeIdleSecs) --location $(ml.region)
+
+  #Stage 2
+- stage: "Data_Preprocessing_Stage"
+  dependsOn: "Training_Infra_Setup_Stage"
+  condition: eq(variables['run.stage2'], 'true')
+  jobs:
+  - job: "Data_Preprocessing_Job"
+    displayName: AgentJob - Data_Preprocessing
+    cancelTimeoutInMinutes: 60
+    pool:
+      name: $(agent.name)
+      vmImage: ubuntu-18.04
+    steps:
+    - task: PythonScript@0
+      displayName: 'Data Pre-processing Step'
+      inputs:
+        scriptPath: prepocess_script.py
+        arguments: |-
+          --container_name glassdata --input_csv glass.csv --dataset_name glass_ds --dataset_desc 'GLASS_DataSet_Description' --training_columns 'RI,NA,MG,AL,SI,K,CA,BA,FE' --target_column 'TYPE' --processed_file_path $(data.path)
+        workingDirectory: '$(System.DefaultWorkingDirectory)'
+
+  #Stage 3
+- stage: "Training_Stage"
+  dependsOn: "Data_Preprocessing_Stage"
+  condition: eq(variables['run.stage3'], 'true')
+  jobs:
+  - job: "Training_Job"
+    displayName: AgentJob - Training_Stage
+    cancelTimeoutInMinutes: 60
+    pool:
+      name: $(agent.name)
+      vmImage: ubuntu-18.04
+    steps:
+    - task: Bash@3
+      displayName: Install Python Dependencies
+      inputs:
+        filePath: environment_setup/install-requirements.sh
+
+    - task: AzureCLI@2
+      displayName: Azure CLI ML Installation
+      inputs:
+        connectedServiceNameARM: 7e03a668-298d-4fab-bb8d-49cccb324797
+        scriptType: bash
+        scriptLocation: inlineScript
+        inlineScript: az extension add -n azure-cli-ml
+
+    - task: Bash@3
+      displayName: Create Metadata/Model/Artifcats Folders
+      inputs:
+        targetType: inline
+        script: mkdir metadata && mkdir models
+
+    - task: AzureCLI@2
+      displayName: Training Stage
+      timeoutInMinutes: 60
+      inputs:
+        connectedServiceNameARM: 7e03a668-298d-4fab-bb8d-49cccb324797
+        scriptType: bash
+        scriptLocation: inlineScript
+        inlineScript: |-
+          az ml run submit-script -g $(ml.resourceGroup) -w $(ml.workspace) -e $(ml.experimentName) --ct $(ml.computeName) -c glass_training --source-directory . --path environment_setup -t ./metadata/run.json training.py --container_name glassdata --input_csv glass.csv --model_path ./models/glass_model.pkl --artifact_loc ./output/models/ --dataset_name glass_ds --dataset_desc 'GLASS_DataSet_Description' --training_columns 'RI,NA,MG,AL,SI,K,CA,BA,FE' --target_column 'TYPE' --train_size 0.85 --tag_name glass_classification_tag --processed_file_path $(data.path)
+        workingDirectory: '$(System.DefaultWorkingDirectory)'
+        addSpnToEnvironment: true
+        useGlobalConfig: true
+
+    - task: AzureCLI@2
+      displayName: Register Model in Model Registry
+      inputs:
+        connectedServiceNameARM: 7e03a668-298d-4fab-bb8d-49cccb324797
+        scriptType: bash
+        scriptLocation: inlineScript
+        inlineScript: |-
+          az ml model register -g $(ml.resourceGroup) -w $(ml.workspace) -n GLASS --asset-path output/models/ -d "GLASS_Decision_Tree_Classifier" --tag "model"="ML Model" --model-framework Custom -f ./metadata/run.json -t metadata/model.json
+
+    - task: Bash@3
+      displayName: Cleaning the tempartifactstore folder
+      inputs:
+        targetType: 'inline'
+        script: rm -rf $(artifact.path)*
+
+    - task: Bash@3
+      displayName: Cleaning the tempdatastore folder
+      inputs:
+        targetType: 'inline'
+        script: rm -rf $(data.path)*
+
+    - task: CopyFiles@2
+      displayName: 'Copy Files to: $(artifact.path)'
+      inputs:
+        SourceFolder: $(Build.SourcesDirectory)
+        Contents: >-
+          **metadata/*
+
+          **/environment_setup/*
+
+          **/deployment/*
+
+          **/inference/*
+
+          **/tests/smoke/*
+
+          **/outputs/prediction.csv
+        TargetFolder: $(artifact.path)
+
+    - task: CopyFiles@2
+      displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
+      inputs:
+        SourceFolder: $(Build.SourcesDirectory)
+        Contents: >-
+          **metadata/*
+
+          **/environment_setup/*
+
+          **/deployment/*
+
+          **/inference/*
+
+          **/tests/smoke/*
+
+          **/outputs/prediction.csv
+        TargetFolder: $(Build.ArtifactStagingDirectory)
+
+    - task: PublishPipelineArtifact@1
+      displayName: Publish Pipeline Artifact
+      inputs:
+        targetPath: $(artifact.publish)
+        artifactName: GLASSTrainingArtifacts
+        publishLocation: 'pipeline'
+
+  #Stage 4
+- stage: "Deployment_Infra_Setup_Stage"
+  condition: eq(variables['run.stage4'], 'true')
+  dependsOn: "Training_Stage"
+  jobs:
+  - job: "Deployment_Infra_Setup_Job"
+    displayName: AgentJob - Deployment_Infra_Setup
+    cancelTimeoutInMinutes: 60
+    pool:
+      name: $(agent.name)
+      vmImage: ubuntu-18.04
+    steps:
+
+    - task: DownloadPipelineArtifact@2
+      displayName: Downloading Pipeline Artifacts
+      inputs:
+        buildType: 'current'
+        artifactName: 'GLASSTrainingArtifacts'
+        targetPath: '$(artifact.publish)'
+    - task: DownloadPipelineArtifact@2
+      displayName: Downloading Pipeline Artifacts
+      inputs:
+        buildType: 'current'
+        artifactName: 'GLASSTrainingArtifacts'
+        targetPath: '$(artifact.path)'
+
+    - task: Bash@3
+      displayName: Install Python Dependencies
+      inputs:
+        filePath: environment_setup/install-requirements.sh
+
+    - task: AzureCLI@1
+      displayName: 'Install Azure CLI ML Extension'
+      inputs:
+        azureSubscription: 'Azure subscription 1 (b53cd405-74a5-4714-9549-88af4dc84f66)'
+        scriptLocation: inlineScript
+        inlineScript: 'az extension add -n azure-cli-ml'
+
+    - task: AzureCLI@2
+      displayName: 'Create AKS'
+      inputs:
+        azureSubscription: 'Azure subscription 1 (b53cd405-74a5-4714-9549-88af4dc84f66)'
+        scriptType: bash
+        scriptLocation: inlineScript
+        inlineScript: |-
+          az ml computetarget create aks -g $(ml.resourceGroup) -w $(ml.workspace) -n $(aks.clusterName) -s $(aks.vmSize) -a $(aks.agentCount) --cluster-purpose $(aks.clusterPurpose) --location $(aks.aksLocation)
+
+  #Stage 5
+- stage: "Model_Deployment_To_AKS"
+  condition: eq(variables['run.stage5'], 'true')
+  dependsOn: "Deployment_Infra_Setup_Stage"
+  jobs:
+  - job: "Model_Deployment_Job"
+    displayName: AgentJob - Model_Deployment
+    cancelTimeoutInMinutes: 60
+    pool:
+      name: $(agent.name)
+      vmImage: ubuntu-18.04
+    steps:
+    - task: Bash@3
+      displayName: Install Python Dependencies
+      inputs:
+        filePath: environment_setup/install-requirements.sh
+
+    - task: AzureCLI@1
+      displayName: 'Install Azure CLI ML Extension'
+      inputs:
+        azureSubscription: 'Azure subscription 1 (b53cd405-74a5-4714-9549-88af4dc84f66)'
+        scriptLocation: inlineScript
+        inlineScript: 'az extension add -n azure-cli-ml'
+
+    - task: AzureCLI@1
+      displayName: 'Deploy ML Model To AKS'
+      inputs:
+        azureSubscription: 'Azure subscription 1 (b53cd405-74a5-4714-9549-88af4dc84f66)'
+        scriptLocation: inlineScript
+        inlineScript: |-
+          az ml model deploy -g $(ml.resourceGroup) -w $(ml.workspace) -n $(aks_service_name) -f metadata/model.json --dc deployment/aksDeploymentConfig.yml --ic deployment/inferenceConfig.yml --ct $(aks.clusterName) --description 'Glass Classification Model Deployed to AKS' --overwrite
+        workingDirectory: $(artifact.path)
+
+  #Stage 6
+- stage: "Run_Integration_Test_And_Publish_Endpoint"
+  dependsOn: "Model_Deployment_To_AKS"
+  condition: eq(variables['run.stage6'], 'true')
+  jobs:
+  - job: "Publish_Endpoint_Job"
+    displayName: AgentJob - Run_Integration_Test_And_Publish_Endpoint
+    cancelTimeoutInMinutes: 60
+    pool:
+      name: $(agent.name)
+      vmImage: ubuntu-18.04
+    steps:
+
+    - task: Bash@3
+      displayName: 'Install Dependencies'
+      inputs:
+        targetType: filePath
+        filePath: 'environment_setup/install-requirements.sh'
+        workingDirectory: $(artifact.path)
+
+    - task: AzureCLI@1
+      displayName: 'Install Azure CLI ML Extension'
+      inputs:
+        azureSubscription: 'Azure subscription 1 (b53cd405-74a5-4714-9549-88af4dc84f66)'
+        scriptLocation: inlineScript
+        inlineScript: 'az extension add -n azure-cli-ml'
+
+    - task: AzureCLI@2
+      displayName: 'Run Integration Test-AKS'
+      inputs:
+        azureSubscription: 'Azure subscription 1 (b53cd405-74a5-4714-9549-88af4dc84f66)'
+        scriptType: bash
+        scriptLocation: inlineScript
+        inlineScript: |-
+          pytest smoke_tests.py --doctest-modules --junitxml=junit/test-results.xml --cov=integration_test --cov-report=xml --cov-report=html --scoreurl $(az ml service show -g $(ml.resourceGroup) -w $(ml.workspace) -n $(aks_service_name) --query scoringUri -o tsv) --scorekey $(az ml service get-keys -g $(ml.resourceGroup) -w $(ml.workspace) -n $(aks_service_name) --query primaryKey -o tsv)
+        workingDirectory: /home/azureuser/$(agent.name)/myagent/tempartifactstore/tests/smoke/
+
+    - task: PublishTestResults@2
+      displayName: 'Publish Test Results **/TEST-*.xml'
+
+  #Stage 7
+- stage: "Delete_Training_Cluster"
+  condition: eq(variables['run.stage7'], 'true')
+  jobs:
+  - job: "Delete_Training_Cluster_Job"
+    displayName: AgentJob - Delete_Training_Cluster
+    cancelTimeoutInMinutes: 60
+    pool:
+      name: $(agent.name)
+      vmImage: ubuntu-18.04
+    steps:
+
+    - task: AzureCLI@1
+      displayName: 'Install Azure CLI ML Extension'
+      inputs:
+        azureSubscription: 'Azure subscription 1 (b53cd405-74a5-4714-9549-88af4dc84f66)'
+        scriptLocation: inlineScript
+        inlineScript: 'az extension add -n azure-cli-ml'
+
+    - task: AzureCLI@1
+      displayName: 'Delete Training Cluster'
+      inputs:
+        azureSubscription: 'Azure subscription 1 (b53cd405-74a5-4714-9549-88af4dc84f66)'
+        scriptLocation: inlineScript
+        inlineScript: |-
+          az ml computetarget delete -n $(ml.computeName) -g $(ml.resourceGroup) -w $(ml.workspace)
+
+  #Stage 8
+- stage: "Delete_Inference_Cluster"
+  condition: eq(variables['run.stage8'], 'true')
+  jobs:
+  - job: "Delete_Inference_Cluster_Job"
+    displayName: AgentJob - Delete_Inference_Cluster
+    cancelTimeoutInMinutes: 60
+    pool:
+      name: $(agent.name)
+      vmImage: ubuntu-18.04
+    steps:
+
+    - task: AzureCLI@1
+      displayName: 'Install Azure CLI ML Extension'
+      inputs:
+        azureSubscription: 'Azure subscription 1 (b53cd405-74a5-4714-9549-88af4dc84f66)'
+        scriptLocation: inlineScript
+        inlineScript: 'az extension add -n azure-cli-ml'
+
+    - task: AzureCLI@1
+      displayName: 'Delete Inference Cluster'
+      inputs:
+        azureSubscription: 'Azure subscription 1 (b53cd405-74a5-4714-9549-88af4dc84f66)'
+        scriptLocation: inlineScript
+        inlineScript: |-
+          az ml computetarget delete -n $(aks.clusterName) -g $(ml.resourceGroup) -w $(ml.workspace)

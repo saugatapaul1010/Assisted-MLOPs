@@ -1,0 +1,669 @@
+{
+    "source": 2,
+    "revision": 22,
+    "description": null,
+    "createdBy": {
+      "displayName": "Saugata Paul",
+      "url": "https://spsprodsin1.vssps.visualstudio.com/Ada3b3387-eb99-4321-b544-8edc5635b17e/_apis/Identities/58cd35a4-94aa-6e12-8bd7-80e7a8409cb6",
+      "_links": {
+        "avatar": {
+          "href": "https://dev.azure.com/SyntbotsAI-RnD/_apis/GraphProfile/MemberAvatars/aad.NThjZDM1YTQtOTRhYS03ZTEyLThiZDctODBlN2E4NDA5Y2I2"
+        }
+      },
+      "id": "58cd35a4-94aa-6e12-8bd7-80e7a8409cb6",
+      "uniqueName": "saugata.paul@atos.net",
+      "imageUrl": "https://dev.azure.com/SyntbotsAI-RnD/_apis/GraphProfile/MemberAvatars/aad.NThjZDM1YTQtOTRhYS03ZTEyLThiZDctODBlN2E4NDA5Y2I2",
+      "descriptor": "aad.NThjZDM1YTQtOTRhYS03ZTEyLThiZDctODBlN2E4NDA5Y2I2"
+    },
+    "createdOn": "2022-04-14T05:12:21.173Z",
+    "modifiedBy": {
+      "displayName": "Saugata Paul",
+      "url": "https://spsprodsin1.vssps.visualstudio.com/Ada3b3387-eb99-4321-b544-8edc5635b17e/_apis/Identities/58cd35a4-94aa-6e12-8bd7-80e7a8409cb6",
+      "_links": {
+        "avatar": {
+          "href": "https://dev.azure.com/SyntbotsAI-RnD/_apis/GraphProfile/MemberAvatars/aad.NThjZDM1YTQtOTRhYS03ZTEyLThiZDctODBlN2E4NDA5Y2I2"
+        }
+      },
+      "id": "58cd35a4-94aa-6e12-8bd7-80e7a8409cb6",
+      "uniqueName": "saugata.paul@atos.net",
+      "imageUrl": "https://dev.azure.com/SyntbotsAI-RnD/_apis/GraphProfile/MemberAvatars/aad.NThjZDM1YTQtOTRhYS03ZTEyLThiZDctODBlN2E4NDA5Y2I2",
+      "descriptor": "aad.NThjZDM1YTQtOTRhYS03ZTEyLThiZDctODBlN2E4NDA5Y2I2"
+    },
+    "modifiedOn": "2022-04-14T10:57:25.857Z",
+    "isDeleted": false,
+    "lastRelease": {
+      "id": 37,
+      "name": "Release-14",
+      "artifacts": [],
+      "_links": {},
+      "description": "",
+      "releaseDefinition": {
+        "id": 6,
+        "projectReference": null,
+        "_links": {}
+      },
+      "createdOn": "2022-04-15T10:43:46.497Z",
+      "createdBy": {
+        "displayName": "Saugata Paul",
+        "url": "https://spsprodsin1.vssps.visualstudio.com/Ada3b3387-eb99-4321-b544-8edc5635b17e/_apis/Identities/58cd35a4-94aa-6e12-8bd7-80e7a8409cb6",
+        "_links": {
+          "avatar": {
+            "href": "https://dev.azure.com/SyntbotsAI-RnD/_apis/GraphProfile/MemberAvatars/aad.NThjZDM1YTQtOTRhYS03ZTEyLThiZDctODBlN2E4NDA5Y2I2"
+          }
+        },
+        "id": "58cd35a4-94aa-6e12-8bd7-80e7a8409cb6",
+        "uniqueName": "saugata.paul@atos.net",
+        "imageUrl": "https://dev.azure.com/SyntbotsAI-RnD/_apis/GraphProfile/MemberAvatars/aad.NThjZDM1YTQtOTRhYS03ZTEyLThiZDctODBlN2E4NDA5Y2I2",
+        "descriptor": "aad.NThjZDM1YTQtOTRhYS03ZTEyLThiZDctODBlN2E4NDA5Y2I2"
+      }
+    },
+    "variables": {
+      "aks_service_name": {
+        "value": "priority-predictor-aks"
+      },
+      "aks.clusterName": {
+        "value": "aksnew"
+      },
+      "ml.resourceGroup": {
+        "value": "SyntbotsAI-RnD-MLOps"
+      },
+      "ml.workspace": {
+        "value": "MLOps_WS01"
+      }
+    },
+    "variableGroups": [
+      5
+    ],
+    "environments": [
+      {
+        "id": 6,
+        "name": "Stage 1",
+        "rank": 1,
+        "owner": {
+          "displayName": "Saugata Paul",
+          "url": "https://spsprodsin1.vssps.visualstudio.com/Ada3b3387-eb99-4321-b544-8edc5635b17e/_apis/Identities/58cd35a4-94aa-6e12-8bd7-80e7a8409cb6",
+          "_links": {
+            "avatar": {
+              "href": "https://dev.azure.com/SyntbotsAI-RnD/_apis/GraphProfile/MemberAvatars/aad.NThjZDM1YTQtOTRhYS03ZTEyLThiZDctODBlN2E4NDA5Y2I2"
+            }
+          },
+          "id": "58cd35a4-94aa-6e12-8bd7-80e7a8409cb6",
+          "uniqueName": "saugata.paul@atos.net",
+          "imageUrl": "https://dev.azure.com/SyntbotsAI-RnD/_apis/GraphProfile/MemberAvatars/aad.NThjZDM1YTQtOTRhYS03ZTEyLThiZDctODBlN2E4NDA5Y2I2",
+          "descriptor": "aad.NThjZDM1YTQtOTRhYS03ZTEyLThiZDctODBlN2E4NDA5Y2I2"
+        },
+        "variables": {},
+        "variableGroups": [],
+        "preDeployApprovals": {
+          "approvals": [
+            {
+              "rank": 1,
+              "isAutomated": true,
+              "isNotificationOn": false,
+              "id": 16
+            }
+          ],
+          "approvalOptions": {
+            "requiredApproverCount": null,
+            "releaseCreatorCanBeApprover": false,
+            "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+            "enforceIdentityRevalidation": false,
+            "timeoutInMinutes": 0,
+            "executionOrder": 1
+          }
+        },
+        "deployStep": {
+          "id": 17
+        },
+        "postDeployApprovals": {
+          "approvals": [
+            {
+              "rank": 1,
+              "isAutomated": true,
+              "isNotificationOn": false,
+              "id": 18
+            }
+          ],
+          "approvalOptions": {
+            "requiredApproverCount": null,
+            "releaseCreatorCanBeApprover": false,
+            "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+            "enforceIdentityRevalidation": false,
+            "timeoutInMinutes": 0,
+            "executionOrder": 2
+          }
+        },
+        "deployPhases": [
+          {
+            "deploymentInput": {
+              "parallelExecution": {
+                "parallelExecutionType": 0
+              },
+              "agentSpecification": {
+                "identifier": "ubuntu-18.04"
+              },
+              "skipArtifactsDownload": false,
+              "artifactsDownloadInput": {
+                "downloadInputs": []
+              },
+              "queueId": 18,
+              "demands": [],
+              "enableAccessToken": false,
+              "timeoutInMinutes": 0,
+              "jobCancelTimeoutInMinutes": 1,
+              "condition": "succeeded()",
+              "overrideInputs": {}
+            },
+            "rank": 1,
+            "phaseType": 1,
+            "name": "Agent job",
+            "refName": null,
+            "workflowTasks": [
+              {
+                "environment": {},
+                "taskId": "33c63b11-352b-45a2-ba1b-54cb568a29ca",
+                "version": "0.*",
+                "name": "Use Python 3.6",
+                "refName": "",
+                "enabled": true,
+                "alwaysRun": false,
+                "continueOnError": false,
+                "timeoutInMinutes": 0,
+                "retryCountOnTaskFailure": 0,
+                "definitionType": "task",
+                "overrideInputs": {},
+                "condition": "succeeded()",
+                "inputs": {
+                  "versionSpec": "3.6",
+                  "addToPath": "true",
+                  "architecture": "x64"
+                }
+              },
+              {
+                "environment": {},
+                "taskId": "6c731c3c-3c68-459a-a5c9-bde6e6595b5b",
+                "version": "3.*",
+                "name": "Install Dependencies",
+                "refName": "",
+                "enabled": true,
+                "alwaysRun": false,
+                "continueOnError": false,
+                "timeoutInMinutes": 0,
+                "retryCountOnTaskFailure": 0,
+                "definitionType": "task",
+                "overrideInputs": {},
+                "condition": "succeeded()",
+                "inputs": {
+                  "targetType": "filePath",
+                  "filePath": "$(System.DefaultWorkingDirectory)/_Assisted_MLOPS/iris_classifier/a/environment_setup/install-requirements.sh",
+                  "arguments": "",
+                  "script": "# Write your commands here\n\necho 'Hello world'\n",
+                  "workingDirectory": "",
+                  "failOnStderr": "false",
+                  "bashEnvValue": ""
+                }
+              },
+              {
+                "environment": {},
+                "taskId": "6c731c3c-3c68-459a-a5c9-bde6e6595b5b",
+                "version": "3.*",
+                "name": "Bash Script Present Working Directory",
+                "refName": "",
+                "enabled": true,
+                "alwaysRun": false,
+                "continueOnError": false,
+                "timeoutInMinutes": 0,
+                "retryCountOnTaskFailure": 0,
+                "definitionType": "task",
+                "overrideInputs": {},
+                "condition": "succeeded()",
+                "inputs": {
+                  "targetType": "inline",
+                  "filePath": "",
+                  "arguments": "",
+                  "script": "# Write your commands here\n\necho 'Present Working Directory'\npwd\necho 'Present Working Directory'",
+                  "workingDirectory": "",
+                  "failOnStderr": "false",
+                  "bashEnvValue": ""
+                }
+              },
+              {
+                "environment": {},
+                "taskId": "6c731c3c-3c68-459a-a5c9-bde6e6595b5b",
+                "version": "3.*",
+                "name": "Bash Script List All files inside PWD",
+                "refName": "",
+                "enabled": true,
+                "alwaysRun": false,
+                "continueOnError": false,
+                "timeoutInMinutes": 0,
+                "retryCountOnTaskFailure": 0,
+                "definitionType": "task",
+                "overrideInputs": {},
+                "condition": "succeeded()",
+                "inputs": {
+                  "targetType": "inline",
+                  "filePath": "",
+                  "arguments": "",
+                  "script": "# Write your commands here\n\necho 'List All files inside PWD'\nls\necho 'List All files inside PWD'\n\n\n",
+                  "workingDirectory": "",
+                  "failOnStderr": "false",
+                  "bashEnvValue": ""
+                }
+              },
+              {
+                "environment": {},
+                "taskId": "6c731c3c-3c68-459a-a5c9-bde6e6595b5b",
+                "version": "3.*",
+                "name": "Bash Script List All files inside _Assisted_MLOP",
+                "refName": "",
+                "enabled": true,
+                "alwaysRun": false,
+                "continueOnError": false,
+                "timeoutInMinutes": 0,
+                "retryCountOnTaskFailure": 0,
+                "definitionType": "task",
+                "overrideInputs": {},
+                "condition": "succeeded()",
+                "inputs": {
+                  "targetType": "inline",
+                  "filePath": "",
+                  "arguments": "",
+                  "script": "# Write your commands here\n\necho 'List All files inside _Assisted_MLOPS'\nls -la _Assisted_MLOPS\necho 'List All files inside _Assisted_MLOPS'\n",
+                  "workingDirectory": "",
+                  "failOnStderr": "false",
+                  "bashEnvValue": ""
+                }
+              },
+              {
+                "environment": {},
+                "taskId": "6c731c3c-3c68-459a-a5c9-bde6e6595b5b",
+                "version": "3.*",
+                "name": "Bash Script Inside _Assisted_MLOPS/iris_classifier",
+                "refName": "",
+                "enabled": true,
+                "alwaysRun": false,
+                "continueOnError": false,
+                "timeoutInMinutes": 0,
+                "retryCountOnTaskFailure": 0,
+                "definitionType": "task",
+                "overrideInputs": {},
+                "condition": "succeeded()",
+                "inputs": {
+                  "targetType": "inline",
+                  "filePath": "",
+                  "arguments": "",
+                  "script": "# Write your commands here\n\necho 'Inside _Assisted_MLOPS/iris_classifier'\nls -la /home/vsts/work/r1/a/_Assisted_MLOPS/iris_classifier\necho 'Inside_Assisted_MLOPS/iris_classifier'",
+                  "workingDirectory": "",
+                  "failOnStderr": "false",
+                  "bashEnvValue": ""
+                }
+              },
+              {
+                "environment": {},
+                "taskId": "6c731c3c-3c68-459a-a5c9-bde6e6595b5b",
+                "version": "3.*",
+                "name": "Bash Script List All files Inside _temp folder",
+                "refName": "",
+                "enabled": true,
+                "alwaysRun": false,
+                "continueOnError": false,
+                "timeoutInMinutes": 0,
+                "retryCountOnTaskFailure": 0,
+                "definitionType": "task",
+                "overrideInputs": {},
+                "condition": "succeeded()",
+                "inputs": {
+                  "targetType": "inline",
+                  "filePath": "",
+                  "arguments": "",
+                  "script": "# Write your commands here\n\necho 'Inside _temp folder'\nls -la /home/vsts/work/_temp/\necho 'Inside _temp folder'\n",
+                  "workingDirectory": "",
+                  "failOnStderr": "false",
+                  "bashEnvValue": ""
+                }
+              },
+              {
+                "environment": {},
+                "taskId": "46e4be58-730b-4389-8a2f-ea10b3e5e815",
+                "version": "2.*",
+                "name": "Install Azure CLI ML Extension",
+                "refName": "",
+                "enabled": true,
+                "alwaysRun": false,
+                "continueOnError": false,
+                "timeoutInMinutes": 0,
+                "retryCountOnTaskFailure": 0,
+                "definitionType": "task",
+                "overrideInputs": {},
+                "condition": "succeeded()",
+                "inputs": {
+                  "connectedServiceNameARM": "7e03a668-298d-4fab-bb8d-49cccb324797",
+                  "scriptType": "bash",
+                  "scriptLocation": "scriptPath",
+                  "scriptPath": "$(System.DefaultWorkingDirectory)/_Assisted_MLOPS/iris_classifier/a/deployment/install_cli_azure.sh",
+                  "inlineScript": "az extension add -n azure-cli-ml",
+                  "scriptArguments": "",
+                  "powerShellErrorActionPreference": "stop",
+                  "addSpnToEnvironment": "false",
+                  "useGlobalConfig": "false",
+                  "cwd": "",
+                  "failOnStandardError": "false",
+                  "powerShellIgnoreLASTEXITCODE": "false"
+                }
+              },
+              {
+                "environment": {},
+                "taskId": "46e4be58-730b-4389-8a2f-ea10b3e5e815",
+                "version": "2.*",
+                "name": "Update CLI",
+                "refName": "",
+                "enabled": true,
+                "alwaysRun": false,
+                "continueOnError": false,
+                "timeoutInMinutes": 0,
+                "retryCountOnTaskFailure": 0,
+                "definitionType": "task",
+                "overrideInputs": {},
+                "condition": "succeeded()",
+                "inputs": {
+                  "connectedServiceNameARM": "7e03a668-298d-4fab-bb8d-49cccb324797",
+                  "scriptType": "bash",
+                  "scriptLocation": "scriptPath",
+                  "scriptPath": "$(System.DefaultWorkingDirectory)/_Assisted_MLOPS/iris_classifier/a/deployment/update_cli.sh",
+                  "inlineScript": "az extension update -n azure-cli-ml",
+                  "scriptArguments": "",
+                  "powerShellErrorActionPreference": "stop",
+                  "addSpnToEnvironment": "false",
+                  "useGlobalConfig": "false",
+                  "cwd": "",
+                  "failOnStandardError": "false",
+                  "powerShellIgnoreLASTEXITCODE": "false"
+                }
+              },
+              {
+                "environment": {},
+                "taskId": "46e4be58-730b-4389-8a2f-ea10b3e5e815",
+                "version": "2.*",
+                "name": "Create AKS",
+                "refName": "",
+                "enabled": false,
+                "alwaysRun": false,
+                "continueOnError": false,
+                "timeoutInMinutes": 0,
+                "retryCountOnTaskFailure": 0,
+                "definitionType": "task",
+                "overrideInputs": {},
+                "condition": "succeeded()",
+                "inputs": {
+                  "connectedServiceNameARM": "7e03a668-298d-4fab-bb8d-49cccb324797",
+                  "scriptType": "bash",
+                  "scriptLocation": "inlineScript",
+                  "scriptPath": "$(System.DefaultWorkingDirectory)/_Assisted_MLOPS/iris_classifier/a/deployment/Create_AKS.sh",
+                  "inlineScript": "az ml computetarget create aks -g $(ml.resourceGroup) -w $(ml.workspace)  -n $(aks.clusterName) -s $(aks.vmSize) -a $(aks.agentCount) --cluster-purpose $(ml.clusterPurpose)",
+                  "scriptArguments": "",
+                  "powerShellErrorActionPreference": "stop",
+                  "addSpnToEnvironment": "false",
+                  "useGlobalConfig": "false",
+                  "cwd": "",
+                  "failOnStandardError": "false",
+                  "powerShellIgnoreLASTEXITCODE": "false"
+                }
+              },
+              {
+                "environment": {},
+                "taskId": "46e4be58-730b-4389-8a2f-ea10b3e5e815",
+                "version": "2.*",
+                "name": "Deploy ML Model To AKS",
+                "refName": "",
+                "enabled": false,
+                "alwaysRun": false,
+                "continueOnError": false,
+                "timeoutInMinutes": 0,
+                "retryCountOnTaskFailure": 0,
+                "definitionType": "task",
+                "overrideInputs": {},
+                "condition": "succeeded()",
+                "inputs": {
+                  "connectedServiceNameARM": "7e03a668-298d-4fab-bb8d-49cccb324797",
+                  "scriptType": "bash",
+                  "scriptLocation": "inlineScript",
+                  "scriptPath": "$(System.DefaultWorkingDirectory)/_Assisted_MLOPS/iris_classifier/a/deployment/Deploy_ML_Model.sh",
+                  "inlineScript": "az ml model deploy -g $(ml.resourceGroup) -w $(ml.workspace) -n $(aks_service_name) -f _Assisted_MLOPS/iris_classifier/metadata/model.json --dc aksDeploymentConfig.yml --ic inferenceConfig.yml --ct $(aks.clusterName) --description \"TicketPriority Classifier deployed in AKS\" --overwrite",
+                  "scriptArguments": "",
+                  "powerShellErrorActionPreference": "stop",
+                  "addSpnToEnvironment": "false",
+                  "useGlobalConfig": "false",
+                  "cwd": "",
+                  "failOnStandardError": "false",
+                  "powerShellIgnoreLASTEXITCODE": "false"
+                }
+              },
+              {
+                "environment": {},
+                "taskId": "46e4be58-730b-4389-8a2f-ea10b3e5e815",
+                "version": "2.*",
+                "name": "Deploy ML Model To AKS Full PATH NAME",
+                "refName": "",
+                "enabled": true,
+                "alwaysRun": false,
+                "continueOnError": false,
+                "timeoutInMinutes": 0,
+                "retryCountOnTaskFailure": 0,
+                "definitionType": "task",
+                "overrideInputs": {},
+                "condition": "succeeded()",
+                "inputs": {
+                  "connectedServiceNameARM": "7e03a668-298d-4fab-bb8d-49cccb324797",
+                  "scriptType": "bash",
+                  "scriptLocation": "inlineScript",
+                  "scriptPath": "$(System.DefaultWorkingDirectory)/_Assisted_MLOPS/iris_classifier/a/deployment/Deploy_ML_Model.sh",
+                  "inlineScript": "az ml model deploy -g $(ml.resourceGroup) -w $(ml.workspace) -n $(aks_service_name) -f _Assisted_MLOPS/iris_classifier/metadata/model.json --dc _Assisted_MLOPS/iris_classifier/a/deployment/aksDeploymentConfig.yml --ic _Assisted_MLOPS/iris_classifier/a/deployment/inferenceConfig.yml --ct $(aks.clusterName) --description \"TicketPriority Classifier deployed in AKS\" --overwrite",
+                  "scriptArguments": "",
+                  "powerShellErrorActionPreference": "stop",
+                  "addSpnToEnvironment": "false",
+                  "useGlobalConfig": "false",
+                  "cwd": "",
+                  "failOnStandardError": "false",
+                  "powerShellIgnoreLASTEXITCODE": "false"
+                }
+              },
+              {
+                "environment": {},
+                "taskId": "46e4be58-730b-4389-8a2f-ea10b3e5e815",
+                "version": "2.*",
+                "name": "Run Integration Test-AKS",
+                "refName": "",
+                "enabled": true,
+                "alwaysRun": false,
+                "continueOnError": false,
+                "timeoutInMinutes": 0,
+                "retryCountOnTaskFailure": 0,
+                "definitionType": "task",
+                "overrideInputs": {},
+                "condition": "succeeded()",
+                "inputs": {
+                  "connectedServiceNameARM": "7e03a668-298d-4fab-bb8d-49cccb324797",
+                  "scriptType": "bash",
+                  "scriptLocation": "scriptPath",
+                  "scriptPath": "$(System.DefaultWorkingDirectory)/_Assisted_MLOPS/iris_classifier/a/deployment/run_integration_test.sh",
+                  "inlineScript": "pytest smoke_tests.py --doctest-modules --junitxml=junit/test-results.xml --cov=integration_test --cov-report=xml --cov-report=html --scoreurl $(az ml service show -g $(ml.resourceGroup) -w $(ml.workspace) -n $(aks_service_name) --query scoringUri -o tsv) --scorekey $(az ml service get-keys -g $(ml.resourceGroup) -w $(ml.workspace) -n $(aks_service_name) --query primaryKey -o tsv)",
+                  "scriptArguments": "",
+                  "powerShellErrorActionPreference": "stop",
+                  "addSpnToEnvironment": "false",
+                  "useGlobalConfig": "false",
+                  "cwd": "",
+                  "failOnStandardError": "false",
+                  "powerShellIgnoreLASTEXITCODE": "false"
+                }
+              },
+              {
+                "environment": {},
+                "taskId": "0b0f01ed-7dde-43ff-9cbb-e48954daf9b1",
+                "version": "2.*",
+                "name": "Publish Test Results **/TEST-*.xml",
+                "refName": "",
+                "enabled": true,
+                "alwaysRun": false,
+                "continueOnError": false,
+                "timeoutInMinutes": 0,
+                "retryCountOnTaskFailure": 0,
+                "definitionType": "task",
+                "overrideInputs": {},
+                "condition": "succeeded()",
+                "inputs": {
+                  "testRunner": "JUnit",
+                  "testResultsFiles": "**/TEST-*.xml",
+                  "searchFolder": "$(System.DefaultWorkingDirectory)",
+                  "mergeTestResults": "false",
+                  "failTaskOnFailedTests": "false",
+                  "testRunTitle": "",
+                  "platform": "",
+                  "configuration": "",
+                  "publishRunAttachments": "true"
+                }
+              }
+            ]
+          }
+        ],
+        "environmentOptions": {
+          "emailNotificationType": "OnlyOnFailure",
+          "emailRecipients": "release.environment.owner;release.creator",
+          "skipArtifactsDownload": false,
+          "timeoutInMinutes": 0,
+          "enableAccessToken": false,
+          "publishDeploymentStatus": true,
+          "badgeEnabled": false,
+          "autoLinkWorkItems": false,
+          "pullRequestDeploymentEnabled": false
+        },
+        "demands": [],
+        "conditions": [
+          {
+            "name": "ReleaseStarted",
+            "conditionType": 1,
+            "value": ""
+          }
+        ],
+        "executionPolicy": {
+          "concurrencyCount": 1,
+          "queueDepthCount": 0
+        },
+        "schedules": [],
+        "currentRelease": {
+          "id": 35,
+          "url": "https://vsrm.dev.azure.com/SyntbotsAI-RnD/b9154e03-9b35-433c-873b-a2a353fa408a/_apis/Release/releases/35",
+          "_links": {}
+        },
+        "retentionPolicy": {
+          "daysToKeep": 30,
+          "releasesToKeep": 3,
+          "retainBuild": true
+        },
+        "processParameters": {},
+        "properties": {
+          "BoardsEnvironmentType": {
+            "$type": "System.String",
+            "$value": "unmapped"
+          },
+          "LinkBoardsWorkItems": {
+            "$type": "System.String",
+            "$value": "False"
+          }
+        },
+        "preDeploymentGates": {
+          "id": 0,
+          "gatesOptions": null,
+          "gates": []
+        },
+        "postDeploymentGates": {
+          "id": 0,
+          "gatesOptions": null,
+          "gates": []
+        },
+        "environmentTriggers": [],
+        "badgeUrl": "https://vsrm.dev.azure.com/SyntbotsAI-RnD/_apis/public/Release/badge/b9154e03-9b35-433c-873b-a2a353fa408a/6/6"
+      }
+    ],
+    "artifacts": [
+      {
+        "sourceId": "b9154e03-9b35-433c-873b-a2a353fa408a:18",
+        "type": "Build",
+        "alias": "_Assisted_MLOPS",
+        "definitionReference": {
+          "artifactSourceDefinitionUrl": {
+            "id": "https://dev.azure.com/SyntbotsAI-RnD/_permalink/_build/index?collectionId=0066fbd0-dade-4958-aee3-2b98c0cefbb8&projectId=b9154e03-9b35-433c-873b-a2a353fa408a&definitionId=18",
+            "name": ""
+          },
+          "defaultVersionBranch": {
+            "id": "",
+            "name": ""
+          },
+          "defaultVersionSpecific": {
+            "id": "",
+            "name": ""
+          },
+          "defaultVersionTags": {
+            "id": "",
+            "name": ""
+          },
+          "defaultVersionType": {
+            "id": "latestType",
+            "name": "Latest"
+          },
+          "definition": {
+            "id": "18",
+            "name": "Assisted_MLOPS"
+          },
+          "definitions": {
+            "id": "",
+            "name": ""
+          },
+          "IsMultiDefinitionType": {
+            "id": "False",
+            "name": "False"
+          },
+          "project": {
+            "id": "b9154e03-9b35-433c-873b-a2a353fa408a",
+            "name": "Assisted-MLOPs"
+          },
+          "repository": {
+            "id": "",
+            "name": ""
+          }
+        },
+        "isPrimary": true,
+        "isRetained": false
+      }
+    ],
+    "triggers": [],
+    "releaseNameFormat": "Release-$(rev:r)",
+    "tags": [],
+    "properties": {
+      "DefinitionCreationSource": {
+        "$type": "System.String",
+        "$value": "ReleaseNew"
+      },
+      "IntegrateBoardsWorkItems": {
+        "$type": "System.String",
+        "$value": "False"
+      },
+      "IntegrateJiraWorkItems": {
+        "$type": "System.String",
+        "$value": "false"
+      }
+    },
+    "id": 6,
+    "name": "New release pipeline",
+    "path": "\\",
+    "projectReference": null,
+    "url": "https://vsrm.dev.azure.com/SyntbotsAI-RnD/b9154e03-9b35-433c-873b-a2a353fa408a/_apis/Release/definitions/6",
+    "_links": {
+      "self": {
+        "href": "https://vsrm.dev.azure.com/SyntbotsAI-RnD/b9154e03-9b35-433c-873b-a2a353fa408a/_apis/Release/definitions/6"
+      },
+      "web": {
+        "href": "https://dev.azure.com/SyntbotsAI-RnD/b9154e03-9b35-433c-873b-a2a353fa408a/_release?definitionId=6"
+      }
+    }
+  }

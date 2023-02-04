@@ -1,0 +1,98 @@
+   Dataset Upload API
+   URL: http://localhost:8000/azure_dataset_upload/
+   Method: POST
+   Payload: FROM UI
+
+   List List Datasets API
+   URL: http://127.0.0.1:8000/list_datasets_in_azure/
+   Method: GET
+   Payload: 
+   N/A
+
+   List Buckets API
+   URL: http://127.0.0.1:8000/list_buckets_in_azure/
+   Method: GET
+   Payload:
+   N/A
+
+   List Create Bucket API
+   URL: http://127.0.0.1:8000/create_bucket_in_azure/
+   Method: POST
+   Payload:
+    {
+    "name": "test_bucket"
+    }
+
+   List Create Pipeline API
+   URL: http://127.0.0.1:8001/pipeline/create/azure/
+   Method: POST
+   Payload:
+    {
+    "pipeline_name": "GlassPipeline",
+    "experiment_name":"GlassExperiment",
+    "dataset_name": "azureml-blobstore-fa9d2517-040e-4c2e-be65-676d5c708710/glassdata/glass.csv",
+    "train_columns": ["RI", "NA", "MG", "AL", "SI", "K", "CA", "BA", "FE"],
+    "target_columns": "TYPE",
+    "train_size": 0.85,
+    "ml-compute_v_m_size": "STANDARD_DS12_V2",
+    "aks-compute_v_m_size" : "STANDARD_DS12_V2",
+    "missing_value":true,
+    "remove_outlier":true,
+    "agent_name": "New_Self_Hosted_Agent_V2",
+    "model_selection": {
+        "model":"Random Forest",
+            "params":{
+            "random_state":42,
+            "n_estimators":200,
+            "criterion":"gini"
+            }
+        },
+    "tasks": {
+    "run_traininfrasetup": true,
+    "run_preprocess": true,
+    "run_train": true,
+    "run_deployinfrasetup": true,
+    "run_deploytoaks": true,
+    "run_publishendpoint": true
+        }
+    }
+
+   View Dataset API
+   URL: http://127.0.0.1:8000/view_dataset/
+   Method: POST
+   Payload:
+    {
+    "dataset_name": "azureml-blobstore-fa9d2517-040e-4c2e-be65-676d5c708710/segmentation/segmentation.csv"
+    }
+
+   Execute Pipeline API
+   URL: http://127.0.0.1:8000/pipeline/create/azure/execute
+   Method: POST
+   Payload:
+    {
+        "definition_id": "187"
+    }
+
+   List Pipeline API
+   URL: http://127.0.0.1:8000/pipelines/
+   Method: GET
+   Payload:
+   N/A
+
+   Pipeline Status API
+   URL: http://127.0.0.1:8000/pipeline/status/azure/
+   Method: POST
+   Payload:
+    {
+        "pipeline_definition_id_list": [182]
+    }
+
+
+   Get Endpoint API
+   URL: http://127.0.0.1:8000/view_dataset/
+   Method: POST
+   Payload:
+    {
+        "endpoint_name": "segmentation-endpoint-lny-myk"
+    }
+

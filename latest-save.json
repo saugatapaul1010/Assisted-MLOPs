@@ -1,0 +1,1118 @@
+{"source":2,"revision":6,"description":null,"createdBy":{"displayName":"Saugata Paul","url":"https://spsprodsin1.vssps.visualstudio.com/Ada3b3387-eb99-4321-b544-8edc5635b17e/_apis/Identities/58cd35a4-94aa-6e12-8bd7-80e7a8409cb6","_links":{"avatar":{"href":"https://dev.azure.com/SyntbotsAI-RnD/_apis/GraphProfile/MemberAvatars/aad.NThjZDM1YTQtOTRhYS03ZTEyLThiZDctODBlN2E4NDA5Y2I2"}},"id":"58cd35a4-94aa-6e12-8bd7-80e7a8409cb6","uniqueName":"saugata.paul@atos.net","imageUrl":"https://dev.azure.com/SyntbotsAI-RnD/_apis/GraphProfile/MemberAvatars/aad.NThjZDM1YTQtOTRhYS03ZTEyLThiZDctODBlN2E4NDA5Y2I2","descriptor":"aad.NThjZDM1YTQtOTRhYS03ZTEyLThiZDctODBlN2E4NDA5Y2I2"},"createdOn":"2022-04-13T15:25:43.330Z","modifiedBy":{"displayName":"Saugata Paul","url":"https://spsprodsin1.vssps.visualstudio.com/Ada3b3387-eb99-4321-b544-8edc5635b17e/_apis/Identities/58cd35a4-94aa-6e12-8bd7-80e7a8409cb6","_links":{"avatar":{"href":"https://dev.azure.com/SyntbotsAI-RnD/_apis/GraphProfile/MemberAvatars/aad.NThjZDM1YTQtOTRhYS03ZTEyLThiZDctODBlN2E4NDA5Y2I2"}},"id":"58cd35a4-94aa-6e12-8bd7-80e7a8409cb6","uniqueName":"saugata.paul@atos.net","imageUrl":"https://dev.azure.com/SyntbotsAI-RnD/_apis/GraphProfile/MemberAvatars/aad.NThjZDM1YTQtOTRhYS03ZTEyLThiZDctODBlN2E4NDA5Y2I2","descriptor":"aad.NThjZDM1YTQtOTRhYS03ZTEyLThiZDctODBlN2E4NDA5Y2I2"},"modifiedOn":"2022-04-13T16:08:22.163Z","isDeleted":false,"lastRelease":{"id":6,"name":"Release-1","artifacts":[],"_links":{},"description":"","releaseDefinition":{"id":3,"projectReference":null,"_links":{}},"createdOn":"2022-04-13T15:28:01.590Z","createdBy":{"displayName":"Saugata Paul","url":"https://spsprodsin1.vssps.visualstudio.com/Ada3b3387-eb99-4321-b544-8edc5635b17e/_apis/Identities/58cd35a4-94aa-6e12-8bd7-80e7a8409cb6","_links":{"avatar":{"href":"https://dev.azure.com/SyntbotsAI-RnD/_apis/GraphProfile/MemberAvatars/aad.NThjZDM1YTQtOTRhYS03ZTEyLThiZDctODBlN2E4NDA5Y2I2"}},"id":"58cd35a4-94aa-6e12-8bd7-80e7a8409cb6","uniqueName":"saugata.paul@atos.net","imageUrl":"https://dev.azure.com/SyntbotsAI-RnD/_apis/GraphProfile/MemberAvatars/aad.NThjZDM1YTQtOTRhYS03ZTEyLThiZDctODBlN2E4NDA5Y2I2","descriptor":"aad.NThjZDM1YTQtOTRhYS03ZTEyLThiZDctODBlN2E4NDA5Y2I2"}},"variables":{"aks_service_name":{"value":"assisted-predictor-aks"},"aks.agentCount":{"value":"3"},"aks.clusterName":{"value":"aksclusterdemotest"},"aks.vmSize":{"value":"STANDARD_DS2_V2"},"ml.clusterPurpose":{"value":"DevTest"},"ml.resourceGroup":{"value":"SyntbotsAI-RnD-MLOps"},"ml.workspace":{"value":"MLOps_WS01"}},"variableGroups":[],"environments":[{"id":3,"name":"Stage 1","rank":1,"owner":{"displayName":"Saugata Paul","url":"https://spsprodsin1.vssps.visualstudio.com/Ada3b3387-eb99-4321-b544-8edc5635b17e/_apis/Identities/58cd35a4-94aa-6e12-8bd7-80e7a8409cb6","_links":{"avatar":{"href":"https://dev.azure.com/SyntbotsAI-RnD/_apis/GraphProfile/MemberAvatars/aad.NThjZDM1YTQtOTRhYS03ZTEyLThiZDctODBlN2E4NDA5Y2I2"}},"id":"58cd35a4-94aa-6e12-8bd7-80e7a8409cb6","uniqueName":"saugata.paul@atos.net","imageUrl":"https://dev.azure.com/SyntbotsAI-RnD/_apis/GraphProfile/MemberAvatars/aad.NThjZDM1YTQtOTRhYS03ZTEyLThiZDctODBlN2E4NDA5Y2I2","descriptor":"aad.NThjZDM1YTQtOTRhYS03ZTEyLThiZDctODBlN2E4NDA5Y2I2"},"variables":{},"variableGroups":[],"preDeployApprovals":{"approvals":[{"rank":1,"isAutomated":true,"isNotificationOn":false,"id":7}],"approvalOptions":{"requiredApproverCount":null,"releaseCreatorCanBeApprover":false,"autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped":false,"enforceIdentityRevalidation":false,"timeoutInMinutes":0,"executionOrder":1}},"deployStep":{"id":8},"postDeployApprovals":{"approvals":[{"rank":1,"isAutomated":true,"isNotificationOn":false,"id":9}],"approvalOptions":{"requiredApproverCount":null,"releaseCreatorCanBeApprover":false,"autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped":false,"enforceIdentityRevalidation":false,"timeoutInMinutes":0,"executionOrder":2}},"deployPhases":[{"deploymentInput":{"parallelExecution":{"parallelExecutionType":0},"agentSpecification":{"identifier":"ubuntu-18.04"},"skipArtifactsDownload":false,"artifactsDownloadInput":{"downloadInputs":[]},"queueId":18,"demands":[],"enableAccessToken":false,"timeoutInMinutes":0,"jobCancelTimeoutInMinutes":1,"condition":"succeeded()","overrideInputs":{}},"rank":1,"phaseType":1,"name":"Agent job","refName":null,"workflowTasks":[{"environment":{},"taskId":"33c63b11-352b-45a2-ba1b-54cb568a29ca","version":"0.*","name":"Use Python 3.7","refName":"","enabled":true,"alwaysRun":false,"continueOnError":false,"timeoutInMinutes":0,"retryCountOnTaskFailure":0,"definitionType":"task","overrideInputs":{},"condition":"succeeded()","inputs":{"versionSpec":"3.7","addToPath":"true","architecture":"x64"}},{"environment":{},"taskId":"6c731c3c-3c68-459a-a5c9-bde6e6595b5b","version":"3.*","name":"Install Dependencies","refName":"","enabled":true,"alwaysRun":false,"continueOnError":false,"timeoutInMinutes":0,"retryCountOnTaskFailure":0,"definitionType":"task","overrideInputs":{},"condition":"succeeded()","inputs":{"targetType":"filePath","filePath":"$(System.DefaultWorkingDirectory)/_Assisted-MLOPs/environment_setup/install-requirements.sh","arguments":"","script":"# Write your commands here\n\necho 'Hello world'\n","workingDirectory":"","failOnStderr":"false","bashEnvValue":""}},{"environment":{},"taskId":"46e4be58-730b-4389-8a2f-ea10b3e5e815","version":"2.*","name":"Install Azure CLI ML Extension","refName":"","enabled":true,"alwaysRun":false,"continueOnError":false,"timeoutInMinutes":0,"retryCountOnTaskFailure":0,"definitionType":"task","overrideInputs":{},"condition":"succeeded()","inputs":{"connectedServiceNameARM":"7e03a668-298d-4fab-bb8d-49cccb324797","scriptType":"bash","scriptLocation":"inlineScript","scriptPath":"","inlineScript":"az extension add -n azure-cli-ml","scriptArguments":"","powerShellErrorActionPreference":"stop","addSpnToEnvironment":"false","useGlobalConfig":"false","cwd":"","failOnStandardError":"false","powerShellIgnoreLASTEXITCODE":"false"}},{"environment":{},"taskId":"46e4be58-730b-4389-8a2f-ea10b3e5e815","version":"2.*","name":"az extension remove -n azure-cli-ml","refName":"","enabled":true,"alwaysRun":false,"continueOnError":false,"timeoutInMinutes":0,"retryCountOnTaskFailure":0,"definitionType":"task","overrideInputs":{},"condition":"succeeded()","inputs":{"connectedServiceNameARM":"7e03a668-298d-4fab-bb8d-49cccb324797","scriptType":"bash","scriptLocation":"inlineScript","scriptPath":"","inlineScript":"az extension remove -n azure-cli-ml","scriptArguments":"","powerShellErrorActionPreference":"stop","addSpnToEnvironment":"false","useGlobalConfig":"false","cwd":"","failOnStandardError":"false","powerShellIgnoreLASTEXITCODE":"false"}},{"environment":{},"taskId":"46e4be58-730b-4389-8a2f-ea10b3e5e815","version":"2.*","name":"az extension remove -n ml","refName":"","enabled":true,"alwaysRun":false,"continueOnError":false,"timeoutInMinutes":0,"retryCountOnTaskFailure":0,"definitionType":"task","overrideInputs":{},"condition":"succeeded()","inputs":{"connectedServiceNameARM":"7e03a668-298d-4fab-bb8d-49cccb324797","scriptType":"bash","scriptLocation":"inlineScript","scriptPath":"","inlineScript":"az extension remove -n ml","scriptArguments":"","powerShellErrorActionPreference":"stop","addSpnToEnvironment":"false","useGlobalConfig":"false","cwd":"","failOnStandardError":"false","powerShellIgnoreLASTEXITCODE":"false"}},{"environment":{},"taskId":"46e4be58-730b-4389-8a2f-ea10b3e5e815","version":"2.*","name":"az extension add -n ml -y","refName":"","enabled":true,"alwaysRun":false,"continueOnError":false,"timeoutInMinutes":0,"retryCountOnTaskFailure":0,"definitionType":"task","overrideInputs":{},"condition":"succeeded()","inputs":{"connectedServiceNameARM":"7e03a668-298d-4fab-bb8d-49cccb324797","scriptType":"bash","scriptLocation":"inlineScript","scriptPath":"","inlineScript":"az extension add -n ml -y","scriptArguments":"","powerShellErrorActionPreference":"stop","addSpnToEnvironment":"false","useGlobalConfig":"false","cwd":"","failOnStandardError":"false","powerShellIgnoreLASTEXITCODE":"false"}},{"environment":{},"taskId":"46e4be58-730b-4389-8a2f-ea10b3e5e815","version":"2.*","name":"az ml -h","refName":"","enabled":true,"alwaysRun":false,"continueOnError":false,"timeoutInMinutes":0,"retryCountOnTaskFailure":0,"definitionType":"task","overrideInputs":{},"condition":"succeeded()","inputs":{"connectedServiceNameARM":"7e03a668-298d-4fab-bb8d-49cccb324797","scriptType":"bash","scriptLocation":"inlineScript","scriptPath":"","inlineScript":"az ml -h","scriptArguments":"","powerShellErrorActionPreference":"stop","addSpnToEnvironment":"false","useGlobalConfig":"false","cwd":"","failOnStandardError":"false","powerShellIgnoreLASTEXITCODE":"false"}},{"environment":{},"taskId":"46e4be58-730b-4389-8a2f-ea10b3e5e815","version":"2.*","name":"AZ Extension List","refName":"","enabled":true,"alwaysRun":false,"continueOnError":false,"timeoutInMinutes":0,"retryCountOnTaskFailure":0,"definitionType":"task","overrideInputs":{},"condition":"succeeded()","inputs":{"connectedServiceNameARM":"7e03a668-298d-4fab-bb8d-49cccb324797","scriptType":"bash","scriptLocation":"inlineScript","scriptPath":"","inlineScript":"az extension list","scriptArguments":"","powerShellErrorActionPreference":"stop","addSpnToEnvironment":"false","useGlobalConfig":"false","cwd":"","failOnStandardError":"false","powerShellIgnoreLASTEXITCODE":"false"}},{"environment":{},"taskId":"46e4be58-730b-4389-8a2f-ea10b3e5e815","version":"2.*","name":"Create AKS","refName":"","enabled":true,"alwaysRun":false,"continueOnError":false,"timeoutInMinutes":0,"retryCountOnTaskFailure":0,"definitionType":"task","overrideInputs":{},"condition":"succeeded()","inputs":{"connectedServiceNameARM":"7e03a668-298d-4fab-bb8d-49cccb324797","scriptType":"bash","scriptLocation":"inlineScript","scriptPath":"","inlineScript":"az ml computetarget create aks -g $(ml.resourceGroup) -w $(ml.workspace)  -n $(aks.clusterName) -s $(aks.vmSize) -a $(aks.agentCount) --cluster-purpose $(ml.clusterPurpose)","scriptArguments":"","powerShellErrorActionPreference":"stop","addSpnToEnvironment":"false","useGlobalConfig":"false","cwd":"","failOnStandardError":"false","powerShellIgnoreLASTEXITCODE":"false"}},{"environment":{},"taskId":"46e4be58-730b-4389-8a2f-ea10b3e5e815","version":"2.*","name":"Deploy to AKS","refName":"","enabled":true,"alwaysRun":false,"continueOnError":false,"timeoutInMinutes":0,"retryCountOnTaskFailure":0,"definitionType":"task","overrideInputs":{},"condition":"succeeded()","inputs":{"connectedServiceNameARM":"7e03a668-298d-4fab-bb8d-49cccb324797","scriptType":"bash","scriptLocation":"inlineScript","scriptPath":"","inlineScript":"az ml model deploy -g $(ml.resourceGroup) -w $(ml.workspace) -n $(aks_service_name) -f output/model.json --dc aksDeploymentConfig.yml --ic inferenceConfig.yml --ct $(aks.clusterName) --description \"IRIS Classifier deployed in AKS\" --overwrite","scriptArguments":"","powerShellErrorActionPreference":"stop","addSpnToEnvironment":"false","useGlobalConfig":"false","cwd":"","failOnStandardError":"false","powerShellIgnoreLASTEXITCODE":"false"}},{"environment":{},"taskId":"46e4be58-730b-4389-8a2f-ea10b3e5e815","version":"2.*","name":"Run Integration Test-AKS","refName":"","enabled":true,"alwaysRun":false,"continueOnError":false,"timeoutInMinutes":0,"retryCountOnTaskFailure":0,"definitionType":"task","overrideInputs":{},"condition":"succeeded()","inputs":{"connectedServiceNameARM":"7e03a668-298d-4fab-bb8d-49cccb324797","scriptType":"bash","scriptLocation":"inlineScript","scriptPath":"","inlineScript":"pytest smoke_tests.py --doctest-modules --junitxml=junit/test-results.xml --cov=integration_test --cov-report=xml --cov-report=html --scoreurl $(az ml service show -g $(ml.resourceGroup) -w $(ml.workspace) -n $(aks_service_name) --query scoringUri -o tsv) --scorekey $(az ml service get-keys -g $(ml.resourceGroup) -w $(ml.workspace) -n $(aks_service_name) --query primaryKey -o tsv)","scriptArguments":"","powerShellErrorActionPreference":"stop","addSpnToEnvironment":"false","useGlobalConfig":"false","cwd":"","failOnStandardError":"false","powerShellIgnoreLASTEXITCODE":"false"}},{"environment":{},"taskId":"0b0f01ed-7dde-43ff-9cbb-e48954daf9b1","version":"2.*","name":"Publish Test Results **/TEST-*.xml","refName":"","enabled":true,"alwaysRun":false,"continueOnError":false,"timeoutInMinutes":0,"retryCountOnTaskFailure":0,"definitionType":"task","overrideInputs":{},"condition":"succeeded()","inputs":{"testRunner":"JUnit","testResultsFiles":"**/TEST-*.xml","searchFolder":"$(System.DefaultWorkingDirectory)","mergeTestResults":"false","failTaskOnFailedTests":"false","testRunTitle":"","platform":"","configuration":"","publishRunAttachments":"true"}}]}],"environmentOptions":{"emailNotificationType":"OnlyOnFailure","emailRecipients":"release.environment.owner;release.creator","skipArtifactsDownload":false,"timeoutInMinutes":0,"enableAccessToken":false,"publishDeploymentStatus":true,"badgeEnabled":false,"autoLinkWorkItems":false,"pullRequestDeploymentEnabled":false},"demands":[],"conditions":[{"name":"ReleaseStarted","conditionType":1,"value":""}],"executionPolicy":{"concurrencyCount":1,"queueDepthCount":0},"schedules":[],"currentRelease":{"id":6,"url":"https://vsrm.dev.azure.com/SyntbotsAI-RnD/b9154e03-9b35-433c-873b-a2a353fa408a/_apis/Release/releases/6","_links":{}},"retentionPolicy":{"daysToKeep":30,"releasesToKeep":3,"retainBuild":true},"processParameters":{},"properties":{"BoardsEnvironmentType":{"$type":"System.String","$value":"unmapped"},"LinkBoardsWorkItems":{"$type":"System.String","$value":"False"}},"preDeploymentGates":{"id":0,"gatesOptions":null,"gates":[]},"postDeploymentGates":{"id":0,"gatesOptions":null,"gates":[]},"environmentTriggers":[],"badgeUrl":"https://vsrm.dev.azure.com/SyntbotsAI-RnD/_apis/public/Release/badge/b9154e03-9b35-433c-873b-a2a353fa408a/3/3"}],"artifacts":[{"sourceId":"b9154e03-9b35-433c-873b-a2a353fa408a:33ec0106-5cb4-4f1b-92f7-66556af10ca6","type":"Git","alias":"_Assisted-MLOPs","definitionReference":{"branches":{"id":"master","name":"master"},"checkoutNestedSubmodules":{"id":"True","name":"Any nested submodules within"},"checkoutSubmodules":{"id":"","name":""},"defaultVersionSpecific":{"id":"","name":""},"defaultVersionType":{"id":"latestFromBranchType","name":"Latest from the default branch"},"definition":{"id":"33ec0106-5cb4-4f1b-92f7-66556af10ca6","name":"Assisted-MLOPs"},"fetchDepth":{"id":"","name":""},"gitLfsSupport":{"id":"","name":""},"project":{"id":"b9154e03-9b35-433c-873b-a2a353fa408a","name":"Assisted-MLOPs"}},"isPrimary":true,"isRetained":false}],"triggers":[{"branchFilters":[],"alias":"_Assisted-MLOPs","triggerType":3}],"releaseNameFormat":"Release-$(rev:r)","tags":[],"properties":{"DefinitionCreationSource":{"$type":"System.String","$value":"ReleaseNew"},"IntegrateBoardsWorkItems":{"$type":"System.String","$value":"False"},"IntegrateJiraWorkItems":{"$type":"System.String","$value":"false"}},"id":3,"name":"Release Pipeline Latest","path":"\\","projectReference":null,"url":"https://vsrm.dev.azure.com/SyntbotsAI-RnD/b9154e03-9b35-433c-873b-a2a353fa408a/_apis/Release/definitions/3","_links":{"self":{"href":"https://vsrm.dev.azure.com/SyntbotsAI-RnD/b9154e03-9b35-433c-873b-a2a353fa408a/_apis/Release/definitions/3"},"web":{"href":"https://dev.azure.com/SyntbotsAI-RnD/b9154e03-9b35-433c-873b-a2a353fa408a/_release?definitionId=3"}}}Initialize:
+
+
+2022-04-14T05:16:23.3341477Z ##[section]Starting: Initialize job
+2022-04-14T05:16:23.3342793Z Agent name: 'Hosted Agent'
+2022-04-14T05:16:23.3343313Z Agent machine name: 'fv-az323-443'
+2022-04-14T05:16:23.3343516Z Current agent version: '2.202.0'
+2022-04-14T05:16:23.3379290Z ##[group]Operating System
+2022-04-14T05:16:23.3379655Z Ubuntu
+2022-04-14T05:16:23.3379785Z 18.04.6
+2022-04-14T05:16:23.3379902Z LTS
+2022-04-14T05:16:23.3380091Z ##[endgroup]
+2022-04-14T05:16:23.3380244Z ##[group]Virtual Environment
+2022-04-14T05:16:23.3380427Z Environment: ubuntu-18.04
+2022-04-14T05:16:23.3380638Z Version: 20220405.3
+2022-04-14T05:16:23.3380943Z Included Software: https://github.com/actions/virtual-environments/blob/ubuntu18/20220405.3/images/linux/Ubuntu1804-Readme.md
+2022-04-14T05:16:23.3381406Z Image Release: https://github.com/actions/virtual-environments/releases/tag/ubuntu18%2F20220405.3
+2022-04-14T05:16:23.3381655Z ##[endgroup]
+2022-04-14T05:16:23.3381820Z ##[group]Virtual Environment Provisioner
+2022-04-14T05:16:23.3382191Z 1.0.0.0-main-20220325-1
+2022-04-14T05:16:23.3382396Z ##[endgroup]
+2022-04-14T05:16:23.3383252Z Current image version: '20220405.3'
+2022-04-14T05:16:23.3387396Z Agent running as: 'vsts'
+2022-04-14T05:16:23.3395294Z Prepare release directory.
+2022-04-14T05:16:23.3402246Z ReleaseId=24, TeamProjectId=b9154e03-9b35-433c-873b-a2a353fa408a, ReleaseDefinitionName=New release pipeline
+2022-04-14T05:16:23.3447624Z Release folder: /home/vsts/work/r1/a
+2022-04-14T05:16:23.3608965Z Environment variables available are below.  Note that these environment variables can be referred to in the task (in the ReleaseDefinition) by replacing "_" with "." e.g. AGENT_NAME environment variable can be referenced using Agent.Name in the ReleaseDefinition: 
+				[AGENT_ACCEPTTEEEULA] --> [True]
+				[AGENT_DISABLELOGPLUGIN_TESTFILEPUBLISHERPLUGIN] --> [true]
+				[AGENT_DISABLELOGPLUGIN_TESTRESULTLOGPLUGIN] --> [true]
+				[AGENT_HOMEDIRECTORY] --> [/home/vsts/agents/2.202.0]
+				[AGENT_ID] --> [8]
+				[AGENT_JOBNAME] --> [Agent job]
+				[AGENT_MACHINENAME] --> [fv-az323-443]
+				[AGENT_NAME] --> [Hosted Agent]
+				[AGENT_OS] --> [Linux]
+				[AGENT_OSARCHITECTURE] --> [X64]
+				[AGENT_RELEASEDIRECTORY] --> [/home/vsts/work/r1/a]
+				[AGENT_RETAINDEFAULTENCODING] --> [false]
+				[AGENT_ROOTDIRECTORY] --> [/home/vsts/work]
+				[AGENT_TASKRESTRICTIONSENFORCEMENTMODE] --> [Enabled]
+				[AGENT_TEMPDIRECTORY] --> [/home/vsts/work/_temp]
+				[AGENT_TOOLSDIRECTORY] --> [/opt/hostedtoolcache]
+				[AGENT_VERSION] --> [2.202.0]
+				[AGENT_WORKFOLDER] --> [/home/vsts/work]
+				[AKS_AGENTCOUNT] --> [3]
+				[AKS_CLUSTERNAME] --> [aksnew]
+				[AKS_VMSIZE] --> [STANDARD_DS2_V2]
+				[AKS_SERVICE_NAME] --> [priority-predictor-aks]
+				[AZURE_HTTP_USER_AGENT] --> [VSTS_0066fbd0-dade-4958-aee3-2b98c0cefbb8_Release__24_24_2]
+				[BUILD_BUILDID] --> [174]
+				[BUILD_BUILDNUMBER] --> [20220414.3]
+				[BUILD_BUILDURI] --> [vstfs:///Build/Build/174]
+				[BUILD_DEFINITIONID] --> [18]
+				[BUILD_DEFINITIONNAME] --> [Assisted_MLOPS]
+				[BUILD_PROJECTID] --> [b9154e03-9b35-433c-873b-a2a353fa408a]
+				[BUILD_PROJECTNAME] --> [Assisted-MLOPs]
+				[BUILD_REPOSITORY_ID] --> [33ec0106-5cb4-4f1b-92f7-66556af10ca6]
+				[BUILD_REPOSITORY_NAME] --> [Assisted-MLOPs]
+				[BUILD_REPOSITORY_PROVIDER] --> [TfsGit]
+				[BUILD_REQUESTEDFOR] --> [Saugata Paul]
+				[BUILD_REQUESTEDFORID] --> [58cd35a4-94aa-6e12-8bd7-80e7a8409cb6]
+				[BUILD_SOURCEBRANCH] --> [refs/heads/master]
+				[BUILD_SOURCEBRANCHNAME] --> [master]
+				[BUILD_SOURCEVERSION] --> [b87dd71988eb35a08f9d56af7277bc1c65e81e00]
+				[BUILD_TYPE] --> [Build]
+				[GIT_TERMINAL_PROMPT] --> [0]
+				[ML_CLUSTERPURPOSE] --> [DevTest]
+				[ML_RESOURCEGROUP] --> [SyntbotsAI-RnD-MLOps]
+				[ML_WORKSPACE] --> [MLOps_WS01]
+				[MSDEPLOY_HTTP_USER_AGENT] --> [VSTS_0066fbd0-dade-4958-aee3-2b98c0cefbb8_Release__24_24_2]
+				[RELEASE_ARTIFACTS__ASSISTED_MLOPS_BUILDID] --> [174]
+				[RELEASE_ARTIFACTS__ASSISTED_MLOPS_BUILDNUMBER] --> [20220414.3]
+				[RELEASE_ARTIFACTS__ASSISTED_MLOPS_BUILDURI] --> [vstfs:///Build/Build/174]
+				[RELEASE_ARTIFACTS__ASSISTED_MLOPS_DEFINITIONID] --> [18]
+				[RELEASE_ARTIFACTS__ASSISTED_MLOPS_DEFINITIONNAME] --> [Assisted_MLOPS]
+				[RELEASE_ARTIFACTS__ASSISTED_MLOPS_PROJECTID] --> [b9154e03-9b35-433c-873b-a2a353fa408a]
+				[RELEASE_ARTIFACTS__ASSISTED_MLOPS_PROJECTNAME] --> [Assisted-MLOPs]
+				[RELEASE_ARTIFACTS__ASSISTED_MLOPS_REPOSITORY_ID] --> [33ec0106-5cb4-4f1b-92f7-66556af10ca6]
+				[RELEASE_ARTIFACTS__ASSISTED_MLOPS_REPOSITORY_NAME] --> [Assisted-MLOPs]
+				[RELEASE_ARTIFACTS__ASSISTED_MLOPS_REPOSITORY_PROVIDER] --> [TfsGit]
+				[RELEASE_ARTIFACTS__ASSISTED_MLOPS_REQUESTEDFOR] --> [Saugata Paul]
+				[RELEASE_ARTIFACTS__ASSISTED_MLOPS_REQUESTEDFORID] --> [58cd35a4-94aa-6e12-8bd7-80e7a8409cb6]
+				[RELEASE_ARTIFACTS__ASSISTED_MLOPS_SOURCEBRANCH] --> [refs/heads/master]
+				[RELEASE_ARTIFACTS__ASSISTED_MLOPS_SOURCEBRANCHNAME] --> [master]
+				[RELEASE_ARTIFACTS__ASSISTED_MLOPS_SOURCEVERSION] --> [b87dd71988eb35a08f9d56af7277bc1c65e81e00]
+				[RELEASE_ARTIFACTS__ASSISTED_MLOPS_TYPE] --> [Build]
+				[RELEASE_ATTEMPTNUMBER] --> [2]
+				[RELEASE_DEFINITIONENVIRONMENTID] --> [6]
+				[RELEASE_DEFINITIONID] --> [6]
+				[RELEASE_DEFINITIONNAME] --> [New release pipeline]
+				[RELEASE_DEPLOYMENT_REQUESTEDFOR] --> [Saugata Paul]
+				[RELEASE_DEPLOYMENT_REQUESTEDFOREMAIL] --> [saugata.paul@atos.net]
+				[RELEASE_DEPLOYMENT_REQUESTEDFORID] --> [58cd35a4-94aa-6e12-8bd7-80e7a8409cb6]
+				[RELEASE_DEPLOYMENT_STARTTIME] --> [2022-04-14 05:16:13Z]
+				[RELEASE_DEPLOYMENTID] --> [51]
+				[RELEASE_DEPLOYPHASEID] --> [49]
+				[RELEASE_ENVIRONMENTID] --> [24]
+				[RELEASE_ENVIRONMENTNAME] --> [Stage 1]
+				[RELEASE_ENVIRONMENTS_STAGE_1_STATUS] --> [InProgress]
+				[RELEASE_ENVIRONMENTURI] --> [vstfs:///ReleaseManagement/Environment/24]
+				[RELEASE_PRIMARYARTIFACTSOURCEALIAS] --> [_Assisted_MLOPS]
+				[RELEASE_REASON] --> [Manual]
+				[RELEASE_RELEASEDESCRIPTION] --> []
+				[RELEASE_RELEASEID] --> [24]
+				[RELEASE_RELEASENAME] --> [Release-1]
+				[RELEASE_RELEASEURI] --> [vstfs:///ReleaseManagement/Release/24]
+				[RELEASE_RELEASEWEBURL] --> [https://dev.azure.com/SyntbotsAI-RnD/b9154e03-9b35-433c-873b-a2a353fa408a/_release?releaseId=24&_a=release-summary]
+				[RELEASE_REQUESTEDFOR] --> [Saugata Paul]
+				[RELEASE_REQUESTEDFOREMAIL] --> [saugata.paul@atos.net]
+				[RELEASE_REQUESTEDFORID] --> [58cd35a4-94aa-6e12-8bd7-80e7a8409cb6]
+				[RELEASE_SKIPARTIFACTSDOWNLOAD] --> [False]
+				[RELEASE_TRIGGERINGARTIFACT_ALIAS] --> []
+				[REQUESTEDFORID] --> [58cd35a4-94aa-6e12-8bd7-80e7a8409cb6]
+				[SYSTEM] --> [release]
+				[SYSTEM_ARTIFACTSDIRECTORY] --> [/home/vsts/work/r1/a]
+				[SYSTEM_COLLECTIONID] --> [0066fbd0-dade-4958-aee3-2b98c0cefbb8]
+				[SYSTEM_COLLECTIONURI] --> [https://vsrm.dev.azure.com/SyntbotsAI-RnD/]
+				[SYSTEM_CULTURE] --> [en-US]
+				[SYSTEM_DEFAULTWORKINGDIRECTORY] --> [/home/vsts/work/r1/a]
+				[SYSTEM_DEFINITIONID] --> [6]
+				[SYSTEM_DEFINITIONNAME] --> [New release pipeline]
+				[SYSTEM_ENABLEACCESSTOKEN] --> [False]
+				[SYSTEM_HOSTTYPE] --> [release]
+				[SYSTEM_ISSCHEDULED] --> [False]
+				[SYSTEM_JOBATTEMPT] --> [1]
+				[SYSTEM_JOBDISPLAYNAME] --> [Agent job]
+				[SYSTEM_JOBID] --> [7c8f641e-154d-5573-7cd0-b5394df60d8a]
+				[SYSTEM_JOBIDENTIFIER] --> [Stage_b9154e039b35433c873ba2a353fa408a_6_2.Phase_1.__default]
+				[SYSTEM_JOBNAME] --> [__default]
+				[SYSTEM_JOBPARALLELISMTAG] --> [Private]
+				[SYSTEM_JOBPOSITIONINPHASE] --> [1]
+				[SYSTEM_JOBTIMEOUT] --> [0]
+				[SYSTEM_PHASEATTEMPT] --> [1]
+				[SYSTEM_PHASEDISPLAYNAME] --> [Agent job]
+				[SYSTEM_PHASEID] --> [50fffef8-0cf4-544a-c241-e155ba9b632a]
+				[SYSTEM_PHASENAME] --> [Phase_1]
+				[SYSTEM_PIPELINESTARTTIME] --> [2022-04-14 05:16:21+00:00]
+				[SYSTEM_PLANID] --> [d1814302-bbad-4b05-b02e-80e514e0dcca]
+				[SYSTEM_SERVERTYPE] --> [Hosted]
+				[SYSTEM_STAGEATTEMPT] --> [1]
+				[SYSTEM_STAGEDISPLAYNAME] --> [Stage 1]
+				[SYSTEM_STAGEID] --> [40e32c0b-797b-510b-29eb-fbd84fb61b52]
+				[SYSTEM_STAGENAME] --> [Stage_b9154e039b35433c873ba2a353fa408a_6_2]
+				[SYSTEM_TASKDEFINITIONSURI] --> [https://dev.azure.com/SyntbotsAI-RnD/]
+				[SYSTEM_TEAMFOUNDATIONCOLLECTIONURI] --> [https://dev.azure.com/SyntbotsAI-RnD/]
+				[SYSTEM_TEAMFOUNDATIONSERVERURI] --> [https://vsrm.dev.azure.com/SyntbotsAI-RnD/]
+				[SYSTEM_TEAMPROJECT] --> [Assisted-MLOPs]
+				[SYSTEM_TEAMPROJECTID] --> [b9154e03-9b35-433c-873b-a2a353fa408a]
+				[SYSTEM_TIMELINEID] --> [d1814302-bbad-4b05-b02e-80e514e0dcca]
+				[SYSTEM_TOTALJOBSINPHASE] --> [1]
+				[SYSTEM_WORKFOLDER] --> [/home/vsts/work]
+2022-04-14T05:16:23.5831087Z Creating artifacts directory: /home/vsts/work/r1/a
+2022-04-14T05:16:23.5941247Z Created artifacts directory: /home/vsts/work/r1/a
+2022-04-14T05:16:23.5990783Z Download all required tasks.
+2022-04-14T05:16:23.6094513Z Downloading task: DownloadPipelineArtifact (1.198.0)
+2022-04-14T05:16:24.3884683Z Downloading task: UsePythonVersion (0.200.0)
+2022-04-14T05:16:25.0257921Z Downloading task: Bash (3.201.0)
+2022-04-14T05:16:25.3691437Z Downloading task: AzureCLI (2.198.0)
+2022-04-14T05:16:25.8709723Z Downloading task: PublishTestResults (2.198.0)
+2022-04-14T05:16:26.6094891Z Checking job knob settings.
+2022-04-14T05:16:26.6103372Z    Knob: AgentToolsDirectory = /opt/hostedtoolcache Source: ${AGENT_TOOLSDIRECTORY} 
+2022-04-14T05:16:26.6104621Z    Knob: AgentPerflog = /home/vsts/perflog Source: ${VSTS_AGENT_PERFLOG} 
+2022-04-14T05:16:26.6106196Z Finished checking job knob settings.
+2022-04-14T05:16:26.6496749Z Start tracking orphan processes.
+2022-04-14T05:16:26.6656394Z ##[section]Finishing: Initialize job
+
+
+
+DOWNLOAD ARTIFACT
+
+2022-04-14T05:16:26.6908051Z ##[section]Starting: Download artifact - _Assisted_MLOPS - iris_classifier
+2022-04-14T05:16:26.7132117Z ==============================================================================
+2022-04-14T05:16:26.7132766Z Task         : Download pipeline artifact
+2022-04-14T05:16:26.7133209Z Description  : Download a named artifact from a pipeline to a local path
+2022-04-14T05:16:26.7133468Z Version      : 1.198.0
+2022-04-14T05:16:26.7133811Z Author       : Microsoft Corporation
+2022-04-14T05:16:26.7134325Z Help         : Download a named artifact from a pipeline to a local path
+2022-04-14T05:16:26.7134691Z ==============================================================================
+2022-04-14T05:16:27.0814025Z Download from the specified build: #174
+2022-04-14T05:16:27.0815247Z Download artifact to: /home/vsts/work/r1/a/_Assisted_MLOPS/iris_classifier
+2022-04-14T05:16:27.1255129Z Using default max parallelism.
+2022-04-14T05:16:27.1268725Z Max dedup parallelism: 192
+2022-04-14T05:16:27.9104352Z ApplicationInsightsTelemetrySender will correlate events with X-TFS-Session 1ef8dd36-923b-464e-8431-43e38466419f
+2022-04-14T05:16:28.2365393Z DedupManifestArtifactClient will correlate http requests with X-TFS-Session 1ef8dd36-923b-464e-8431-43e38466419f
+2022-04-14T05:16:28.2378799Z Minimatch patterns: [**]
+2022-04-14T05:16:28.6168454Z Filtered 62 files from the Minimatch filters supplied.
+2022-04-14T05:16:28.6211586Z Downloaded 0.0 MB out of 2.5 MB (0%).
+2022-04-14T05:16:30.3818738Z Downloaded 2.5 MB out of 2.5 MB (100%).
+2022-04-14T05:16:30.3832417Z 
+2022-04-14T05:16:30.3834231Z Download statistics:
+2022-04-14T05:16:30.3841561Z Total Content: 2.5 MB
+2022-04-14T05:16:30.3842731Z Physical Content Downloaded: 2.4 MB
+2022-04-14T05:16:30.3843781Z Compression Saved: 0.0 MB
+2022-04-14T05:16:30.3844594Z Local Caching Saved: 0.0 MB
+2022-04-14T05:16:30.3845364Z Chunks Downloaded: 78
+2022-04-14T05:16:30.3846160Z Nodes Downloaded: 0
+2022-04-14T05:16:30.3846617Z 
+2022-04-14T05:16:30.3876853Z Download completed.
+2022-04-14T05:16:33.0119526Z ApplicationInsightsTelemetrySender correlated 2 events with X-TFS-Session 1ef8dd36-923b-464e-8431-43e38466419f
+2022-04-14T05:16:33.0128945Z Downloading artifact finished.
+2022-04-14T05:16:33.0238524Z ##[section]Finishing: Download artifact - _Assisted_MLOPS - iris_classifier
+
+
+Python
+
+2022-04-14T05:16:33.0268809Z ##[section]Starting: Use Python 3.7
+2022-04-14T05:16:33.0277435Z ==============================================================================
+2022-04-14T05:16:33.0277749Z Task         : Use Python version
+2022-04-14T05:16:33.0278244Z Description  : Use the specified version of Python from the tool cache, optionally adding it to the PATH
+2022-04-14T05:16:33.0278551Z Version      : 0.200.0
+2022-04-14T05:16:33.0278745Z Author       : Microsoft Corporation
+2022-04-14T05:16:33.0279068Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/tool/use-python-version
+2022-04-14T05:16:33.0279433Z ==============================================================================
+2022-04-14T05:16:33.3300209Z Found tool in cache: Python 3.7.12 x64
+2022-04-14T05:16:33.3507777Z Prepending PATH environment variable with directory: /opt/hostedtoolcache/Python/3.7.12/x64
+2022-04-14T05:16:33.3514259Z Prepending PATH environment variable with directory: /opt/hostedtoolcache/Python/3.7.12/x64/bin
+2022-04-14T05:16:33.3637778Z ##[section]Finishing: Use Python 3.7
+
+
+Install Dependencis
+
+2022-04-14T05:16:33.3660922Z ##[section]Starting: Install Dependencies
+2022-04-14T05:16:33.3666744Z ==============================================================================
+2022-04-14T05:16:33.3667038Z Task         : Bash
+2022-04-14T05:16:33.3667266Z Description  : Run a Bash script on macOS, Linux, or Windows
+2022-04-14T05:16:33.3667490Z Version      : 3.201.0
+2022-04-14T05:16:33.3667683Z Author       : Microsoft Corporation
+2022-04-14T05:16:33.3667962Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/bash
+2022-04-14T05:16:33.3668311Z ==============================================================================
+2022-04-14T05:16:33.8920829Z Generating script.
+2022-04-14T05:16:33.8922919Z Formatted command: exec bash '/home/vsts/work/r1/a/_Assisted_MLOPS/iris_classifier/a/environment_setup/install-requirements.sh'
+2022-04-14T05:16:33.8924905Z ========================== Starting Command Output ===========================
+2022-04-14T05:16:33.8927822Z [command]/bin/bash /home/vsts/work/_temp/a351bc61-13e7-438c-acbb-e7c2d160e6a3.sh
+2022-04-14T05:16:33.8928180Z Python 3.7.12
+2022-04-14T05:16:34.6896449Z Collecting azure-cli==2.30.0
+2022-04-14T05:16:34.9487005Z   Downloading azure_cli-2.30.0-py3-none-any.whl (2.3 MB)
+2022-04-14T05:16:35.2495398Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 7.8 MB/s eta 0:00:00
+2022-04-14T05:16:35.4302473Z Collecting azure-mgmt-sql~=3.0.1
+2022-04-14T05:16:35.4857412Z   Downloading azure_mgmt_sql-3.0.1-py2.py3-none-any.whl (912 kB)
+2022-04-14T05:16:35.5005593Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 912.9/912.9 KB 76.7 MB/s eta 0:00:00
+2022-04-14T05:16:35.5759231Z Collecting azure-mgmt-authorization~=0.61.0
+2022-04-14T05:16:35.6308110Z   Downloading azure_mgmt_authorization-0.61.0-py2.py3-none-any.whl (94 kB)
+2022-04-14T05:16:35.6391007Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 94.5/94.5 KB 17.0 MB/s eta 0:00:00
+2022-04-14T05:16:35.7317396Z Collecting azure-mgmt-marketplaceordering==1.1.0
+2022-04-14T05:16:35.7848880Z   Downloading azure_mgmt_marketplaceordering-1.1.0-py2.py3-none-any.whl (26 kB)
+2022-04-14T05:16:35.8523449Z Collecting azure-mgmt-search~=8.0
+2022-04-14T05:16:35.9050735Z   Downloading azure_mgmt_search-8.0.0-py2.py3-none-any.whl (71 kB)
+2022-04-14T05:16:35.9126674Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 71.7/71.7 KB 24.0 MB/s eta 0:00:00
+2022-04-14T05:16:36.0864483Z Collecting pytz==2019.1
+2022-04-14T05:16:36.1422037Z   Downloading pytz-2019.1-py2.py3-none-any.whl (510 kB)
+2022-04-14T05:16:36.1570302Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 510.9/510.9 KB 75.4 MB/s eta 0:00:00
+2022-04-14T05:16:36.2303121Z Collecting azure-mgmt-datalake-analytics~=0.2.1
+2022-04-14T05:16:36.2839323Z   Downloading azure_mgmt_datalake_analytics-0.2.1-py2.py3-none-any.whl (146 kB)
+2022-04-14T05:16:36.2897413Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 146.6/146.6 KB 42.8 MB/s eta 0:00:00
+2022-04-14T05:16:36.3593914Z Collecting azure-mgmt-trafficmanager~=0.51.0
+2022-04-14T05:16:36.4138167Z   Downloading azure_mgmt_trafficmanager-0.51.0-py2.py3-none-any.whl (58 kB)
+2022-04-14T05:16:36.4185633Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.6/58.6 KB 16.0 MB/s eta 0:00:00
+2022-04-14T05:16:36.4829791Z Collecting azure-mgmt-extendedlocation~=1.0.0b2
+2022-04-14T05:16:36.5361624Z   Downloading azure_mgmt_extendedlocation-1.0.0-py2.py3-none-any.whl (64 kB)
+2022-04-14T05:16:36.5416388Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 64.4/64.4 KB 17.7 MB/s eta 0:00:00
+2022-04-14T05:16:36.6305133Z Collecting azure-mgmt-compute~=23.1.0
+2022-04-14T05:16:36.6889676Z   Downloading azure_mgmt_compute-23.1.0-py2.py3-none-any.whl (4.8 MB)
+2022-04-14T05:16:36.7736956Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.8/4.8 MB 58.3 MB/s eta 0:00:00
+2022-04-14T05:16:36.8659499Z Collecting azure-mgmt-redis~=13.0.0
+2022-04-14T05:16:36.9211321Z   Downloading azure_mgmt_redis-13.0.0-py2.py3-none-any.whl (75 kB)
+2022-04-14T05:16:36.9267095Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 75.9/75.9 KB 21.9 MB/s eta 0:00:00
+2022-04-14T05:16:36.9935560Z Collecting distro
+2022-04-14T05:16:37.0466155Z   Downloading distro-1.7.0-py3-none-any.whl (20 kB)
+2022-04-14T05:16:37.1161530Z Collecting azure-synapse-accesscontrol~=0.5.0
+2022-04-14T05:16:37.1690628Z   Downloading azure_synapse_accesscontrol-0.5.0-py2.py3-none-any.whl (30 kB)
+2022-04-14T05:16:37.2370906Z Collecting azure-mgmt-security~=2.0.0b1
+2022-04-14T05:16:37.2904158Z   Downloading azure_mgmt_security-2.0.0b1-py2.py3-none-any.whl (344 kB)
+2022-04-14T05:16:37.2985375Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 344.9/344.9 KB 65.2 MB/s eta 0:00:00
+2022-04-14T05:16:37.3715415Z Collecting azure-mgmt-cdn==11.0.0
+2022-04-14T05:16:37.4254681Z   Downloading azure_mgmt_cdn-11.0.0-py2.py3-none-any.whl (252 kB)
+2022-04-14T05:16:37.4340614Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 252.7/252.7 KB 47.9 MB/s eta 0:00:00
+2022-04-14T05:16:37.5088254Z Collecting azure-mgmt-rdbms~=10.0.0
+2022-04-14T05:16:37.5636543Z   Downloading azure_mgmt_rdbms-10.0.0-py2.py3-none-any.whl (644 kB)
+2022-04-14T05:16:37.5738712Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 645.0/645.0 KB 89.0 MB/s eta 0:00:00
+2022-04-14T05:16:37.6420642Z Collecting azure-mgmt-deploymentmanager~=0.2.0
+2022-04-14T05:16:37.6948425Z   Downloading azure_mgmt_deploymentmanager-0.2.0-py2.py3-none-any.whl (41 kB)
+2022-04-14T05:16:37.7006667Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 41.4/41.4 KB 11.8 MB/s eta 0:00:00
+2022-04-14T05:16:37.7665358Z Collecting azure-mgmt-recoveryservices~=2.0.0
+2022-04-14T05:16:37.8210959Z   Downloading azure_mgmt_recoveryservices-2.0.0-py2.py3-none-any.whl (79 kB)
+2022-04-14T05:16:37.8264725Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 79.7/79.7 KB 25.5 MB/s eta 0:00:00
+2022-04-14T05:16:37.9081835Z Collecting packaging~=20.9
+2022-04-14T05:16:37.9609327Z   Downloading packaging-20.9-py2.py3-none-any.whl (40 kB)
+2022-04-14T05:16:37.9658918Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.9/40.9 KB 13.1 MB/s eta 0:00:00
+2022-04-14T05:16:38.0604373Z Collecting azure-synapse-managedprivateendpoints~=0.3.0
+2022-04-14T05:16:38.1134693Z   Downloading azure_synapse_managedprivateendpoints-0.3.0-py2.py3-none-any.whl (19 kB)
+2022-04-14T05:16:38.1850238Z Collecting azure-mgmt-keyvault==9.2.0
+2022-04-14T05:16:38.2395543Z   Downloading azure_mgmt_keyvault-9.2.0-py2.py3-none-any.whl (412 kB)
+2022-04-14T05:16:38.2485491Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 412.4/412.4 KB 69.9 MB/s eta 0:00:00
+2022-04-14T05:16:38.3162734Z Collecting azure-mgmt-apimanagement~=0.2.0
+2022-04-14T05:16:38.3698479Z   Downloading azure_mgmt_apimanagement-0.2.0-py2.py3-none-any.whl (275 kB)
+2022-04-14T05:16:38.3784205Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 275.3/275.3 KB 53.8 MB/s eta 0:00:00
+2022-04-14T05:16:38.4460711Z Collecting azure-mgmt-policyinsights~=1.0.0
+2022-04-14T05:16:38.4989060Z   Downloading azure_mgmt_policyinsights-1.0.0-py2.py3-none-any.whl (78 kB)
+2022-04-14T05:16:38.5041669Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.7/78.7 KB 25.9 MB/s eta 0:00:00
+2022-04-14T05:16:38.5695882Z Collecting azure-mgmt-batchai~=7.0.0b1
+2022-04-14T05:16:38.6238992Z   Downloading azure_mgmt_batchai-7.0.0b1-py2.py3-none-any.whl (99 kB)
+2022-04-14T05:16:38.6341735Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 99.1/99.1 KB 12.7 MB/s eta 0:00:00
+2022-04-14T05:16:38.6992670Z Collecting jsondiff~=1.2.0
+2022-04-14T05:16:38.7526567Z   Downloading jsondiff-1.2.0.tar.gz (8.0 kB)
+2022-04-14T05:16:38.7594406Z   Preparing metadata (setup.py): started
+2022-04-14T05:16:39.1456844Z   Preparing metadata (setup.py): finished with status 'done'
+2022-04-14T05:16:39.2134938Z Collecting chardet~=3.0.4
+2022-04-14T05:16:39.2665183Z   Downloading chardet-3.0.4-py2.py3-none-any.whl (133 kB)
+2022-04-14T05:16:39.2742308Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.4/133.4 KB 36.7 MB/s eta 0:00:00
+2022-04-14T05:16:39.3470725Z Collecting azure-mgmt-netapp~=5.1.0
+2022-04-14T05:16:39.4009291Z   Downloading azure_mgmt_netapp-5.1.0-py2.py3-none-any.whl (127 kB)
+2022-04-14T05:16:39.4069479Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 127.8/127.8 KB 37.3 MB/s eta 0:00:00
+2022-04-14T05:16:39.4797591Z Collecting azure-mgmt-monitor~=2.0.0
+2022-04-14T05:16:39.5357289Z   Downloading azure_mgmt_monitor-2.0.0-py2.py3-none-any.whl (607 kB)
+2022-04-14T05:16:39.5463734Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 607.4/607.4 KB 84.4 MB/s eta 0:00:00
+2022-04-14T05:16:39.6299945Z Collecting azure-mgmt-containerregistry==8.2.0
+2022-04-14T05:16:39.6861014Z   Downloading azure_mgmt_containerregistry-8.2.0-py2.py3-none-any.whl (928 kB)
+2022-04-14T05:16:39.7006724Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 928.0/928.0 KB 87.3 MB/s eta 0:00:00
+2022-04-14T05:16:39.8031970Z Collecting azure-mgmt-kusto~=0.3.0
+2022-04-14T05:16:39.8573435Z   Downloading azure_mgmt_kusto-0.3.0-py2.py3-none-any.whl (73 kB)
+2022-04-14T05:16:39.8626848Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.9/73.9 KB 26.0 MB/s eta 0:00:00
+2022-04-14T05:16:39.9356614Z Collecting azure-mgmt-eventhub~=9.1.0
+2022-04-14T05:16:39.9907839Z   Downloading azure_mgmt_eventhub-9.1.0-py2.py3-none-any.whl (383 kB)
+2022-04-14T05:16:40.0000750Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 383.5/383.5 KB 61.9 MB/s eta 0:00:00
+2022-04-14T05:16:40.0711361Z Collecting azure-mgmt-iothub==2.1.0
+2022-04-14T05:16:40.1258143Z   Downloading azure_mgmt_iothub-2.1.0-py2.py3-none-any.whl (834 kB)
+2022-04-14T05:16:40.1380512Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 834.6/834.6 KB 91.0 MB/s eta 0:00:00
+2022-04-14T05:16:40.2347947Z Collecting fabric~=2.4
+2022-04-14T05:16:40.2879546Z   Downloading fabric-2.7.0-py2.py3-none-any.whl (55 kB)
+2022-04-14T05:16:40.2995466Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 55.3/55.3 KB 17.3 MB/s eta 0:00:00
+2022-04-14T05:16:40.3616374Z Collecting azure-mgmt-msi~=0.2
+2022-04-14T05:16:40.4152171Z   Downloading azure_mgmt_msi-0.2.0-py2.py3-none-any.whl (17 kB)
+2022-04-14T05:16:40.5027008Z Collecting azure-mgmt-resource==19.0.0
+2022-04-14T05:16:40.5597835Z   Downloading azure_mgmt_resource-19.0.0-py2.py3-none-any.whl (2.2 MB)
+2022-04-14T05:16:40.6039986Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 54.6 MB/s eta 0:00:00
+2022-04-14T05:16:40.6944087Z Collecting six>=1.10.0
+2022-04-14T05:16:40.7476060Z   Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+2022-04-14T05:16:40.8210226Z Collecting sshtunnel~=0.1.4
+2022-04-14T05:16:40.8748442Z   Downloading sshtunnel-0.1.5-py2.py3-none-any.whl (23 kB)
+2022-04-14T05:16:40.9464925Z Collecting javaproperties~=0.5.1
+2022-04-14T05:16:40.9994300Z   Downloading javaproperties-0.5.2-py2.py3-none-any.whl (19 kB)
+2022-04-14T05:16:41.0685789Z Collecting azure-keyvault-administration==4.0.0b3
+2022-04-14T05:16:41.1221520Z   Downloading azure_keyvault_administration-4.0.0b3-py2.py3-none-any.whl (77 kB)
+2022-04-14T05:16:41.1278882Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 77.5/77.5 KB 24.2 MB/s eta 0:00:00
+2022-04-14T05:16:41.1985690Z Collecting azure-mgmt-media~=7.0
+2022-04-14T05:16:41.2519789Z   Downloading azure_mgmt_media-7.0.0-py2.py3-none-any.whl (219 kB)
+2022-04-14T05:16:41.2597355Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 219.1/219.1 KB 49.5 MB/s eta 0:00:00
+2022-04-14T05:16:41.3326164Z Collecting azure-mgmt-recoveryservicesbackup~=3.0.0
+2022-04-14T05:16:41.3864972Z   Downloading azure_mgmt_recoveryservicesbackup-3.0.0-py2.py3-none-any.whl (422 kB)
+2022-04-14T05:16:41.3956239Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 422.9/422.9 KB 72.6 MB/s eta 0:00:00
+2022-04-14T05:16:41.4730631Z Collecting azure-mgmt-devtestlabs~=4.0
+2022-04-14T05:16:41.5271362Z   Downloading azure_mgmt_devtestlabs-4.0.0-py2.py3-none-any.whl (137 kB)
+2022-04-14T05:16:41.5337382Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 137.0/137.0 KB 40.9 MB/s eta 0:00:00
+2022-04-14T05:16:41.6005833Z Collecting azure-synapse-spark~=0.2.0
+2022-04-14T05:16:41.6540422Z   Downloading azure_synapse_spark-0.2.0-py2.py3-none-any.whl (29 kB)
+2022-04-14T05:16:41.7242608Z Collecting azure-mgmt-applicationinsights~=1.0.0
+2022-04-14T05:16:41.7783645Z   Downloading azure_mgmt_applicationinsights-1.0.0-py2.py3-none-any.whl (302 kB)
+2022-04-14T05:16:41.7855054Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 303.0/303.0 KB 73.6 MB/s eta 0:00:00
+2022-04-14T05:16:41.8514093Z Collecting azure-mgmt-servicelinker==1.0.0b1
+2022-04-14T05:16:41.9056466Z   Downloading azure_mgmt_servicelinker-1.0.0b1-py2.py3-none-any.whl (32 kB)
+2022-04-14T05:16:41.9746167Z Collecting azure-mgmt-sqlvirtualmachine~=1.0.0b1
+2022-04-14T05:16:42.0307561Z   Downloading azure_mgmt_sqlvirtualmachine-1.0.0b2-py3-none-any.whl (57 kB)
+2022-04-14T05:16:42.0363941Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.9/57.9 KB 17.7 MB/s eta 0:00:00
+2022-04-14T05:16:42.1167635Z Collecting azure-multiapi-storage~=0.7.0
+2022-04-14T05:16:42.1709077Z   Downloading azure_multiapi_storage-0.7.0-py2.py3-none-any.whl (5.5 MB)
+2022-04-14T05:16:42.2892424Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.5/5.5 MB 47.6 MB/s eta 0:00:00
+2022-04-14T05:16:42.3863446Z Collecting azure-mgmt-appconfiguration~=2.0.0
+2022-04-14T05:16:42.4661211Z   Downloading azure_mgmt_appconfiguration-2.0.0-py2.py3-none-any.whl (61 kB)
+2022-04-14T05:16:42.4732538Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.5/61.5 KB 19.0 MB/s eta 0:00:00
+2022-04-14T05:16:42.5482480Z Collecting azure-mgmt-iotcentral~=9.0.0b1
+2022-04-14T05:16:42.6012839Z   Downloading azure_mgmt_iotcentral-9.0.0-py2.py3-none-any.whl (31 kB)
+2022-04-14T05:16:42.6699698Z Collecting azure-mgmt-signalr~=1.0.0b2
+2022-04-14T05:16:42.7281142Z   Downloading azure_mgmt_signalr-1.0.0-py2.py3-none-any.whl (74 kB)
+2022-04-14T05:16:42.7348764Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 74.1/74.1 KB 20.0 MB/s eta 0:00:00
+2022-04-14T05:16:42.8052421Z Collecting azure-mgmt-cognitiveservices~=12.0.0
+2022-04-14T05:16:42.8587896Z   Downloading azure_mgmt_cognitiveservices-12.0.0-py2.py3-none-any.whl (78 kB)
+2022-04-14T05:16:42.8645713Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.6/78.6 KB 22.9 MB/s eta 0:00:00
+2022-04-14T05:16:42.9323560Z Collecting azure-mgmt-advisor==9.0.0
+2022-04-14T05:16:42.9853066Z   Downloading azure_mgmt_advisor-9.0.0-py2.py3-none-any.whl (46 kB)
+2022-04-14T05:16:42.9909109Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 46.9/46.9 KB 14.3 MB/s eta 0:00:00
+2022-04-14T05:16:43.0578657Z Collecting azure-mgmt-datamigration~=10.0.0
+2022-04-14T05:16:43.1115562Z   Downloading azure_mgmt_datamigration-10.0.0-py2.py3-none-any.whl (174 kB)
+2022-04-14T05:16:43.1278261Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 174.5/174.5 KB 12.6 MB/s eta 0:00:00
+2022-04-14T05:16:43.1948682Z Collecting azure-mgmt-billing==6.0.0
+2022-04-14T05:16:43.2484096Z   Downloading azure_mgmt_billing-6.0.0-py2.py3-none-any.whl (166 kB)
+2022-04-14T05:16:43.2555524Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 167.0/167.0 KB 42.3 MB/s eta 0:00:00
+2022-04-14T05:16:43.3217958Z Collecting azure-mgmt-iothubprovisioningservices~=0.3.0
+2022-04-14T05:16:43.3755678Z   Downloading azure_mgmt_iothubprovisioningservices-0.3.0-py2.py3-none-any.whl (32 kB)
+2022-04-14T05:16:43.4518889Z Collecting azure-mgmt-web~=4.0.0
+2022-04-14T05:16:43.5100984Z   Downloading azure_mgmt_web-4.0.0-py2.py3-none-any.whl (3.9 MB)
+2022-04-14T05:16:43.5824498Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.9/3.9 MB 56.0 MB/s eta 0:00:00
+2022-04-14T05:16:43.6611407Z Collecting azure-mgmt-managedservices~=1.0
+2022-04-14T05:16:43.7145513Z   Downloading azure_mgmt_managedservices-1.0.0-py2.py3-none-any.whl (38 kB)
+2022-04-14T05:16:43.7875538Z Collecting azure-mgmt-containerinstance~=9.1.0
+2022-04-14T05:16:43.8427918Z   Downloading azure_mgmt_containerinstance-9.1.0-py2.py3-none-any.whl (58 kB)
+2022-04-14T05:16:43.8480875Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.0/58.0 KB 19.2 MB/s eta 0:00:00
+2022-04-14T05:16:43.9162501Z Collecting azure-mgmt-synapse~=2.1.0b2
+2022-04-14T05:16:43.9704271Z   Downloading azure_mgmt_synapse-2.1.0b4-py3-none-any.whl (514 kB)
+2022-04-14T05:16:43.9805916Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 514.7/514.7 KB 74.9 MB/s eta 0:00:00
+2022-04-14T05:16:44.1013732Z Collecting azure-cli-core==2.30.0
+2022-04-14T05:16:44.1550782Z   Downloading azure_cli_core-2.30.0-py3-none-any.whl (181 kB)
+2022-04-14T05:16:44.1624882Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 181.5/181.5 KB 44.9 MB/s eta 0:00:00
+2022-04-14T05:16:44.2439978Z Collecting azure-mgmt-containerservice~=16.1.0
+2022-04-14T05:16:44.2997206Z   Downloading azure_mgmt_containerservice-16.1.0-py2.py3-none-any.whl (1.7 MB)
+2022-04-14T05:16:44.3203907Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 101.1 MB/s eta 0:00:00
+2022-04-14T05:16:44.4184275Z Collecting azure-mgmt-cosmosdb~=7.0.0b2
+2022-04-14T05:16:44.4731325Z   Downloading azure_mgmt_cosmosdb-7.0.0b3-py3-none-any.whl (385 kB)
+2022-04-14T05:16:44.4814440Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 385.4/385.4 KB 72.2 MB/s eta 0:00:00
+2022-04-14T05:16:44.5514820Z Collecting azure-storage-common~=1.4
+2022-04-14T05:16:44.6044613Z   Downloading azure_storage_common-1.4.2-py2.py3-none-any.whl (47 kB)
+2022-04-14T05:16:44.6093137Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 47.4/47.4 KB 16.3 MB/s eta 0:00:00
+2022-04-14T05:16:44.6759748Z Collecting xmltodict~=0.12
+2022-04-14T05:16:44.7289898Z   Downloading xmltodict-0.12.0-py2.py3-none-any.whl (9.2 kB)
+2022-04-14T05:16:44.8050768Z Collecting azure-mgmt-batch~=16.0.0
+2022-04-14T05:16:44.8592654Z   Downloading azure_mgmt_batch-16.0.0-py2.py3-none-any.whl (139 kB)
+2022-04-14T05:16:44.8656611Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 139.6/139.6 KB 40.7 MB/s eta 0:00:00
+2022-04-14T05:16:44.9324990Z Collecting azure-loganalytics~=0.1.0
+2022-04-14T05:16:44.9857363Z   Downloading azure_loganalytics-0.1.1-py2.py3-none-any.whl (16 kB)
+2022-04-14T05:16:45.0899731Z Collecting PyNaCl~=1.4.0
+2022-04-14T05:16:45.1428457Z   Downloading PyNaCl-1.4.0-cp35-abi3-manylinux1_x86_64.whl (961 kB)
+2022-04-14T05:16:45.1562354Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 961.1/961.1 KB 92.7 MB/s eta 0:00:00
+2022-04-14T05:16:45.2464877Z Collecting azure-mgmt-network~=19.1.0
+2022-04-14T05:16:45.3005352Z   Downloading azure_mgmt_network-19.1.0-py2.py3-none-any.whl (22.0 MB)
+2022-04-14T05:16:45.7619802Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 22.0/22.0 MB 39.5 MB/s eta 0:00:00
+2022-04-14T05:16:45.9404126Z Collecting azure-graphrbac~=0.60.0
+2022-04-14T05:16:46.0040446Z   Downloading azure_graphrbac-0.60.0-py2.py3-none-any.whl (139 kB)
+2022-04-14T05:16:46.0108439Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 139.7/139.7 KB 38.4 MB/s eta 0:00:00
+2022-04-14T05:16:46.0835957Z Collecting azure-keyvault-keys~=4.5.0b4
+2022-04-14T05:16:46.1401704Z   Downloading azure_keyvault_keys-4.5.0-py3-none-any.whl (375 kB)
+2022-04-14T05:16:46.1531264Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 375.5/375.5 KB 36.4 MB/s eta 0:00:00
+2022-04-14T05:16:46.2198737Z Collecting azure-mgmt-relay~=0.1.0
+2022-04-14T05:16:46.2725243Z   Downloading azure_mgmt_relay-0.1.0-py2.py3-none-any.whl (36 kB)
+2022-04-14T05:16:46.3517372Z Collecting semver==2.13.0
+2022-04-14T05:16:46.4050700Z   Downloading semver-2.13.0-py2.py3-none-any.whl (12 kB)
+2022-04-14T05:16:46.4719862Z Collecting azure-mgmt-maps~=2.0.0
+2022-04-14T05:16:46.5246104Z   Downloading azure_mgmt_maps-2.0.0-py2.py3-none-any.whl (38 kB)
+2022-04-14T05:16:46.6031127Z Collecting azure-identity
+2022-04-14T05:16:46.6569078Z   Downloading azure_identity-1.9.0-py3-none-any.whl (134 kB)
+2022-04-14T05:16:46.6637268Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 134.0/134.0 KB 35.5 MB/s eta 0:00:00
+2022-04-14T05:16:46.7499927Z Collecting websocket-client~=0.56.0
+2022-04-14T05:16:46.8040510Z   Downloading websocket_client-0.56.0-py2.py3-none-any.whl (200 kB)
+2022-04-14T05:16:46.8112324Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 200.6/200.6 KB 51.3 MB/s eta 0:00:00
+2022-04-14T05:16:46.8884868Z Collecting azure-datalake-store~=0.0.49
+2022-04-14T05:16:46.9411931Z   Downloading azure_datalake_store-0.0.52-py2.py3-none-any.whl (61 kB)
+2022-04-14T05:16:46.9473178Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.7/61.7 KB 18.2 MB/s eta 0:00:00
+2022-04-14T05:16:47.0679093Z Collecting azure-mgmt-databoxedge~=1.0.0
+2022-04-14T05:16:47.1243950Z   Downloading azure_mgmt_databoxedge-1.0.0-py2.py3-none-any.whl (1.3 MB)
+2022-04-14T05:16:47.1406960Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 96.9 MB/s eta 0:00:00
+2022-04-14T05:16:47.2239391Z Collecting azure-mgmt-dns~=8.0.0
+2022-04-14T05:16:47.2777326Z   Downloading azure_mgmt_dns-8.0.0-py2.py3-none-any.whl (118 kB)
+2022-04-14T05:16:47.2838833Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 118.9/118.9 KB 34.6 MB/s eta 0:00:00
+2022-04-14T05:16:47.3484575Z Collecting azure-mgmt-servicefabricmanagedclusters~=1.0.0
+2022-04-14T05:16:47.4064303Z   Downloading azure_mgmt_servicefabricmanagedclusters-1.0.0-py2.py3-none-any.whl (112 kB)
+2022-04-14T05:16:47.4124682Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 112.5/112.5 KB 34.6 MB/s eta 0:00:00
+2022-04-14T05:16:47.4790938Z Collecting azure-mgmt-imagebuilder~=0.4.0
+2022-04-14T05:16:47.5324914Z   Downloading azure_mgmt_imagebuilder-0.4.0-py2.py3-none-any.whl (29 kB)
+2022-04-14T05:16:47.6073390Z Collecting azure-mgmt-datalake-store~=0.5.0
+2022-04-14T05:16:47.6605223Z   Downloading azure_mgmt_datalake_store-0.5.0-py2.py3-none-any.whl (88 kB)
+2022-04-14T05:16:47.6667579Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 88.7/88.7 KB 26.0 MB/s eta 0:00:00
+2022-04-14T05:16:47.7393965Z Collecting azure-batch~=11.0.0
+2022-04-14T05:16:47.8033911Z   Downloading azure_batch-11.0.0-py2.py3-none-any.whl (228 kB)
+2022-04-14T05:16:47.8136585Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 228.0/228.0 KB 31.3 MB/s eta 0:00:00
+2022-04-14T05:16:47.8833039Z Collecting azure-mgmt-hdinsight~=9.0.0
+2022-04-14T05:16:47.9426787Z   Downloading azure_mgmt_hdinsight-9.0.0-py2.py3-none-any.whl (125 kB)
+2022-04-14T05:16:47.9491291Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 125.7/125.7 KB 32.3 MB/s eta 0:00:00
+2022-04-14T05:16:48.0122356Z Collecting azure-mgmt-privatedns~=1.0.0
+2022-04-14T05:16:48.0673098Z   Downloading azure_mgmt_privatedns-1.0.0-py2.py3-none-any.whl (43 kB)
+2022-04-14T05:16:48.0728610Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 44.0/44.0 KB 13.8 MB/s eta 0:00:00
+2022-04-14T05:16:48.1384431Z Collecting azure-mgmt-redhatopenshift==1.0.0
+2022-04-14T05:16:48.1991446Z   Downloading azure_mgmt_redhatopenshift-1.0.0-py2.py3-none-any.whl (41 kB)
+2022-04-14T05:16:48.2041189Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 41.1/41.1 KB 15.2 MB/s eta 0:00:00
+2022-04-14T05:16:48.2715090Z Collecting azure-mgmt-reservations==0.6.0
+2022-04-14T05:16:48.3287913Z   Downloading azure_mgmt_reservations-0.6.0-py2.py3-none-any.whl (33 kB)
+2022-04-14T05:16:48.4026146Z Collecting azure-cosmos>=3.0.2,~=3.0
+2022-04-14T05:16:48.4594631Z   Downloading azure_cosmos-3.2.0-py2.py3-none-any.whl (106 kB)
+2022-04-14T05:16:48.4658915Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 106.6/106.6 KB 32.3 MB/s eta 0:00:00
+2022-04-14T05:16:48.5338378Z Collecting azure-mgmt-managementgroups~=0.1
+2022-04-14T05:16:48.5881808Z   Downloading azure_mgmt_managementgroups-0.2.0-py2.py3-none-any.whl (59 kB)
+2022-04-14T05:16:48.5943141Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 59.5/59.5 KB 18.3 MB/s eta 0:00:00
+2022-04-14T05:16:48.6648910Z Collecting azure-appconfiguration~=1.1.1
+2022-04-14T05:16:48.7179132Z   Downloading azure_appconfiguration-1.1.1-py2.py3-none-any.whl (37 kB)
+2022-04-14T05:16:48.7882670Z Collecting azure-synapse-artifacts~=0.8.0
+2022-04-14T05:16:48.8451312Z   Downloading azure_synapse_artifacts-0.8.0-py2.py3-none-any.whl (997 kB)
+2022-04-14T05:16:48.8590660Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 997.4/997.4 KB 94.1 MB/s eta 0:00:00
+2022-04-14T05:16:48.9289013Z Collecting azure-mgmt-consumption~=2.0
+2022-04-14T05:16:48.9821393Z   Downloading azure_mgmt_consumption-2.0.0-py2.py3-none-any.whl (46 kB)
+2022-04-14T05:16:48.9876036Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 46.3/46.3 KB 14.9 MB/s eta 0:00:00
+2022-04-14T05:16:49.0527588Z Collecting azure-mgmt-botservice~=0.3.0
+2022-04-14T05:16:49.1054636Z   Downloading azure_mgmt_botservice-0.3.0-py2.py3-none-any.whl (37 kB)
+2022-04-14T05:16:49.1771431Z Collecting azure-mgmt-servicebus~=6.0.0
+2022-04-14T05:16:49.2312176Z   Downloading azure_mgmt_servicebus-6.0.0-py2.py3-none-any.whl (120 kB)
+2022-04-14T05:16:49.2378419Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 120.7/120.7 KB 32.2 MB/s eta 0:00:00
+2022-04-14T05:16:49.3093116Z Collecting azure-mgmt-eventgrid==9.0.0
+2022-04-14T05:16:49.3626433Z   Downloading azure_mgmt_eventgrid-9.0.0-py2.py3-none-any.whl (178 kB)
+2022-04-14T05:16:49.3694906Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 178.4/178.4 KB 46.1 MB/s eta 0:00:00
+2022-04-14T05:16:49.4353909Z Collecting antlr4-python3-runtime~=4.7.2
+2022-04-14T05:16:49.4879603Z   Downloading antlr4-python3-runtime-4.7.2.tar.gz (112 kB)
+2022-04-14T05:16:49.5136600Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 112.3/112.3 KB 33.4 MB/s eta 0:00:00
+2022-04-14T05:16:49.5332512Z   Preparing metadata (setup.py): started
+2022-04-14T05:16:49.7146401Z   Preparing metadata (setup.py): finished with status 'done'
+2022-04-14T05:16:49.7855235Z Collecting azure-keyvault~=1.1.0
+2022-04-14T05:16:49.8394036Z   Downloading azure_keyvault-1.1.0-py2.py3-none-any.whl (352 kB)
+2022-04-14T05:16:49.8486129Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 352.3/352.3 KB 62.4 MB/s eta 0:00:00
+2022-04-14T05:16:49.9223032Z Collecting scp~=0.13.2
+2022-04-14T05:16:49.9747416Z   Downloading scp-0.13.6-py2.py3-none-any.whl (8.2 kB)
+2022-04-14T05:16:50.0437026Z Collecting azure-mgmt-servicefabric~=1.0.0
+2022-04-14T05:16:50.0972604Z   Downloading azure_mgmt_servicefabric-1.0.0-py2.py3-none-any.whl (139 kB)
+2022-04-14T05:16:50.1041467Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 139.6/139.6 KB 34.4 MB/s eta 0:00:00
+2022-04-14T05:16:50.1769979Z Collecting azure-mgmt-loganalytics~=11.0.0
+2022-04-14T05:16:50.2308641Z   Downloading azure_mgmt_loganalytics-11.0.0-py2.py3-none-any.whl (145 kB)
+2022-04-14T05:16:50.2372051Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 145.2/145.2 KB 39.2 MB/s eta 0:00:00
+2022-04-14T05:16:50.3264280Z Collecting PyGithub~=1.38
+2022-04-14T05:16:50.3799847Z   Downloading PyGithub-1.55-py3-none-any.whl (291 kB)
+2022-04-14T05:16:50.3902350Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 291.7/291.7 KB 39.6 MB/s eta 0:00:00
+2022-04-14T05:16:50.4775598Z Collecting azure-mgmt-storage~=19.0.0
+2022-04-14T05:16:50.5331878Z   Downloading azure_mgmt_storage-19.0.0-py2.py3-none-any.whl (1.8 MB)
+2022-04-14T05:16:50.5558098Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 93.4 MB/s eta 0:00:00
+2022-04-14T05:16:50.6505656Z Collecting azure-cli-telemetry==1.0.6.*
+2022-04-14T05:16:50.7032682Z   Downloading azure_cli_telemetry-1.0.6-py3-none-any.whl (10 kB)
+2022-04-14T05:16:50.7793657Z Collecting msal-extensions<0.4,>=0.3.0
+2022-04-14T05:16:50.8320967Z   Downloading msal_extensions-0.3.1-py2.py3-none-any.whl (18 kB)
+2022-04-14T05:16:50.9408706Z Collecting humanfriendly<10.0,>=4.7
+2022-04-14T05:16:50.9946406Z   Downloading humanfriendly-9.2-py2.py3-none-any.whl (86 kB)
+2022-04-14T05:16:51.0000560Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 86.7/86.7 KB 27.2 MB/s eta 0:00:00
+2022-04-14T05:16:51.0809397Z Collecting pyopenssl>=17.1.0
+2022-04-14T05:16:51.1343075Z   Downloading pyOpenSSL-22.0.0-py2.py3-none-any.whl (55 kB)
+2022-04-14T05:16:51.1460858Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 55.8/55.8 KB 5.5 MB/s eta 0:00:00
+2022-04-14T05:16:51.2304088Z Collecting PyJWT>=2.1.0
+2022-04-14T05:16:51.2836961Z   Downloading PyJWT-2.3.0-py3-none-any.whl (16 kB)
+2022-04-14T05:16:51.3894343Z Collecting paramiko<3.0.0,>=2.0.8
+2022-04-14T05:16:51.4434834Z   Downloading paramiko-2.10.3-py2.py3-none-any.whl (211 kB)
+2022-04-14T05:16:51.4508474Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 211.9/211.9 KB 52.1 MB/s eta 0:00:00
+2022-04-14T05:16:51.8418016Z Collecting cryptography
+2022-04-14T05:16:51.8951586Z   Downloading cryptography-36.0.2-cp36-abi3-manylinux_2_24_x86_64.whl (3.6 MB)
+2022-04-14T05:16:51.9684776Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.6/3.6 MB 50.5 MB/s eta 0:00:00
+2022-04-14T05:16:52.0483630Z Collecting jmespath
+2022-04-14T05:16:52.1033762Z   Downloading jmespath-1.0.0-py3-none-any.whl (23 kB)
+2022-04-14T05:16:52.2113187Z Collecting requests[socks]~=2.25.1
+2022-04-14T05:16:52.2647862Z   Downloading requests-2.25.1-py2.py3-none-any.whl (61 kB)
+2022-04-14T05:16:52.2728799Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.2/61.2 KB 10.0 MB/s eta 0:00:00
+2022-04-14T05:16:52.3721769Z Collecting urllib3[secure]>=1.26.5
+2022-04-14T05:16:52.4252123Z   Downloading urllib3-1.26.9-py2.py3-none-any.whl (138 kB)
+2022-04-14T05:16:52.4321918Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 139.0/139.0 KB 35.5 MB/s eta 0:00:00
+2022-04-14T05:16:52.4998426Z Collecting azure-mgmt-core<2,>=1.2.0
+2022-04-14T05:16:52.5532501Z   Downloading azure_mgmt_core-1.3.0-py2.py3-none-any.whl (25 kB)
+2022-04-14T05:16:52.6267790Z Collecting pkginfo>=1.5.0.1
+2022-04-14T05:16:52.6803412Z   Downloading pkginfo-1.8.2-py2.py3-none-any.whl (26 kB)
+2022-04-14T05:16:52.7611945Z Collecting knack~=0.8.2
+2022-04-14T05:16:52.8152877Z   Downloading knack-0.8.2-py3-none-any.whl (59 kB)
+2022-04-14T05:16:52.8205786Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 59.7/59.7 KB 17.7 MB/s eta 0:00:00
+2022-04-14T05:16:53.0105333Z Collecting psutil~=5.8
+2022-04-14T05:16:53.0665937Z   Downloading psutil-5.9.0-cp37-cp37m-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (280 kB)
+2022-04-14T05:16:53.0728188Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 280.7/280.7 KB 59.5 MB/s eta 0:00:00
+2022-04-14T05:16:53.1608062Z Collecting argcomplete~=1.8
+2022-04-14T05:16:53.2145622Z   Downloading argcomplete-1.12.3-py2.py3-none-any.whl (38 kB)
+2022-04-14T05:16:53.2926767Z Collecting msal<2.0.0,>=1.15.0
+2022-04-14T05:16:53.3458713Z   Downloading msal-1.17.0-py2.py3-none-any.whl (79 kB)
+2022-04-14T05:16:53.3519069Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 79.3/79.3 KB 23.9 MB/s eta 0:00:00
+2022-04-14T05:16:53.4457199Z Collecting msrest>=0.6.21
+2022-04-14T05:16:53.4985972Z   Downloading msrest-0.6.21-py2.py3-none-any.whl (85 kB)
+2022-04-14T05:16:53.5040964Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 85.2/85.2 KB 26.2 MB/s eta 0:00:00
+2022-04-14T05:16:53.5803916Z Collecting azure-common~=1.1
+2022-04-14T05:16:53.6331048Z   Downloading azure_common-1.1.28-py2.py3-none-any.whl (14 kB)
+2022-04-14T05:16:53.7148856Z Collecting azure-core<2.0.0,>=1.7.0
+2022-04-14T05:16:53.7931963Z   Downloading azure_core-1.23.1-py3-none-any.whl (178 kB)
+2022-04-14T05:16:53.8043127Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 178.2/178.2 KB 20.1 MB/s eta 0:00:00
+2022-04-14T05:16:53.9476267Z Collecting msrestazure<2.0.0,>=0.4.32
+2022-04-14T05:16:54.0005382Z   Downloading msrestazure-0.6.4-py2.py3-none-any.whl (40 kB)
+2022-04-14T05:16:54.0063327Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.5/40.5 KB 11.7 MB/s eta 0:00:00
+2022-04-14T05:16:54.1063935Z Collecting portalocker~=1.2
+2022-04-14T05:16:54.1596295Z   Downloading portalocker-1.7.1-py2.py3-none-any.whl (10 kB)
+2022-04-14T05:16:54.2305562Z Collecting applicationinsights<0.12,>=0.11.1
+2022-04-14T05:16:54.2839243Z   Downloading applicationinsights-0.11.10-py2.py3-none-any.whl (55 kB)
+2022-04-14T05:16:54.2897032Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 55.1/55.1 KB 17.6 MB/s eta 0:00:00
+2022-04-14T05:16:54.3536682Z Collecting requests>=2.10.0
+2022-04-14T05:16:54.4064285Z   Downloading requests-2.27.1-py2.py3-none-any.whl (63 kB)
+2022-04-14T05:16:54.4121574Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.1/63.1 KB 18.9 MB/s eta 0:00:00
+2022-04-14T05:16:54.7002538Z Collecting cffi
+2022-04-14T05:16:54.7540241Z   Downloading cffi-1.15.0-cp37-cp37m-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (427 kB)
+2022-04-14T05:16:54.7663305Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 427.1/427.1 KB 45.8 MB/s eta 0:00:00
+2022-04-14T05:16:54.8410138Z Collecting adal>=0.4.2
+2022-04-14T05:16:54.8938886Z   Downloading adal-1.2.7-py2.py3-none-any.whl (55 kB)
+2022-04-14T05:16:54.8999016Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 55.5/55.5 KB 15.5 MB/s eta 0:00:00
+2022-04-14T05:16:54.9889913Z Collecting azure-nspkg>=2.0.0
+2022-04-14T05:16:55.0414549Z   Downloading azure_nspkg-3.0.2-py3-none-any.whl (1.5 kB)
+2022-04-14T05:16:55.2376696Z Collecting azure-mgmt-nspkg>=2.0.0
+2022-04-14T05:16:55.2919100Z   Downloading azure_mgmt_nspkg-3.0.2-py3-none-any.whl (1.6 kB)
+2022-04-14T05:16:55.4080471Z Collecting azure-mgmt-datalake-nspkg>=2.0.0
+2022-04-14T05:16:55.4609967Z   Downloading azure_mgmt_datalake_nspkg-3.0.1-py3-none-any.whl (1.7 kB)
+2022-04-14T05:16:56.0298369Z Collecting python-dateutil
+2022-04-14T05:16:56.0843478Z   Downloading python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+2022-04-14T05:16:56.0941799Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 247.7/247.7 KB 36.6 MB/s eta 0:00:00
+2022-04-14T05:16:56.3396785Z Collecting pathlib2
+2022-04-14T05:16:56.8950784Z   Downloading pathlib2-2.3.7.post1-py2.py3-none-any.whl (18 kB)
+2022-04-14T05:16:56.8952156Z Collecting invoke<2.0,>=1.3
+2022-04-14T05:16:56.8953186Z   Downloading invoke-1.7.0-py3-none-any.whl (171 kB)
+2022-04-14T05:16:56.8954196Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 171.5/171.5 KB 44.4 MB/s eta 0:00:00
+2022-04-14T05:16:56.8954757Z Collecting pyparsing>=2.0.2
+2022-04-14T05:16:56.8955458Z   Downloading pyparsing-3.0.8-py3-none-any.whl (98 kB)
+2022-04-14T05:16:56.8956763Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 98.5/98.5 KB 30.8 MB/s eta 0:00:00
+2022-04-14T05:16:56.9177610Z Collecting deprecated
+2022-04-14T05:16:56.9705317Z   Downloading Deprecated-1.2.13-py2.py3-none-any.whl (9.6 kB)
+2022-04-14T05:16:57.3187795Z Collecting importlib-metadata<5,>=0.23
+2022-04-14T05:16:57.3714011Z   Downloading importlib_metadata-4.11.3-py3-none-any.whl (18 kB)
+2022-04-14T05:16:57.4741101Z Collecting typing-extensions>=4.0.1
+2022-04-14T05:16:57.5274632Z   Downloading typing_extensions-4.1.1-py3-none-any.whl (26 kB)
+2022-04-14T05:16:57.6947541Z Collecting pycparser
+2022-04-14T05:16:57.7475497Z   Downloading pycparser-2.21-py2.py3-none-any.whl (118 kB)
+2022-04-14T05:16:57.7536535Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 118.7/118.7 KB 33.5 MB/s eta 0:00:00
+2022-04-14T05:16:57.9274475Z Collecting colorama
+2022-04-14T05:16:57.9805574Z   Downloading colorama-0.4.4-py2.py3-none-any.whl (16 kB)
+2022-04-14T05:16:58.0503148Z Collecting tabulate
+2022-04-14T05:16:58.1037492Z   Downloading tabulate-0.8.9-py3-none-any.whl (25 kB)
+2022-04-14T05:16:58.1924801Z Collecting pygments
+2022-04-14T05:16:58.2477615Z   Downloading Pygments-2.11.2-py3-none-any.whl (1.1 MB)
+2022-04-14T05:16:58.2625219Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 87.8 MB/s eta 0:00:00
+2022-04-14T05:16:58.3757562Z Collecting pyyaml
+2022-04-14T05:16:58.4301740Z   Downloading PyYAML-6.0-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl (596 kB)
+2022-04-14T05:16:58.4401482Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 596.3/596.3 KB 83.0 MB/s eta 0:00:00
+2022-04-14T05:16:58.6182423Z Collecting isodate>=0.6.0
+2022-04-14T05:16:58.6718911Z   Downloading isodate-0.6.1-py2.py3-none-any.whl (41 kB)
+2022-04-14T05:16:58.6778851Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 41.7/41.7 KB 11.0 MB/s eta 0:00:00
+2022-04-14T05:16:58.7660126Z Collecting requests-oauthlib>=0.5.0
+2022-04-14T05:16:58.8193445Z   Downloading requests_oauthlib-1.3.1-py2.py3-none-any.whl (23 kB)
+2022-04-14T05:16:58.9014970Z Collecting certifi>=2017.4.17
+2022-04-14T05:16:58.9551621Z   Downloading certifi-2021.10.8-py2.py3-none-any.whl (149 kB)
+2022-04-14T05:16:58.9621628Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 149.2/149.2 KB 39.5 MB/s eta 0:00:00
+2022-04-14T05:16:59.1434986Z Collecting bcrypt>=3.1.3
+2022-04-14T05:16:59.1962641Z   Downloading bcrypt-3.2.0-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl (61 kB)
+2022-04-14T05:16:59.2013365Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.9/61.9 KB 20.5 MB/s eta 0:00:00
+2022-04-14T05:16:59.4881175Z Collecting idna<4,>=2.5
+2022-04-14T05:16:59.5407141Z   Downloading idna-3.3-py3-none-any.whl (61 kB)
+2022-04-14T05:16:59.5459575Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.2/61.2 KB 20.8 MB/s eta 0:00:00
+2022-04-14T05:16:59.6355937Z Collecting charset-normalizer~=2.0.0
+2022-04-14T05:16:59.6882078Z   Downloading charset_normalizer-2.0.12-py3-none-any.whl (39 kB)
+2022-04-14T05:16:59.7368183Z Collecting idna<4,>=2.5
+2022-04-14T05:16:59.7894356Z   Downloading idna-2.10-py2.py3-none-any.whl (58 kB)
+2022-04-14T05:16:59.7952801Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.8/58.8 KB 17.7 MB/s eta 0:00:00
+2022-04-14T05:16:59.8658683Z Collecting PySocks!=1.5.7,>=1.5.6
+2022-04-14T05:16:59.9190036Z   Downloading PySocks-1.7.1-py3-none-any.whl (16 kB)
+2022-04-14T05:17:00.2550482Z Collecting wrapt<2,>=1.10
+2022-04-14T05:17:00.3082120Z   Downloading wrapt-1.14.0-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (75 kB)
+2022-04-14T05:17:00.3137912Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 75.2/75.2 KB 23.5 MB/s eta 0:00:00
+2022-04-14T05:17:00.6225245Z Collecting zipp>=0.5
+2022-04-14T05:17:00.6754652Z   Downloading zipp-3.8.0-py3-none-any.whl (5.4 kB)
+2022-04-14T05:17:00.8938694Z Collecting oauthlib>=3.0.0
+2022-04-14T05:17:00.9464169Z   Downloading oauthlib-3.2.0-py3-none-any.whl (151 kB)
+2022-04-14T05:17:00.9525558Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 151.5/151.5 KB 46.3 MB/s eta 0:00:00
+2022-04-14T05:17:01.2792125Z Using legacy 'setup.py install' for antlr4-python3-runtime, since package 'wheel' is not installed.
+2022-04-14T05:17:01.2798056Z Using legacy 'setup.py install' for jsondiff, since package 'wheel' is not installed.
+2022-04-14T05:17:02.1065236Z Installing collected packages: tabulate, pytz, portalocker, pkginfo, jsondiff, invoke, chardet, certifi, azure-nspkg, azure-common, applicationinsights, antlr4-python3-runtime, zipp, xmltodict, wrapt, urllib3, typing-extensions, six, semver, pyyaml, PySocks, pyparsing, PyJWT, pygments, pycparser, psutil, oauthlib, jmespath, idna, humanfriendly, distro, colorama, azure-mgmt-nspkg, azure-cli-telemetry, websocket-client, requests, python-dateutil, pathlib2, packaging, javaproperties, isodate, importlib-metadata, deprecated, cffi, azure-mgmt-datalake-nspkg, requests-oauthlib, PyNaCl, cryptography, bcrypt, azure-cosmos, azure-core, argcomplete, pyopenssl, PyGithub, paramiko, msrest, knack, azure-storage-common, azure-mgmt-core, adal, sshtunnel, scp, msrestazure, msal, fabric, azure-synapse-spark, azure-synapse-managedprivateendpoints, azure-synapse-artifacts, azure-synapse-accesscontrol, azure-multiapi-storage, azure-mgmt-web, azure-mgmt-synapse, azure-mgmt-storage, azure-mgmt-sqlvirtualmachine, azure-mgmt-sql, azure-mgmt-signalr, azure-mgmt-servicelinker, azure-mgmt-servicefabricmanagedclusters, azure-mgmt-servicefabric, azure-mgmt-servicebus, azure-mgmt-security, azure-mgmt-search, azure-mgmt-resource, azure-mgmt-redis, azure-mgmt-redhatopenshift, azure-mgmt-recoveryservicesbackup, azure-mgmt-recoveryservices, azure-mgmt-rdbms, azure-mgmt-privatedns, azure-mgmt-policyinsights, azure-mgmt-network, azure-mgmt-netapp, azure-mgmt-monitor, azure-mgmt-media, azure-mgmt-marketplaceordering, azure-mgmt-maps, azure-mgmt-loganalytics, azure-mgmt-keyvault, azure-mgmt-iothub, azure-mgmt-iotcentral, azure-mgmt-hdinsight, azure-mgmt-extendedlocation, azure-mgmt-eventhub, azure-mgmt-eventgrid, azure-mgmt-dns, azure-mgmt-datamigration, azure-mgmt-databoxedge, azure-mgmt-cosmosdb, azure-mgmt-containerservice, azure-mgmt-containerregistry, azure-mgmt-containerinstance, azure-mgmt-compute, azure-mgmt-cognitiveservices, azure-mgmt-cdn, azure-mgmt-billing, azure-mgmt-batchai, azure-mgmt-batch, azure-mgmt-applicationinsights, azure-mgmt-appconfiguration, azure-mgmt-advisor, azure-loganalytics, azure-keyvault-keys, azure-keyvault-administration, azure-datalake-store, azure-appconfiguration, msal-extensions, azure-mgmt-trafficmanager, azure-mgmt-reservations, azure-mgmt-relay, azure-mgmt-msi, azure-mgmt-managementgroups, azure-mgmt-managedservices, azure-mgmt-kusto, azure-mgmt-iothubprovisioningservices, azure-mgmt-imagebuilder, azure-mgmt-devtestlabs, azure-mgmt-deploymentmanager, azure-mgmt-datalake-store, azure-mgmt-datalake-analytics, azure-mgmt-consumption, azure-mgmt-botservice, azure-mgmt-authorization, azure-mgmt-apimanagement, azure-keyvault, azure-graphrbac, azure-batch, azure-identity, azure-cli-core, azure-cli
+2022-04-14T05:17:02.2736751Z   Running setup.py install for jsondiff: started
+2022-04-14T05:17:02.5183766Z   Running setup.py install for jsondiff: finished with status 'done'
+2022-04-14T05:17:02.8009716Z   Running setup.py install for antlr4-python3-runtime: started
+2022-04-14T05:17:03.0783992Z   Running setup.py install for antlr4-python3-runtime: finished with status 'done'
+2022-04-14T05:17:53.6096009Z Successfully installed PyGithub-1.55 PyJWT-2.3.0 PyNaCl-1.4.0 PySocks-1.7.1 adal-1.2.7 antlr4-python3-runtime-4.7.2 applicationinsights-0.11.10 argcomplete-1.12.3 azure-appconfiguration-1.1.1 azure-batch-11.0.0 azure-cli-2.30.0 azure-cli-core-2.30.0 azure-cli-telemetry-1.0.6 azure-common-1.1.28 azure-core-1.23.1 azure-cosmos-3.2.0 azure-datalake-store-0.0.52 azure-graphrbac-0.60.0 azure-identity-1.9.0 azure-keyvault-1.1.0 azure-keyvault-administration-4.0.0b3 azure-keyvault-keys-4.5.0 azure-loganalytics-0.1.1 azure-mgmt-advisor-9.0.0 azure-mgmt-apimanagement-0.2.0 azure-mgmt-appconfiguration-2.0.0 azure-mgmt-applicationinsights-1.0.0 azure-mgmt-authorization-0.61.0 azure-mgmt-batch-16.0.0 azure-mgmt-batchai-7.0.0b1 azure-mgmt-billing-6.0.0 azure-mgmt-botservice-0.3.0 azure-mgmt-cdn-11.0.0 azure-mgmt-cognitiveservices-12.0.0 azure-mgmt-compute-23.1.0 azure-mgmt-consumption-2.0.0 azure-mgmt-containerinstance-9.1.0 azure-mgmt-containerregistry-8.2.0 azure-mgmt-containerservice-16.1.0 azure-mgmt-core-1.3.0 azure-mgmt-cosmosdb-7.0.0b3 azure-mgmt-databoxedge-1.0.0 azure-mgmt-datalake-analytics-0.2.1 azure-mgmt-datalake-nspkg-3.0.1 azure-mgmt-datalake-store-0.5.0 azure-mgmt-datamigration-10.0.0 azure-mgmt-deploymentmanager-0.2.0 azure-mgmt-devtestlabs-4.0.0 azure-mgmt-dns-8.0.0 azure-mgmt-eventgrid-9.0.0 azure-mgmt-eventhub-9.1.0 azure-mgmt-extendedlocation-1.0.0 azure-mgmt-hdinsight-9.0.0 azure-mgmt-imagebuilder-0.4.0 azure-mgmt-iotcentral-9.0.0 azure-mgmt-iothub-2.1.0 azure-mgmt-iothubprovisioningservices-0.3.0 azure-mgmt-keyvault-9.2.0 azure-mgmt-kusto-0.3.0 azure-mgmt-loganalytics-11.0.0 azure-mgmt-managedservices-1.0.0 azure-mgmt-managementgroups-0.2.0 azure-mgmt-maps-2.0.0 azure-mgmt-marketplaceordering-1.1.0 azure-mgmt-media-7.0.0 azure-mgmt-monitor-2.0.0 azure-mgmt-msi-0.2.0 azure-mgmt-netapp-5.1.0 azure-mgmt-network-19.1.0 azure-mgmt-nspkg-3.0.2 azure-mgmt-policyinsights-1.0.0 azure-mgmt-privatedns-1.0.0 azure-mgmt-rdbms-10.0.0 azure-mgmt-recoveryservices-2.0.0 azure-mgmt-recoveryservicesbackup-3.0.0 azure-mgmt-redhatopenshift-1.0.0 azure-mgmt-redis-13.0.0 azure-mgmt-relay-0.1.0 azure-mgmt-reservations-0.6.0 azure-mgmt-resource-19.0.0 azure-mgmt-search-8.0.0 azure-mgmt-security-2.0.0b1 azure-mgmt-servicebus-6.0.0 azure-mgmt-servicefabric-1.0.0 azure-mgmt-servicefabricmanagedclusters-1.0.0 azure-mgmt-servicelinker-1.0.0b1 azure-mgmt-signalr-1.0.0 azure-mgmt-sql-3.0.1 azure-mgmt-sqlvirtualmachine-1.0.0b2 azure-mgmt-storage-19.0.0 azure-mgmt-synapse-2.1.0b4 azure-mgmt-trafficmanager-0.51.0 azure-mgmt-web-4.0.0 azure-multiapi-storage-0.7.0 azure-nspkg-3.0.2 azure-storage-common-1.4.2 azure-synapse-accesscontrol-0.5.0 azure-synapse-artifacts-0.8.0 azure-synapse-managedprivateendpoints-0.3.0 azure-synapse-spark-0.2.0 bcrypt-3.2.0 certifi-2021.10.8 cffi-1.15.0 chardet-3.0.4 colorama-0.4.4 cryptography-36.0.2 deprecated-1.2.13 distro-1.7.0 fabric-2.7.0 humanfriendly-9.2 idna-2.10 importlib-metadata-4.11.3 invoke-1.7.0 isodate-0.6.1 javaproperties-0.5.2 jmespath-1.0.0 jsondiff-1.2.0 knack-0.8.2 msal-1.17.0 msal-extensions-0.3.1 msrest-0.6.21 msrestazure-0.6.4 oauthlib-3.2.0 packaging-20.9 paramiko-2.10.3 pathlib2-2.3.7.post1 pkginfo-1.8.2 portalocker-1.7.1 psutil-5.9.0 pycparser-2.21 pygments-2.11.2 pyopenssl-22.0.0 pyparsing-3.0.8 python-dateutil-2.8.2 pytz-2019.1 pyyaml-6.0 requests-2.25.1 requests-oauthlib-1.3.1 scp-0.13.6 semver-2.13.0 six-1.16.0 sshtunnel-0.1.5 tabulate-0.8.9 typing-extensions-4.1.1 urllib3-1.26.9 websocket-client-0.56.0 wrapt-1.14.0 xmltodict-0.12.0 zipp-3.8.0
+2022-04-14T05:17:54.9528470Z Collecting azureml-sdk
+2022-04-14T05:17:55.2149926Z   Downloading azureml_sdk-1.40.0-py3-none-any.whl (4.5 kB)
+2022-04-14T05:17:55.3274106Z Collecting azureml-train-core~=1.40.0
+2022-04-14T05:17:55.3805251Z   Downloading azureml_train_core-1.40.0-py3-none-any.whl (8.6 MB)
+2022-04-14T05:17:55.8055545Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.6/8.6 MB 20.6 MB/s eta 0:00:00
+2022-04-14T05:17:55.9107410Z Collecting azureml-train-automl-client~=1.40.0
+2022-04-14T05:17:55.9632331Z   Downloading azureml_train_automl_client-1.40.0-py3-none-any.whl (136 kB)
+2022-04-14T05:17:55.9695061Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 136.4/136.4 KB 37.0 MB/s eta 0:00:00
+2022-04-14T05:17:56.0824676Z Collecting azureml-core~=1.40.0
+2022-04-14T05:17:56.1409042Z   Downloading azureml_core-1.40.0.post1-py3-none-any.whl (2.7 MB)
+2022-04-14T05:17:56.1746554Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.7/2.7 MB 86.5 MB/s eta 0:00:00
+2022-04-14T05:17:56.2587589Z Collecting azureml-dataset-runtime[fuse]~=1.40.0
+2022-04-14T05:17:56.3133283Z   Downloading azureml_dataset_runtime-1.40.0-py3-none-any.whl (3.5 kB)
+2022-04-14T05:17:56.3957581Z Collecting azureml-pipeline~=1.40.0
+2022-04-14T05:17:56.4486416Z   Downloading azureml_pipeline-1.40.0-py3-none-any.whl (3.7 kB)
+2022-04-14T05:17:56.4858457Z Requirement already satisfied: msal<2.0.0,>=1.15.0 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from azureml-core~=1.40.0->azureml-sdk) (1.17.0)
+2022-04-14T05:17:56.5509107Z Collecting contextlib2<22.0.0
+2022-04-14T05:17:56.6035874Z   Downloading contextlib2-21.6.0-py2.py3-none-any.whl (13 kB)
+2022-04-14T05:17:56.6079030Z Requirement already satisfied: azure-mgmt-keyvault<10.0.0,>=0.40.0 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from azureml-core~=1.40.0->azureml-sdk) (9.2.0)
+2022-04-14T05:17:56.6087140Z Requirement already satisfied: azure-graphrbac<1.0.0,>=0.40.0 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from azureml-core~=1.40.0->azureml-sdk) (0.60.0)
+2022-04-14T05:17:56.6095396Z Requirement already satisfied: argcomplete<2.0 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from azureml-core~=1.40.0->azureml-sdk) (1.12.3)
+2022-04-14T05:17:56.6750279Z Collecting SecretStorage<4.0.0
+2022-04-14T05:17:56.7277926Z   Downloading SecretStorage-3.3.1-py3-none-any.whl (15 kB)
+2022-04-14T05:17:56.8048179Z Collecting ndg-httpsclient<=0.5.1
+2022-04-14T05:17:56.8582229Z   Downloading ndg_httpsclient-0.5.1-py3-none-any.whl (34 kB)
+2022-04-14T05:17:56.9378015Z Collecting azure-core<1.22
+2022-04-14T05:17:56.9916483Z   Downloading azure_core-1.21.1-py2.py3-none-any.whl (178 kB)
+2022-04-14T05:17:56.9975636Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 178.1/178.1 KB 55.3 MB/s eta 0:00:00
+2022-04-14T05:17:57.0008500Z Requirement already satisfied: msrest<1.0.0,>=0.5.1 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from azureml-core~=1.40.0->azureml-sdk) (0.6.21)
+2022-04-14T05:17:57.0768831Z Collecting pyopenssl<22.0.0
+2022-04-14T05:17:57.1291152Z   Downloading pyOpenSSL-21.0.0-py2.py3-none-any.whl (55 kB)
+2022-04-14T05:17:57.1348450Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 55.1/55.1 KB 16.5 MB/s eta 0:00:00
+2022-04-14T05:17:57.1371842Z Requirement already satisfied: humanfriendly<11.0,>=4.7 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from azureml-core~=1.40.0->azureml-sdk) (9.2)
+2022-04-14T05:17:57.1381698Z Requirement already satisfied: azure-mgmt-containerregistry<9.0.0,>=8.2.0 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from azureml-core~=1.40.0->azureml-sdk) (8.2.0)
+2022-04-14T05:17:57.2027807Z Collecting pathspec<1.0.0
+2022-04-14T05:17:57.2550039Z   Downloading pathspec-0.9.0-py2.py3-none-any.whl (31 kB)
+2022-04-14T05:17:57.2597173Z Requirement already satisfied: requests[socks]<3.0.0,>=2.19.1 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from azureml-core~=1.40.0->azureml-sdk) (2.25.1)
+2022-04-14T05:17:57.2604046Z Requirement already satisfied: msrestazure<=0.6.4,>=0.4.33 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from azureml-core~=1.40.0->azureml-sdk) (0.6.4)
+2022-04-14T05:17:57.2608161Z Requirement already satisfied: pytz in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from azureml-core~=1.40.0->azureml-sdk) (2019.1)
+2022-04-14T05:17:57.2615697Z Requirement already satisfied: paramiko<3.0.0,>=2.0.8 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from azureml-core~=1.40.0->azureml-sdk) (2.10.3)
+2022-04-14T05:17:57.2619978Z Requirement already satisfied: pkginfo in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from azureml-core~=1.40.0->azureml-sdk) (1.8.2)
+2022-04-14T05:17:57.2629956Z Requirement already satisfied: azure-mgmt-storage<20.0.0,>=16.0.0 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from azureml-core~=1.40.0->azureml-sdk) (19.0.0)
+2022-04-14T05:17:57.2638681Z Requirement already satisfied: adal<=1.2.7,>=1.2.0 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from azureml-core~=1.40.0->azureml-sdk) (1.2.7)
+2022-04-14T05:17:57.2646706Z Requirement already satisfied: python-dateutil<3.0.0,>=2.7.3 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from azureml-core~=1.40.0->azureml-sdk) (2.8.2)
+2022-04-14T05:17:57.2654778Z Requirement already satisfied: azure-common<2.0.0,>=1.1.12 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from azureml-core~=1.40.0->azureml-sdk) (1.1.28)
+2022-04-14T05:17:57.2664736Z Requirement already satisfied: azure-mgmt-resource<21.0.0,>=15.0.0 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from azureml-core~=1.40.0->azureml-sdk) (19.0.0)
+2022-04-14T05:17:57.3585272Z Collecting docker<6.0.0
+2022-04-14T05:17:57.4107911Z   Downloading docker-5.0.3-py2.py3-none-any.whl (146 kB)
+2022-04-14T05:17:57.4171845Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 146.2/146.2 KB 43.8 MB/s eta 0:00:00
+2022-04-14T05:17:57.4205009Z Requirement already satisfied: cryptography!=1.9,!=2.0.*,!=2.1.*,!=2.2.*,<37.0.0 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from azureml-core~=1.40.0->azureml-sdk) (36.0.2)
+2022-04-14T05:17:57.4213052Z Requirement already satisfied: msal-extensions<0.4,>=0.3.0 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from azureml-core~=1.40.0->azureml-sdk) (0.3.1)
+2022-04-14T05:17:57.4906624Z Collecting jsonpickle<3.0.0
+2022-04-14T05:17:57.5441376Z   Downloading jsonpickle-2.1.0-py2.py3-none-any.whl (38 kB)
+2022-04-14T05:17:57.5489421Z Requirement already satisfied: PyJWT<3.0.0 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from azureml-core~=1.40.0->azureml-sdk) (2.3.0)
+2022-04-14T05:17:57.5499161Z Requirement already satisfied: azure-mgmt-authorization<1.0.0,>=0.40.0 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from azureml-core~=1.40.0->azureml-sdk) (0.61.0)
+2022-04-14T05:17:57.6243233Z Collecting knack~=0.9.0
+2022-04-14T05:17:57.6775039Z   Downloading knack-0.9.0-py3-none-any.whl (59 kB)
+2022-04-14T05:17:57.6830493Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 59.8/59.8 KB 20.2 MB/s eta 0:00:00
+2022-04-14T05:17:57.7939025Z Collecting urllib3<=1.26.7,>=1.23
+2022-04-14T05:17:57.8605739Z   Downloading urllib3-1.26.7-py2.py3-none-any.whl (138 kB)
+2022-04-14T05:17:57.8672492Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 138.8/138.8 KB 38.5 MB/s eta 0:00:00
+2022-04-14T05:17:57.9340718Z Collecting backports.tempfile
+2022-04-14T05:17:57.9876413Z   Downloading backports.tempfile-1.0-py2.py3-none-any.whl (4.4 kB)
+2022-04-14T05:17:57.9916269Z Requirement already satisfied: packaging<22.0,>=20.0 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from azureml-core~=1.40.0->azureml-sdk) (20.9)
+2022-04-14T05:17:58.0603240Z Collecting jmespath<1.0.0
+2022-04-14T05:17:58.1130170Z   Downloading jmespath-0.10.0-py2.py3-none-any.whl (24 kB)
+2022-04-14T05:17:58.2356941Z Collecting azureml-dataprep<3.1.0a,>=3.0.0a
+2022-04-14T05:17:58.2890501Z   Downloading azureml_dataprep-3.0.2-py3-none-any.whl (38.6 MB)
+2022-04-14T05:17:59.0845358Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 38.6/38.6 MB 33.8 MB/s eta 0:00:00
+2022-04-14T05:17:59.3741277Z Collecting pyarrow<4.0.0,>=0.17.0
+2022-04-14T05:17:59.4273500Z   Downloading pyarrow-3.0.0-cp37-cp37m-manylinux2014_x86_64.whl (20.7 MB)
+2022-04-14T05:17:59.8735484Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 20.7/20.7 MB 40.6 MB/s eta 0:00:00
+2022-04-14T05:18:00.3878268Z Collecting numpy!=1.19.3
+2022-04-14T05:18:00.4419606Z   Downloading numpy-1.21.6-cp37-cp37m-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (15.7 MB)
+2022-04-14T05:18:00.7949440Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.7/15.7 MB 40.1 MB/s eta 0:00:00
+2022-04-14T05:18:00.9093764Z Collecting fusepy<4.0.0,>=3.0.1
+2022-04-14T05:18:00.9622230Z   Downloading fusepy-3.0.1.tar.gz (11 kB)
+2022-04-14T05:18:00.9679960Z   Preparing metadata (setup.py): started
+2022-04-14T05:18:01.1847307Z   Preparing metadata (setup.py): finished with status 'done'
+2022-04-14T05:18:01.2683941Z Collecting azureml-pipeline-steps~=1.40.0
+2022-04-14T05:18:01.3224571Z   Downloading azureml_pipeline_steps-1.40.0-py3-none-any.whl (70 kB)
+2022-04-14T05:18:01.3288664Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 70.4/70.4 KB 20.9 MB/s eta 0:00:00
+2022-04-14T05:18:01.4150771Z Collecting azureml-pipeline-core~=1.40.0
+2022-04-14T05:18:01.4687373Z   Downloading azureml_pipeline_core-1.40.0-py3-none-any.whl (313 kB)
+2022-04-14T05:18:01.4773030Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 313.6/313.6 KB 55.8 MB/s eta 0:00:00
+2022-04-14T05:18:01.5719884Z Collecting azureml-telemetry~=1.40.0
+2022-04-14T05:18:01.6259103Z   Downloading azureml_telemetry-1.40.0-py3-none-any.whl (31 kB)
+2022-04-14T05:18:01.7187998Z Collecting azureml-automl-core~=1.40.0
+2022-04-14T05:18:01.7788517Z   Downloading azureml_automl_core-1.40.0-py3-none-any.whl (230 kB)
+2022-04-14T05:18:01.7862290Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 230.1/230.1 KB 51.0 MB/s eta 0:00:00
+2022-04-14T05:18:01.8719842Z Collecting azureml-train-restclients-hyperdrive~=1.40.0
+2022-04-14T05:18:01.9247536Z   Downloading azureml_train_restclients_hyperdrive-1.40.0-py3-none-any.whl (19 kB)
+2022-04-14T05:18:01.9486719Z Requirement already satisfied: importlib-metadata<5,>=0.23 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from argcomplete<2.0->azureml-core~=1.40.0->azureml-sdk) (4.11.3)
+2022-04-14T05:18:01.9596012Z Requirement already satisfied: six>=1.11.0 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from azure-core<1.22->azureml-core~=1.40.0->azureml-sdk) (1.16.0)
+2022-04-14T05:18:01.9766658Z Requirement already satisfied: azure-mgmt-core<2.0.0,>=1.2.0 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from azure-mgmt-containerregistry<9.0.0,>=8.2.0->azureml-core~=1.40.0->azureml-sdk) (1.3.0)
+2022-04-14T05:18:02.0837790Z Collecting dotnetcore2<3.0.0,>=2.1.14
+2022-04-14T05:18:02.1369527Z   Downloading dotnetcore2-2.1.23-py3-none-manylinux1_x86_64.whl (29.3 MB)
+2022-04-14T05:18:02.7054458Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 29.3/29.3 MB 38.4 MB/s eta 0:00:00
+2022-04-14T05:18:02.9191424Z Collecting azureml-dataprep-native<39.0.0,>=38.0.0
+2022-04-14T05:18:02.9745758Z   Downloading azureml_dataprep_native-38.0.0-cp37-cp37m-manylinux1_x86_64.whl (1.3 MB)
+2022-04-14T05:18:02.9913850Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 95.7 MB/s eta 0:00:00
+2022-04-14T05:18:03.0684058Z Collecting azure-identity==1.7.0
+2022-04-14T05:18:03.1213951Z   Downloading azure_identity-1.7.0-py2.py3-none-any.whl (129 kB)
+2022-04-14T05:18:03.1280310Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 129.1/129.1 KB 34.6 MB/s eta 0:00:00
+2022-04-14T05:18:03.2031119Z Collecting cloudpickle<3.0.0,>=1.1.0
+2022-04-14T05:18:03.2557095Z   Downloading cloudpickle-2.0.0-py3-none-any.whl (25 kB)
+2022-04-14T05:18:03.4506070Z Collecting azureml-dataprep-rslex~=2.4.0dev0
+2022-04-14T05:18:03.5038107Z   Downloading azureml_dataprep_rslex-2.4.2-cp37-cp37m-manylinux1_x86_64.whl (14.5 MB)
+2022-04-14T05:18:03.7917812Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.5/14.5 MB 44.6 MB/s eta 0:00:00
+2022-04-14T05:18:03.8693156Z Requirement already satisfied: applicationinsights in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from azureml-telemetry~=1.40.0->azureml-train-automl-client~=1.40.0->azureml-sdk) (0.11.10)
+2022-04-14T05:18:03.9050697Z Requirement already satisfied: cffi>=1.12 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from cryptography!=1.9,!=2.0.*,!=2.1.*,!=2.2.*,<37.0.0->azureml-core~=1.40.0->azureml-sdk) (1.15.0)
+2022-04-14T05:18:03.9169057Z Requirement already satisfied: websocket-client>=0.32.0 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from docker<6.0.0->azureml-core~=1.40.0->azureml-sdk) (0.56.0)
+2022-04-14T05:18:03.9671134Z Requirement already satisfied: pygments in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from knack~=0.9.0->azureml-core~=1.40.0->azureml-sdk) (2.11.2)
+2022-04-14T05:18:03.9673983Z Requirement already satisfied: pyyaml in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from knack~=0.9.0->azureml-core~=1.40.0->azureml-sdk) (6.0)
+2022-04-14T05:18:03.9679231Z Requirement already satisfied: tabulate in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from knack~=0.9.0->azureml-core~=1.40.0->azureml-sdk) (0.8.9)
+2022-04-14T05:18:03.9925893Z Requirement already satisfied: portalocker<3,>=1.0 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from msal-extensions<0.4,>=0.3.0->azureml-core~=1.40.0->azureml-sdk) (1.7.1)
+2022-04-14T05:18:04.0063574Z Requirement already satisfied: isodate>=0.6.0 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from msrest<1.0.0,>=0.5.1->azureml-core~=1.40.0->azureml-sdk) (0.6.1)
+2022-04-14T05:18:04.0074044Z Requirement already satisfied: certifi>=2017.4.17 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from msrest<1.0.0,>=0.5.1->azureml-core~=1.40.0->azureml-sdk) (2021.10.8)
+2022-04-14T05:18:04.0082168Z Requirement already satisfied: requests-oauthlib>=0.5.0 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from msrest<1.0.0,>=0.5.1->azureml-core~=1.40.0->azureml-sdk) (1.3.1)
+2022-04-14T05:18:04.1133177Z Collecting pyasn1>=0.1.1
+2022-04-14T05:18:04.1657342Z   Downloading pyasn1-0.4.8-py2.py3-none-any.whl (77 kB)
+2022-04-14T05:18:04.1712009Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 77.1/77.1 KB 23.8 MB/s eta 0:00:00
+2022-04-14T05:18:04.1888456Z Requirement already satisfied: pyparsing>=2.0.2 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from packaging<22.0,>=20.0->azureml-core~=1.40.0->azureml-sdk) (3.0.8)
+2022-04-14T05:18:04.2116102Z Requirement already satisfied: pynacl>=1.0.1 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from paramiko<3.0.0,>=2.0.8->azureml-core~=1.40.0->azureml-sdk) (1.4.0)
+2022-04-14T05:18:04.2123280Z Requirement already satisfied: bcrypt>=3.1.3 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from paramiko<3.0.0,>=2.0.8->azureml-core~=1.40.0->azureml-sdk) (3.2.0)
+2022-04-14T05:18:04.3178375Z Requirement already satisfied: chardet<5,>=3.0.2 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from requests[socks]<3.0.0,>=2.19.1->azureml-core~=1.40.0->azureml-sdk) (3.0.4)
+2022-04-14T05:18:04.3184451Z Requirement already satisfied: idna<3,>=2.5 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from requests[socks]<3.0.0,>=2.19.1->azureml-core~=1.40.0->azureml-sdk) (2.10)
+2022-04-14T05:18:04.3494702Z Requirement already satisfied: PySocks!=1.5.7,>=1.5.6 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from requests[socks]<3.0.0,>=2.19.1->azureml-core~=1.40.0->azureml-sdk) (1.7.1)
+2022-04-14T05:18:04.4235901Z Collecting jeepney>=0.6
+2022-04-14T05:18:04.4953854Z   Downloading jeepney-0.8.0-py3-none-any.whl (48 kB)
+2022-04-14T05:18:04.5003350Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.4/48.4 KB 18.4 MB/s eta 0:00:00
+2022-04-14T05:18:04.5919905Z Collecting backports.weakref
+2022-04-14T05:18:04.6453172Z   Downloading backports.weakref-1.0.post1-py2.py3-none-any.whl (5.2 kB)
+2022-04-14T05:18:04.7328268Z Requirement already satisfied: pycparser in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from cffi>=1.12->cryptography!=1.9,!=2.0.*,!=2.1.*,!=2.2.*,<37.0.0->azureml-core~=1.40.0->azureml-sdk) (2.21)
+2022-04-14T05:18:04.7581000Z Requirement already satisfied: distro>=1.2.0 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from dotnetcore2<3.0.0,>=2.1.14->azureml-dataprep<3.1.0a,>=3.0.0a->azureml-dataset-runtime[fuse]~=1.40.0->azureml-sdk) (1.7.0)
+2022-04-14T05:18:04.7928254Z Requirement already satisfied: zipp>=0.5 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from importlib-metadata<5,>=0.23->argcomplete<2.0->azureml-core~=1.40.0->azureml-sdk) (3.8.0)
+2022-04-14T05:18:04.7943717Z Requirement already satisfied: typing-extensions>=3.6.4 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from importlib-metadata<5,>=0.23->argcomplete<2.0->azureml-core~=1.40.0->azureml-sdk) (4.1.1)
+2022-04-14T05:18:04.8984624Z Requirement already satisfied: oauthlib>=3.0.0 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from requests-oauthlib>=0.5.0->msrest<1.0.0,>=0.5.1->azureml-core~=1.40.0->azureml-sdk) (3.2.0)
+2022-04-14T05:18:05.0257844Z Using legacy 'setup.py install' for fusepy, since package 'wheel' is not installed.
+2022-04-14T05:18:05.5777497Z Installing collected packages: pyasn1, fusepy, backports.weakref, azureml-dataprep-rslex, azureml-dataprep-native, urllib3, pathspec, numpy, jmespath, jeepney, dotnetcore2, contextlib2, cloudpickle, backports.tempfile, pyarrow, jsonpickle, SecretStorage, pyopenssl, knack, docker, azure-core, ndg-httpsclient, azureml-train-restclients-hyperdrive, azure-identity, azureml-dataprep, azureml-core, azureml-telemetry, azureml-pipeline-core, azureml-dataset-runtime, azureml-train-core, azureml-automl-core, azureml-train-automl-client, azureml-pipeline-steps, azureml-pipeline, azureml-sdk
+2022-04-14T05:18:05.6342304Z   Running setup.py install for fusepy: started
+2022-04-14T05:18:05.8658558Z   Running setup.py install for fusepy: finished with status 'done'
+2022-04-14T05:18:06.1846824Z   Attempting uninstall: urllib3
+2022-04-14T05:18:06.1867007Z     Found existing installation: urllib3 1.26.9
+2022-04-14T05:18:06.2071757Z     Uninstalling urllib3-1.26.9:
+2022-04-14T05:18:06.2084256Z       Successfully uninstalled urllib3-1.26.9
+2022-04-14T05:18:07.8987416Z   Attempting uninstall: jmespath
+2022-04-14T05:18:07.8994997Z     Found existing installation: jmespath 1.0.0
+2022-04-14T05:18:07.9057584Z     Uninstalling jmespath-1.0.0:
+2022-04-14T05:18:07.9068834Z       Successfully uninstalled jmespath-1.0.0
+2022-04-14T05:18:09.4147814Z   Attempting uninstall: pyopenssl
+2022-04-14T05:18:09.4155076Z     Found existing installation: pyOpenSSL 22.0.0
+2022-04-14T05:18:09.4214594Z     Uninstalling pyOpenSSL-22.0.0:
+2022-04-14T05:18:09.4221773Z       Successfully uninstalled pyOpenSSL-22.0.0
+2022-04-14T05:18:09.4474019Z   Attempting uninstall: knack
+2022-04-14T05:18:09.4481599Z     Found existing installation: knack 0.8.2
+2022-04-14T05:18:09.4598301Z     Uninstalling knack-0.8.2:
+2022-04-14T05:18:09.4608914Z       Successfully uninstalled knack-0.8.2
+2022-04-14T05:18:09.5717235Z   Attempting uninstall: azure-core
+2022-04-14T05:18:09.5735734Z     Found existing installation: azure-core 1.23.1
+2022-04-14T05:18:09.6018929Z     Uninstalling azure-core-1.23.1:
+2022-04-14T05:18:09.6035096Z       Successfully uninstalled azure-core-1.23.1
+2022-04-14T05:18:09.7113244Z   Attempting uninstall: azure-identity
+2022-04-14T05:18:09.7133127Z     Found existing installation: azure-identity 1.9.0
+2022-04-14T05:18:09.7476676Z     Uninstalling azure-identity-1.9.0:
+2022-04-14T05:18:09.7497371Z       Successfully uninstalled azure-identity-1.9.0
+2022-04-14T05:18:13.9806495Z ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+2022-04-14T05:18:13.9808143Z azure-cli-core 2.30.0 requires knack~=0.8.2, but you have knack 0.9.0 which is incompatible.
+2022-04-14T05:18:13.9811302Z Successfully installed SecretStorage-3.3.1 azure-core-1.21.1 azure-identity-1.7.0 azureml-automl-core-1.40.0 azureml-core-1.40.0.post1 azureml-dataprep-3.0.2 azureml-dataprep-native-38.0.0 azureml-dataprep-rslex-2.4.2 azureml-dataset-runtime-1.40.0 azureml-pipeline-1.40.0 azureml-pipeline-core-1.40.0 azureml-pipeline-steps-1.40.0 azureml-sdk-1.40.0 azureml-telemetry-1.40.0 azureml-train-automl-client-1.40.0 azureml-train-core-1.40.0 azureml-train-restclients-hyperdrive-1.40.0 backports.tempfile-1.0 backports.weakref-1.0.post1 cloudpickle-2.0.0 contextlib2-21.6.0 docker-5.0.3 dotnetcore2-2.1.23 fusepy-3.0.1 jeepney-0.8.0 jmespath-0.10.0 jsonpickle-2.1.0 knack-0.9.0 ndg-httpsclient-0.5.1 numpy-1.21.6 pathspec-0.9.0 pyarrow-3.0.0 pyasn1-0.4.8 pyopenssl-21.0.0 urllib3-1.26.7
+2022-04-14T05:18:15.0462237Z Collecting pytest
+2022-04-14T05:18:15.2533185Z   Downloading pytest-7.1.1-py3-none-any.whl (297 kB)
+2022-04-14T05:18:15.4079803Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 297.0/297.0 KB 1.9 MB/s eta 0:00:00
+2022-04-14T05:18:15.4979835Z Collecting pluggy<2.0,>=0.12
+2022-04-14T05:18:15.5503225Z   Downloading pluggy-1.0.0-py2.py3-none-any.whl (13 kB)
+2022-04-14T05:18:15.6484102Z Collecting py>=1.8.2
+2022-04-14T05:18:15.7008285Z   Downloading py-1.11.0-py2.py3-none-any.whl (98 kB)
+2022-04-14T05:18:15.7100292Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 98.7/98.7 KB 14.8 MB/s eta 0:00:00
+2022-04-14T05:18:15.7123528Z Requirement already satisfied: packaging in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pytest) (20.9)
+2022-04-14T05:18:15.7851849Z Collecting tomli>=1.0.0
+2022-04-14T05:18:15.8376940Z   Downloading tomli-2.0.1-py3-none-any.whl (12 kB)
+2022-04-14T05:18:15.8473841Z Requirement already satisfied: importlib-metadata>=0.12 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pytest) (4.11.3)
+2022-04-14T05:18:15.9198960Z Collecting attrs>=19.2.0
+2022-04-14T05:18:15.9726544Z   Downloading attrs-21.4.0-py2.py3-none-any.whl (60 kB)
+2022-04-14T05:18:15.9781069Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.6/60.6 KB 17.9 MB/s eta 0:00:00
+2022-04-14T05:18:16.0405849Z Collecting iniconfig
+2022-04-14T05:18:16.0931456Z   Downloading iniconfig-1.1.1-py2.py3-none-any.whl (5.0 kB)
+2022-04-14T05:18:16.1576486Z Requirement already satisfied: zipp>=0.5 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from importlib-metadata>=0.12->pytest) (3.8.0)
+2022-04-14T05:18:16.1592328Z Requirement already satisfied: typing-extensions>=3.6.4 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from importlib-metadata>=0.12->pytest) (4.1.1)
+2022-04-14T05:18:16.1752347Z Requirement already satisfied: pyparsing>=2.0.2 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from packaging->pytest) (3.0.8)
+2022-04-14T05:18:16.9438657Z Installing collected packages: iniconfig, tomli, py, attrs, pluggy, pytest
+2022-04-14T05:18:17.2680083Z Successfully installed attrs-21.4.0 iniconfig-1.1.1 pluggy-1.0.0 py-1.11.0 pytest-7.1.1 tomli-2.0.1
+2022-04-14T05:18:18.2031116Z Collecting pytest-cov
+2022-04-14T05:18:18.4091141Z   Downloading pytest_cov-3.0.0-py3-none-any.whl (20 kB)
+2022-04-14T05:18:18.4307800Z Requirement already satisfied: pytest>=4.6 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pytest-cov) (7.1.1)
+2022-04-14T05:18:18.9118019Z Collecting coverage[toml]>=5.2.1
+2022-04-14T05:18:18.9647587Z   Downloading coverage-6.3.2-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (207 kB)
+2022-04-14T05:18:19.0824780Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 208.0/208.0 KB 1.8 MB/s eta 0:00:00
+2022-04-14T05:18:19.0891561Z Requirement already satisfied: tomli in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from coverage[toml]>=5.2.1->pytest-cov) (2.0.1)
+2022-04-14T05:18:19.1050048Z Requirement already satisfied: attrs>=19.2.0 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pytest>=4.6->pytest-cov) (21.4.0)
+2022-04-14T05:18:19.1064682Z Requirement already satisfied: importlib-metadata>=0.12 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pytest>=4.6->pytest-cov) (4.11.3)
+2022-04-14T05:18:19.1071662Z Requirement already satisfied: py>=1.8.2 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pytest>=4.6->pytest-cov) (1.11.0)
+2022-04-14T05:18:19.1075597Z Requirement already satisfied: iniconfig in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pytest>=4.6->pytest-cov) (1.1.1)
+2022-04-14T05:18:19.1083285Z Requirement already satisfied: pluggy<2.0,>=0.12 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pytest>=4.6->pytest-cov) (1.0.0)
+2022-04-14T05:18:19.1088317Z Requirement already satisfied: packaging in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pytest>=4.6->pytest-cov) (20.9)
+2022-04-14T05:18:19.1619164Z Requirement already satisfied: zipp>=0.5 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from importlib-metadata>=0.12->pytest>=4.6->pytest-cov) (3.8.0)
+2022-04-14T05:18:19.1632239Z Requirement already satisfied: typing-extensions>=3.6.4 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from importlib-metadata>=0.12->pytest>=4.6->pytest-cov) (4.1.1)
+2022-04-14T05:18:19.1749666Z Requirement already satisfied: pyparsing>=2.0.2 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from packaging->pytest>=4.6->pytest-cov) (3.0.8)
+2022-04-14T05:18:19.8160078Z Installing collected packages: coverage, pytest-cov
+2022-04-14T05:18:19.9412545Z Successfully installed coverage-6.3.2 pytest-cov-3.0.0
+2022-04-14T05:18:20.1439317Z ##[section]Finishing: Install Dependencies
+
+
+Install CLI
+
+2022-04-14T05:18:20.1462784Z ##[section]Starting: Install Azure CLI ML Extension
+2022-04-14T05:18:20.1471228Z ==============================================================================
+2022-04-14T05:18:20.1471496Z Task         : Azure CLI
+2022-04-14T05:18:20.1471913Z Description  : Run Azure CLI commands against an Azure subscription in a PowerShell Core/Shell script when running on Linux agent or PowerShell/PowerShell Core/Batch script when running on Windows agent.
+2022-04-14T05:18:20.1472306Z Version      : 2.198.0
+2022-04-14T05:18:20.1472497Z Author       : Microsoft Corporation
+2022-04-14T05:18:20.1472908Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/azure-cli
+2022-04-14T05:18:20.1473238Z ==============================================================================
+2022-04-14T05:18:20.2730590Z [command]/opt/hostedtoolcache/Python/3.7.12/x64/bin/az --version
+2022-04-14T05:18:21.4756159Z WARNING: You have 2 updates available. Consider updating your CLI installation with 'az upgrade'
+2022-04-14T05:18:21.4756836Z azure-cli                         2.30.0 *
+2022-04-14T05:18:21.4757487Z 
+2022-04-14T05:18:21.4757574Z 
+2022-04-14T05:18:21.4758030Z Please let us know how we are doing: https://aka.ms/azureclihats
+2022-04-14T05:18:21.4759268Z and let us know if you're interested in trying out our newest features: https://aka.ms/CLIUXstudy
+2022-04-14T05:18:21.4759623Z core                              2.30.0 *
+2022-04-14T05:18:21.4760269Z telemetry                          1.0.6
+2022-04-14T05:18:21.4760522Z 
+2022-04-14T05:18:21.4760849Z Extensions:
+2022-04-14T05:18:21.4761348Z azure-devops                      0.25.0
+2022-04-14T05:18:21.4761569Z 
+2022-04-14T05:18:21.4762109Z Python location '/opt/hostedtoolcache/Python/3.7.12/x64/bin/python'
+2022-04-14T05:18:21.4762687Z Extensions directory '/opt/az/azcliextensions'
+2022-04-14T05:18:21.4762933Z 
+2022-04-14T05:18:21.4763330Z Python (Linux) 3.7.12 (default, Sep  6 2021, 07:36:52) 
+2022-04-14T05:18:21.4763723Z [GCC 7.5.0]
+2022-04-14T05:18:21.4763923Z 
+2022-04-14T05:18:21.4764261Z Legal docs and information: aka.ms/AzureCliLegal
+2022-04-14T05:18:21.4764518Z 
+2022-04-14T05:18:21.4764681Z 
+2022-04-14T05:18:21.4780489Z Setting AZURE_CONFIG_DIR env variable to: /home/vsts/work/_temp/.azclitask
+2022-04-14T05:18:21.4783387Z Setting active cloud to: AzureCloud
+2022-04-14T05:18:21.4850255Z [command]/opt/hostedtoolcache/Python/3.7.12/x64/bin/az cloud set -n AzureCloud
+2022-04-14T05:18:22.9481892Z [command]/opt/hostedtoolcache/Python/3.7.12/x64/bin/az login --service-principal -u *** --password=*** --tenant 12873845-9729-49dd-b821-76b52a360a58 --allow-no-subscriptions
+2022-04-14T05:18:25.1162623Z [
+2022-04-14T05:18:25.1163124Z   {
+2022-04-14T05:18:25.1163474Z     "cloudName": "AzureCloud",
+2022-04-14T05:18:25.1164498Z     "homeTenantId": "12873845-9729-49dd-b821-76b52a360a58",
+2022-04-14T05:18:25.1165092Z     "id": "b53cd405-74a5-4714-9549-88af4dc84f66",
+2022-04-14T05:18:25.1165489Z     "isDefault": true,
+2022-04-14T05:18:25.1165810Z     "managedByTenants": [],
+2022-04-14T05:18:25.1166193Z     "name": "Azure subscription 1",
+2022-04-14T05:18:25.1166527Z     "state": "Enabled",
+2022-04-14T05:18:25.1167065Z     "tenantId": "12873845-9729-49dd-b821-76b52a360a58",
+2022-04-14T05:18:25.1167447Z     "user": {
+2022-04-14T05:18:25.1168355Z       "name": "***",
+2022-04-14T05:18:25.1168719Z       "type": "servicePrincipal"
+2022-04-14T05:18:25.1169027Z     }
+2022-04-14T05:18:25.1169310Z   }
+2022-04-14T05:18:25.1169590Z ]
+2022-04-14T05:18:25.1178201Z [command]/opt/hostedtoolcache/Python/3.7.12/x64/bin/az account set --subscription b53cd405-74a5-4714-9549-88af4dc84f66
+2022-04-14T05:18:25.3091735Z [command]/bin/bash /home/vsts/work/_temp/azureclitaskscript1649913500265.sh
+2022-04-14T05:18:55.2115763Z [command]/opt/hostedtoolcache/Python/3.7.12/x64/bin/az account clear
+2022-04-14T05:18:57.4115947Z ##[section]Finishing: Install Azure CLI ML Extension
+
+
+
+
+Update CLI
+
+2022-04-14T05:18:57.4139466Z ##[section]Starting: Update CLI
+2022-04-14T05:18:57.4147908Z ==============================================================================
+2022-04-14T05:18:57.4148170Z Task         : Azure CLI
+2022-04-14T05:18:57.4148576Z Description  : Run Azure CLI commands against an Azure subscription in a PowerShell Core/Shell script when running on Linux agent or PowerShell/PowerShell Core/Batch script when running on Windows agent.
+2022-04-14T05:18:57.4148971Z Version      : 2.198.0
+2022-04-14T05:18:57.4149158Z Author       : Microsoft Corporation
+2022-04-14T05:18:57.4149425Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/azure-cli
+2022-04-14T05:18:57.4149927Z ==============================================================================
+2022-04-14T05:18:57.5433407Z [command]/opt/hostedtoolcache/Python/3.7.12/x64/bin/az --version
+2022-04-14T05:18:58.2263571Z azure-cli                         2.30.0 *
+2022-04-14T05:18:58.2264054Z 
+2022-04-14T05:18:58.2264396Z core                              2.30.0 *
+2022-04-14T05:18:58.2264939Z telemetry                          1.0.6
+2022-04-14T05:18:58.2265145Z 
+2022-04-14T05:18:58.2265425Z Extensions:
+2022-04-14T05:18:58.2265920Z azure-devops                      0.25.0
+2022-04-14T05:18:58.2266423Z azure-cli-ml                      1.37.0
+2022-04-14T05:18:58.2266643Z 
+2022-04-14T05:18:58.2267170Z Python location '/opt/hostedtoolcache/Python/3.7.12/x64/bin/python'
+2022-04-14T05:18:58.2267760Z Extensions directory '/opt/az/azcliextensions'
+2022-04-14T05:18:58.2268009Z 
+2022-04-14T05:18:58.2268400Z Python (Linux) 3.7.12 (default, Sep  6 2021, 07:36:52) 
+2022-04-14T05:18:58.2268799Z [GCC 7.5.0]
+2022-04-14T05:18:58.2268993Z 
+2022-04-14T05:18:58.2269324Z Legal docs and information: aka.ms/AzureCliLegal
+2022-04-14T05:18:58.2269577Z 
+2022-04-14T05:18:58.2269744Z 
+2022-04-14T05:18:58.2274772Z WARNING: You have 2 updates available. Consider updating your CLI installation with 'az upgrade'
+2022-04-14T05:18:58.2275001Z 
+2022-04-14T05:18:58.2275255Z Please let us know how we are doing: https://aka.ms/azureclihats
+2022-04-14T05:18:58.2275829Z and let us know if you're interested in trying out our newest features: https://aka.ms/CLIUXstudy
+2022-04-14T05:18:58.2283360Z Setting AZURE_CONFIG_DIR env variable to: /home/vsts/work/_temp/.azclitask
+2022-04-14T05:18:58.2287812Z Setting active cloud to: AzureCloud
+2022-04-14T05:18:58.2295764Z [command]/opt/hostedtoolcache/Python/3.7.12/x64/bin/az cloud set -n AzureCloud
+2022-04-14T05:18:58.4286617Z [command]/opt/hostedtoolcache/Python/3.7.12/x64/bin/az login --service-principal -u *** --password=*** --tenant 12873845-9729-49dd-b821-76b52a360a58 --allow-no-subscriptions
+2022-04-14T05:19:00.3806658Z [
+2022-04-14T05:19:00.3807394Z   {
+2022-04-14T05:19:00.3807778Z     "cloudName": "AzureCloud",
+2022-04-14T05:19:00.3808869Z     "homeTenantId": "12873845-9729-49dd-b821-76b52a360a58",
+2022-04-14T05:19:00.3809569Z     "id": "b53cd405-74a5-4714-9549-88af4dc84f66",
+2022-04-14T05:19:00.3810018Z     "isDefault": true,
+2022-04-14T05:19:00.3810438Z     "managedByTenants": [],
+2022-04-14T05:19:00.3810841Z     "name": "Azure subscription 1",
+2022-04-14T05:19:00.3811252Z     "state": "Enabled",
+2022-04-14T05:19:00.3811838Z     "tenantId": "12873845-9729-49dd-b821-76b52a360a58",
+2022-04-14T05:19:00.3812293Z     "user": {
+2022-04-14T05:19:00.3813383Z       "name": "***",
+2022-04-14T05:19:00.3813806Z       "type": "servicePrincipal"
+2022-04-14T05:19:00.3814190Z     }
+2022-04-14T05:19:00.3814516Z   }
+2022-04-14T05:19:00.3814853Z ]
+2022-04-14T05:19:00.3824522Z [command]/opt/hostedtoolcache/Python/3.7.12/x64/bin/az account set --subscription b53cd405-74a5-4714-9549-88af4dc84f66
+2022-04-14T05:19:00.5894057Z [command]/bin/bash /home/vsts/work/_temp/azureclitaskscript1649913537537.sh
+2022-04-14T05:19:04.5166119Z WARNING: No updates available for 'azure-cli-ml'. Use --debug for more information.
+2022-04-14T05:19:04.5577975Z [command]/opt/hostedtoolcache/Python/3.7.12/x64/bin/az account clear
+2022-04-14T05:19:04.7661773Z ##[section]Finishing: Update CLI
+
+
+Create AKS
+
+
+2022-04-14T05:19:04.7684445Z ##[section]Starting: Create AKS
+2022-04-14T05:19:04.7692479Z ==============================================================================
+2022-04-14T05:19:04.7692741Z Task         : Azure CLI
+2022-04-14T05:19:04.7693156Z Description  : Run Azure CLI commands against an Azure subscription in a PowerShell Core/Shell script when running on Linux agent or PowerShell/PowerShell Core/Batch script when running on Windows agent.
+2022-04-14T05:19:04.7693563Z Version      : 2.198.0
+2022-04-14T05:19:04.7693750Z Author       : Microsoft Corporation
+2022-04-14T05:19:04.7694014Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/azure-cli
+2022-04-14T05:19:04.7694505Z ==============================================================================
+2022-04-14T05:19:05.4385522Z [command]/opt/hostedtoolcache/Python/3.7.12/x64/bin/az --version
+2022-04-14T05:19:05.5573641Z WARNING: You have 2 updates available. Consider updating your CLI installation with 'az upgrade'
+2022-04-14T05:19:05.5573925Z 
+2022-04-14T05:19:05.5574393Z Please let us know how we are doing: https://aka.ms/azureclihats
+2022-04-14T05:19:05.5574967Z and let us know if you're interested in trying out our newest features: https://aka.ms/CLIUXstudy
+2022-04-14T05:19:05.5575449Z azure-cli                         2.30.0 *
+2022-04-14T05:19:05.5575562Z 
+2022-04-14T05:19:05.5575768Z core                              2.30.0 *
+2022-04-14T05:19:05.5576281Z telemetry                          1.0.6
+2022-04-14T05:19:05.5576390Z 
+2022-04-14T05:19:05.5576581Z Extensions:
+2022-04-14T05:19:05.5576928Z azure-devops                      0.25.0
+2022-04-14T05:19:05.5577296Z azure-cli-ml                      1.37.0
+2022-04-14T05:19:05.5577417Z 
+2022-04-14T05:19:05.5577828Z Python location '/opt/hostedtoolcache/Python/3.7.12/x64/bin/python'
+2022-04-14T05:19:05.5578275Z Extensions directory '/opt/az/azcliextensions'
+2022-04-14T05:19:05.5578413Z 
+2022-04-14T05:19:05.5578699Z Python (Linux) 3.7.12 (default, Sep  6 2021, 07:36:52) 
+2022-04-14T05:19:05.5578990Z [GCC 7.5.0]
+2022-04-14T05:19:05.5579081Z 
+2022-04-14T05:19:05.5579308Z Legal docs and information: aka.ms/AzureCliLegal
+2022-04-14T05:19:05.5579461Z 
+2022-04-14T05:19:05.5579529Z 
+2022-04-14T05:19:05.5592928Z Setting AZURE_CONFIG_DIR env variable to: /home/vsts/work/_temp/.azclitask
+2022-04-14T05:19:05.5598181Z Setting active cloud to: AzureCloud
+2022-04-14T05:19:05.5605901Z [command]/opt/hostedtoolcache/Python/3.7.12/x64/bin/az cloud set -n AzureCloud
+2022-04-14T05:19:05.7464875Z [command]/opt/hostedtoolcache/Python/3.7.12/x64/bin/az login --service-principal -u *** --password=*** --tenant 12873845-9729-49dd-b821-76b52a360a58 --allow-no-subscriptions
+2022-04-14T05:19:07.0924665Z [
+2022-04-14T05:19:07.0925264Z   {
+2022-04-14T05:19:07.0925626Z     "cloudName": "AzureCloud",
+2022-04-14T05:19:07.0926616Z     "homeTenantId": "12873845-9729-49dd-b821-76b52a360a58",
+2022-04-14T05:19:07.0927235Z     "id": "b53cd405-74a5-4714-9549-88af4dc84f66",
+2022-04-14T05:19:07.0927631Z     "isDefault": true,
+2022-04-14T05:19:07.0927985Z     "managedByTenants": [],
+2022-04-14T05:19:07.0928342Z     "name": "Azure subscription 1",
+2022-04-14T05:19:07.0928679Z     "state": "Enabled",
+2022-04-14T05:19:07.0929210Z     "tenantId": "12873845-9729-49dd-b821-76b52a360a58",
+2022-04-14T05:19:07.0929596Z     "user": {
+2022-04-14T05:19:07.0930501Z       "name": "***",
+2022-04-14T05:19:07.0930881Z       "type": "servicePrincipal"
+2022-04-14T05:19:07.0931187Z     }
+2022-04-14T05:19:07.0931468Z   }
+2022-04-14T05:19:07.0931735Z ]
+2022-04-14T05:19:07.0940267Z [command]/opt/hostedtoolcache/Python/3.7.12/x64/bin/az account set --subscription b53cd405-74a5-4714-9549-88af4dc84f66
+2022-04-14T05:19:07.2870298Z [command]/bin/bash /home/vsts/work/_temp/azureclitaskscript1649913544879.sh
+2022-04-14T05:29:07.1324962Z Provisioning compute resources...
+2022-04-14T05:29:07.1325948Z Resource creation submitted successfully.
+2022-04-14T05:29:07.1326600Z Provisioning operation finished, operation "Succeeded"
+2022-04-14T05:29:07.1327154Z {
+2022-04-14T05:29:07.1327651Z   "location": "centralindia",
+2022-04-14T05:29:07.1328531Z   "name": "aksnew",
+2022-04-14T05:29:07.1329057Z   "provisioningErrors": null,
+2022-04-14T05:29:07.1329614Z   "provisioningState": "Succeeded"
+2022-04-14T05:29:07.1330115Z }
+2022-04-14T05:29:07.3467036Z [command]/opt/hostedtoolcache/Python/3.7.12/x64/bin/az account clear
+2022-04-14T05:29:07.5544877Z ##[section]Finishing: Create AKS
+
+
+Deploy Model to AKS
+
+2022-04-14T05:29:07.5572466Z ##[section]Starting: Deploy ML Model To AKS
+2022-04-14T05:29:07.5581703Z ==============================================================================
+2022-04-14T05:29:07.5582047Z Task         : Azure CLI
+2022-04-14T05:29:07.5582790Z Description  : Run Azure CLI commands against an Azure subscription in a PowerShell Core/Shell script when running on Linux agent or PowerShell/PowerShell Core/Batch script when running on Windows agent.
+2022-04-14T05:29:07.5583327Z Version      : 2.198.0
+2022-04-14T05:29:07.5583566Z Author       : Microsoft Corporation
+2022-04-14T05:29:07.5583909Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/azure-cli
+2022-04-14T05:29:07.5584332Z ==============================================================================
+2022-04-14T05:29:07.6779095Z [command]/opt/hostedtoolcache/Python/3.7.12/x64/bin/az --version
+2022-04-14T05:29:08.3935564Z WARNING: You have 2 updates available. Consider updating your CLI installation with 'az upgrade'
+2022-04-14T05:29:08.3936300Z 
+2022-04-14T05:29:08.3936704Z Please let us know how we are doing: https://aka.ms/azureclihats
+2022-04-14T05:29:08.3937409Z and let us know if you're interested in trying out our newest features: https://aka.ms/CLIUXstudy
+2022-04-14T05:29:08.3964323Z azure-cli                         2.30.0 *
+2022-04-14T05:29:08.3964844Z 
+2022-04-14T05:29:08.3965298Z core                              2.30.0 *
+2022-04-14T05:29:08.3965717Z telemetry                          1.0.6
+2022-04-14T05:29:08.3965986Z 
+2022-04-14T05:29:08.3966332Z Extensions:
+2022-04-14T05:29:08.3966894Z azure-devops                      0.25.0
+2022-04-14T05:29:08.3967472Z azure-cli-ml                      1.37.0
+2022-04-14T05:29:08.3967761Z 
+2022-04-14T05:29:08.3968347Z Python location '/opt/hostedtoolcache/Python/3.7.12/x64/bin/python'
+2022-04-14T05:29:08.3969014Z Extensions directory '/opt/az/azcliextensions'
+2022-04-14T05:29:08.3969331Z 
+2022-04-14T05:29:08.3969788Z Python (Linux) 3.7.12 (default, Sep  6 2021, 07:36:52) 
+2022-04-14T05:29:08.3970272Z [GCC 7.5.0]
+2022-04-14T05:29:08.3970520Z 
+2022-04-14T05:29:08.3970915Z Legal docs and information: aka.ms/AzureCliLegal
+2022-04-14T05:29:08.3971231Z 
+2022-04-14T05:29:08.3971457Z 
+2022-04-14T05:29:08.3973584Z Setting AZURE_CONFIG_DIR env variable to: /home/vsts/work/_temp/.azclitask
+2022-04-14T05:29:08.3975335Z Setting active cloud to: AzureCloud
+2022-04-14T05:29:08.3984436Z [command]/opt/hostedtoolcache/Python/3.7.12/x64/bin/az cloud set -n AzureCloud
+2022-04-14T05:29:08.5830388Z [command]/opt/hostedtoolcache/Python/3.7.12/x64/bin/az login --service-principal -u *** --password=*** --tenant 12873845-9729-49dd-b821-76b52a360a58 --allow-no-subscriptions
+2022-04-14T05:29:10.2090870Z [
+2022-04-14T05:29:10.2091427Z   {
+2022-04-14T05:29:10.2091780Z     "cloudName": "AzureCloud",
+2022-04-14T05:29:10.2092873Z     "homeTenantId": "12873845-9729-49dd-b821-76b52a360a58",
+2022-04-14T05:29:10.2093471Z     "id": "b53cd405-74a5-4714-9549-88af4dc84f66",
+2022-04-14T05:29:10.2093859Z     "isDefault": true,
+2022-04-14T05:29:10.2094202Z     "managedByTenants": [],
+2022-04-14T05:29:10.2094555Z     "name": "Azure subscription 1",
+2022-04-14T05:29:10.2094899Z     "state": "Enabled",
+2022-04-14T05:29:10.2095415Z     "tenantId": "12873845-9729-49dd-b821-76b52a360a58",
+2022-04-14T05:29:10.2095802Z     "user": {
+2022-04-14T05:29:10.2096707Z       "name": "***",
+2022-04-14T05:29:10.2111699Z       "type": "servicePrincipal"
+2022-04-14T05:29:10.2111961Z     }
+2022-04-14T05:29:10.2112125Z   }
+2022-04-14T05:29:10.2112298Z ]
+2022-04-14T05:29:10.2118949Z [command]/opt/hostedtoolcache/Python/3.7.12/x64/bin/az account set --subscription b53cd405-74a5-4714-9549-88af4dc84f66
+2022-04-14T05:29:10.4046844Z [command]/bin/bash /home/vsts/work/_temp/azureclitaskscript1649914147671.sh
+2022-04-14T05:29:13.0309276Z ERROR: {'Azure-cli-ml Version': '1.37.0', 'Error': FileNotFoundError(2, 'No such file or directory')}
+2022-04-14T05:29:13.2546815Z ##[error]Script failed with exit code: 1
+2022-04-14T05:29:13.2560605Z [command]/opt/hostedtoolcache/Python/3.7.12/x64/bin/az account clear
+2022-04-14T05:29:13.4627931Z ##[section]Finishing: Deploy ML Model To AKS
+
